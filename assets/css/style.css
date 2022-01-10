@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #ffffff;
+  background: black;
   color: #898989;
   font-family: "Poppins", helvetica;
   font-size: 15px;
@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  color: #292929;
+  color: #ecd500;
   font-weight: 600;
 }
 
@@ -411,7 +411,7 @@ p {
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .hero-content p {
@@ -420,7 +420,7 @@ p {
   margin-top: 0;
   margin-bottom: 30px;
   text-transform: capitalize;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-weight: 500;
 }
 
@@ -430,7 +430,7 @@ p {
 }
 
 .hero-content .list-social li i {
-  color: #fff;
+  color: black;
   font-size: 15px;
 }
 
