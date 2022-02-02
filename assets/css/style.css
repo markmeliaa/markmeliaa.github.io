@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: black;
+  background: white;
   color: #898989;
   font-family: "Poppins", helvetica;
   font-size: 15px;
@@ -493,13 +493,13 @@ p {
 #about {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
+  background: black;
   padding-top: 120px;
 }
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #b8a07e;
+  border: 20px solid #ecd500;
 }
 
 #about .div-img-bg .about-img img {
@@ -528,7 +528,7 @@ p {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background: #f7f7f7;
+  background: black;
   position: relative;
   padding-bottom: 80px;
 }
@@ -708,7 +708,7 @@ p {
 #journal, #journal-blog {
   height: auto;
   width: 100%;
-  background: #f7f7f7;
+  background: black;
   padding-bottom: 60px;
   position: relative;
 }
@@ -981,7 +981,7 @@ blockquote {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f7f7;
+  background: black;
   padding-top: 50px;
   padding-bottom: 50px;
 }
