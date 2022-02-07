@@ -499,7 +499,7 @@ p {
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #ecd500;
+  border: 20px solid #086a91;
 }
 
 #about .div-img-bg .about-img img {
@@ -513,15 +513,17 @@ p {
 }
 
 #about .about-descr .p-heading {
-  font-family: "Playfair Display", serif;
-  font-size: 28px;
-  text-align: left;
+  color: #ecd500;
+  font-family: "Sitka Small";
+  font-size: 24px;
+  text-align: justify;
 }
 
 #about .about-descr .separator {
-  max-width: 80%;
+  max-width: 95%;
   margin-bottom: 0;
-  text-align: left;
+  text-align: justify;
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -537,7 +539,7 @@ p {
   margin: 10px 0;
   position: relative;
   font-size: 13px;
-  color: #292929;
+  color: #086a91;
   letter-spacing: 0.1em;
   font-weight: 500;
   text-transform: uppercase;
@@ -552,7 +554,7 @@ p {
 
 .services-block i {
   font-size: 44px;
-  color: #b8a07e;
+  color: white;
   line-height: 44px;
 }
 
@@ -563,12 +565,12 @@ p {
 .services-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: #e98367;
   opacity: 1;
-  border: 1px solid #b8a07e;
+  border: 1px solid black;
 }
 .services-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #b8a07e;
+  background-color: #ed3c0d;
 }
 
 /*--------------------------------------------------------------
@@ -1055,7 +1057,7 @@ blockquote {
     float: none;
     width: 100%;
     text-align: center;
-    border-top: 1px solid #f7f7f7;
+    border-top: 1px solid white;
     line-height: 45px;
     margin-left: 0;
     padding-top: 10px;
