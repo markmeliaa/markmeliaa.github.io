@@ -767,12 +767,14 @@ p {
 #contact {
   height: auto;
   width: 100%;
+  background: black;
 }
 
 .contact-details {
   list-style: none;
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 .contact-details li {
@@ -803,7 +805,7 @@ p {
 .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #086a91;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -823,7 +825,7 @@ p {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #086a91;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -984,7 +986,6 @@ blockquote {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: black;
   padding-top: 50px;
   padding-bottom: 50px;
 }
