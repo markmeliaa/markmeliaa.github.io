@@ -40,7 +40,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li class="dropdown"><a href="#portfolio"><span>Portolio</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="nav-link scrollto" href="#portfolio"><span>Portolio</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li class="dropdown"><a href="#portfolio"><span>Games</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
@@ -62,20 +62,20 @@
                   <li><a href="#">WikiZelda</a></li>
                 </ul>
               </li>
-              <li class="dropdown"><a href="#portfolio"><span>Research</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Concurrency in Unity</a></li>
-                </ul>
-              </li>
             </ul>
           </li>
+          <li class="dropdown"><a class="nav-link scrollto" href="#journal"><span>Research</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Concurrency in Unity</a></li>
+              <li><a href="#">Neural Network in Python</a></li>
+            </ul>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav> <!-- .navbar -->
 
     </div>
-  </header><!-- End Header -->
+  </header> <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <div id="hero" class="home">
@@ -113,10 +113,10 @@
 
               <p class="p-heading">I am a junior programmer who enjoys coding and making videogames which include any kind of AI, ML or VR aspect. </p>
 
-              <p class="separator">I think that my programming skill is my <b> strongest asset </b>, not only because I have been improving it during the years but also because
+              <p class="separator">I think that my programming skill is my <b> strongest asset</b>, not only because I have been improving it during the years but also because
                                     I know how to <b> think outside the box </b> and find coding solutions to problems in a different way as conventional people may do.</p>
 
-              <p class="separator">Outside programming, I also enjoy a lot <b> designing games </b> and everything that it involves, and I think it is because I have always had
+              <p class="separator">Outside programming, I also enjoy a lot <b> designing games </b>and everything that it involves, and I think it is because I have always had
                                     a <b> pretty wild imagination </b> since I was a child and every time that I can I try to develop it even more thinking about new game concepts or game mechanics.</p>
 
             </div>
@@ -226,7 +226,6 @@
               <li data-filter=".filter-games">Games</li>
               <li data-filter=".filter-projects">Projects</li>
               <li data-filter=".filter-mobile">Mobile Apps</li>
-              <li data-filter=".filter-research">Research</li>
             </ul>
           </div>
         </div>
@@ -269,6 +268,15 @@
             </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-games">
+            <img src="assets/img/myicon.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Ophiuchus</h4>
+              <p>A look into the starts -- COMING SOON</p>
+              <a href="#" class="details-link" title="More Info"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-projects">
             <img src="assets/img/myicon.png" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -305,15 +313,6 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-research">
-            <img src="assets/img/myicon.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Concurrency in Unity</h4>
-              <p>¿How can concurrency be implemented?</p>
-              <a href="#" class="details-link" title="More Info"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
           <!--
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
@@ -332,13 +331,13 @@
 
     </div><!-- End Portfolio Section -->
 
-    <!-- ======= Journal Section ======= -->
-    <!--
+    <!-- ======= Research Section ======= -->
+
     <div id="journal" class="text-left paddsection">
 
       <div class="container">
         <div class="section-title text-center">
-          <h2>journal</h2>
+          <h2>RESEARCH DONE</h2>
         </div>
       </div>
 
@@ -349,13 +348,12 @@
             <div class="col-lg-4 col-md-6">
               <div class="journal-info">
 
-                <a href="blog-single.html"><img src="assets/img/blog-post-1.jpg" class="img-responsive" alt="img"></a>
+                <a href="#"><img src="assets/img/logo2.png" class="img-responsive" alt="img"></a>
 
                 <div class="journal-txt">
 
-                  <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
-                  <p class="separator">To an English person, it will seem like simplified English
-                  </p>
+                  <h4><a href="#">CONCURRENCY IN UNITY</a></h4>
+                  <p class="separator">How does concurrency work and in which ways can be applied into Unity?</p>
 
                 </div>
 
@@ -365,19 +363,19 @@
             <div class="col-lg-4 col-md-6">
               <div class="journal-info">
 
-                <a href="blog-single.html"><img src="assets/img/blog-post-2.jpg" class="img-responsive" alt="img"></a>
+                <a href="#"><img src="assets/img/logo2.png" class="img-responsive" alt="img"></a>
 
                 <div class="journal-txt">
 
-                  <h4><a href="blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
-                  <p class="separator">To an English person, it will seem like simplified English
-                  </p>
+                  <h4><a href="#">NEURAL NETWORK IN PYTHON</a></h4>
+                  <p class="separator">Neural networks performance, gradient descent and how to apply that into Python</p>
 
                 </div>
 
               </div>
             </div>
 
+            <!--
             <div class="col-lg-4 col-md-6">
               <div class="journal-info">
 
@@ -393,14 +391,15 @@
 
               </div>
             </div>
+            -->
 
           </div>
         </div>
       </div>
 
     </div>
-    -->
-    <!-- End Journal Section -->
+
+    <!-- End Research Section -->
 
     <!-- ======= Contact Section ======= -->
     <div id="contact" class="paddsection">

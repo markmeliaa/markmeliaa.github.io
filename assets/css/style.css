@@ -746,12 +746,12 @@ p {
   line-height: 24px;
   margin: 0 0 13px 0;
   font-weight: 500;
-  color: #292929;
+  color: #086a91;
   transition: all 0.5s ease-in-out 0s;
 }
 
 .journal-block .journal-info .journal-txt h4 a:hover {
-  color: #b8a07e;
+  color: #ed3c0d;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -767,7 +767,6 @@ p {
 #contact {
   height: auto;
   width: 100%;
-  background: black;
 }
 
 .contact-details {
@@ -988,6 +987,7 @@ blockquote {
 #footer {
   padding-top: 50px;
   padding-bottom: 50px;
+  background: black;
 }
 
 #footer .socials-media {
