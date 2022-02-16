@@ -62,8 +62,8 @@ p {
 }
 
 ::selection {
-  background: #b8a07e;
-  color: #fff;
+  background: #ecd500;
+  color: black;
 }
 
 .btn {
@@ -776,6 +776,22 @@ p {
   color: white;
 }
 
+.contact-quote {
+  color: white;
+  font-family: 'Redressed', cursive;
+  font-size: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.contact-quote-author {
+  color: #086a91;
+  font-family: "Poppins", helvetica;
+  font-size: 30px;
+  padding-top: 20px;
+  text-align: center;
+}
+
 .contact-details li {
   padding-bottom: 10px;
 }
@@ -789,6 +805,7 @@ p {
   min-height: 160px;
 }
 
+/*
 .php-email-form .error-message {
   display: none;
   color: #fff;
@@ -828,6 +845,18 @@ p {
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
+}
+*/
+
+a:hover {
+  color: #ed3c0d;
+}
+
+.contact-mailto {
+  color: white;
+}
+.contact-cv {
+  color: #ecd500;
 }
 
 @-webkit-keyframes animate-loading {
