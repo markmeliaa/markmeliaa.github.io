@@ -1057,7 +1057,7 @@ blockquote {
 }
 
 #footer .socials-media ul li a:hover {
-  color: #b8a07e;
+  color: #ecd500;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -1071,6 +1071,14 @@ blockquote {
 
 .credits {
   font-size: 13px;
+}
+
+.credits a {
+  color: white;
+}
+
+.credits a:hover {
+  color: #ed3c0d;
 }
 
 /** Width between 1200x to 0
