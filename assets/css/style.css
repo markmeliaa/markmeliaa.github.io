@@ -911,6 +911,12 @@ a:hover {
   overflow: hidden;
 }
 
+.main-content img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
 .container-main .block-main .content-main {
   background: #181A1B none repeat scroll 0 0;
   display: inline-block;
@@ -952,7 +958,7 @@ a:hover {
   margin-left: 5px;
 }
 
-/* Commonts */
+/* Comments */
 .comments {
   background: #fff;
 }
