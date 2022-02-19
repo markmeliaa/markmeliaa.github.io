@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Mark Meliá - Concurrency Research</title>
+  <title>Mark Meliá - Python Neural Network</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -33,7 +33,7 @@
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo"><img src="../assets/img/FullIcon.png" alt="" class="img-fluid"></a>
+      <a href="../index.html" class="logo"><img src="../assets/img/FullIcon.png" alt="" class="img-fluid"></a>
       <!-- Uncomment below if you prefer to use an text logo -->
       <!-- <h1 class="logo"><a href="index.html">Folio</a></h1> -->
 
@@ -86,38 +86,38 @@
               <div class="container-main single-main">
                 <div class="col-md-12">
                   <div class="block-main mb-30">
-                    <img src="../assets/img/research/blog-post-concurrency.jpg" class="img-responsive" alt="reviews2">
+                    <img src="../assets/img/research/blog-post-neuralnetwork.jpg" class="img-responsive" alt="reviews2">
                     <div class="content-main single-post padDiv">
                       <div class="journal-txt">
-                        <h4>WHAT IS CONCURRENCY AND HOW CAN IT BE APPLIED INTO UNITY?</h4>
+                        <h4>HOW CAN A NEURAL NETWORK RECOGNIZE HANDWRITTEN DIGITS?</h4>
                       </div>
                       <div class="post-meta">
                         <ul class="list-unstyled mb-0">
-                          <li class="author">Research done by:<a href="https://github.com/markmeliaa">Marc Alcón Meliá</a><span>&</span><a href="https://www.artstation.com/ninartgarcia">Cristina García Armijo</a></li>
-                          <li class="date">Finish date of the research:<span>January 10, 2021</span></li>
-                          <li class="date">Duration and experimentation:<span>4 months and a half</span></li>
-                          <li class="date">Can be found here:<a href="https://github.com/markmeliaa/Concurrency_Research">Unity project + PDF Document</a></li>
+                          <li class="author">Research done by:<a href="https://github.com/markmeliaa">Marc Alcón Meliá</a></li>
+                          <li class="date">Finish date of the research:<span>January 18, 2022</span></li>
+                          <li class="date">Duration and experimentation:<span>2 months</span></li>
+                          <li class="date">Can be found here:<a href="https://github.com/markmeliaa/Python_NN_Research">Python Files + PDF Document</a></li>
                           <!--<li class="commont"><i class="ion-ios-heart-outline"></i><a href="#">3 Comments</a></li>-->
                         </ul>
                       </div>
                       <p class="mb-30">
-                        Either in computer science or when programming games, we as programmers may found ourselves sometimes in the situation that the game that we are building 
-                        runs slow because we added <b>too many tasks</b> that deteriorate the performance of the game, and in those cases one good solution that we can apply is concurrency, 
-                        which will make the game run <b>significantly</b> faster.
+                        First of all, I want to do an statement, this is not completely my job, this is an adaptation of the first chapter of <a href="http://neuralnetworksanddeeplearning.com/index.html">Michael Nielsen's book</a>
+                        and that also uses knowledge of the Youtube videos done by 3Blue1Brown (<a href="https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=1&ab_channel=3Blue1Brown">Here you can find the video playlist</a>),
+                        but I learned so much with that documentation that I needed to show it in a written article.
                       </p>
                       <p class="mb-30">
-                        In this research article, first it is explained what concurrency is and why is it useful, and then it gets a bit more complex, because it starts to
-                        explain in which ways can concurrency be implemented into Unity, either using <b>Coroutines, Jobs or Threads</b>, and it finishes giving a conclusion about which application
-                        is better in each case and justifies it.
+                        The article is kind of divided in two main parts, one that explains the basics of the neural networks and the knowledge that it will later be implemented and used (such as
+                        <b>gradient descent, stochastic gradient descent, backpropagations, weights and biases...</b>), and the other part that explains how to apply it into Python and what are the 
+                        results that we can expect from the project, how good will it be (although <b>it can be improved</b> as Michael Nielsen explains in the rest of his book).
                       </p>
-                      <blockquote>It's kind of a divide and conquer approach to perform more tasks in less time</blockquote>
+                      <blockquote>Neural networks and deep learning are probably the future of the computer science</blockquote>
                       <p class="mb-30">
-                        Additional to the research article, there is also a Unity project, that displays a maze with several capsule objects, ones that use concurrency (we
-                        used threads in the project) and other that don't, and it can clearly be seen how they go faster and together, rather than slower and one after another because of the 
-                        no use of concurrency in them.
-                      </p>
+                        The python files needed to follow the article are all included (not only the main file, Network.py, but also the comparaison files that later are mentioned), and everything
+                        in them is commented so the reader can follow the code at the same time that reads the article and learns about neural networks.
+                      </p> 
                       <p class="mb-30">
-                        Aside from that, it also implements an <b>A* algorithm</b> to find the best solution of the maze and guide the capsules to the goal.
+                        Finally, the document is ended by a small conclusion about how the neural networks are a phenomenal recourse and that they may constitute <b>the future of programming</b>,
+                        but that it still has a great road ahead because of their multiple limitations and factors.
                       </p>
                     </div>
                   </div>
