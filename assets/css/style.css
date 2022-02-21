@@ -39,7 +39,7 @@ h4 {
 }
 
 a {
-  color: #292929;
+  color: white;
   text-decoration: none !important;
   transition: all 0.5s ease-in-out 0s;
 }
@@ -449,8 +449,8 @@ p {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 120px 0 0 0;
-  background-color: white;
+  padding: 110px 0 0 0;
+  background-color: #181A1B;
   min-height: 40px;
 }
 @media (max-width: 992px) {
@@ -485,6 +485,11 @@ p {
   color: #6c757d;
   content: "/";
 }
+
+.breadcrumbs a {
+  color: white;
+}
+
 @media (max-width: 768px) {
   .breadcrumbs .d-flex {
     display: block !important;
