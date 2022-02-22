@@ -674,8 +674,8 @@ p {
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
 }
-.portfolio-details .portfolio-details-slider .covid-img {
-  width: 47%;
+.portfolio-details .portfolio-details-slider .vertical-img {
+  width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -690,6 +690,8 @@ p {
   background-color: #e98367;
   opacity: 1;
   border: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #ed3c0d;
