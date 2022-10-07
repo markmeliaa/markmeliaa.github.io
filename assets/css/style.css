@@ -952,12 +952,12 @@ a:hover {
 
 .videoWrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
+  padding-bottom: 66.35%; /* 16:9 */
   height: 0;
 }
 .videoWrapper iframe {
   position: absolute;
+  padding-top: 75px;
   top: 0;
   left: 0;
   width: 100%;
@@ -1078,8 +1078,8 @@ blockquote {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 55px;
+  padding-bottom: 55px;
   background: black;
 }
 
