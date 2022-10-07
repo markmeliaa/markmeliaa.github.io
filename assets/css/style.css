@@ -20,7 +20,6 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  scrollbar-color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1079,8 +1078,8 @@ blockquote {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  padding-top: 50px;
-  padding-bottom: 77px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background: black;
 }
 
