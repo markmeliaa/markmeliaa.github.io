@@ -120,6 +120,11 @@ p {
   padding-bottom: 10px;
 }
 
+.paddsection2 {
+  padding-top: 45px;
+  padding-bottom: 10px;
+}
+
 .paddsections {
   padding-top: 90px;
   padding-bottom: 90px !important;
@@ -817,7 +822,7 @@ p {
   color: white;
   font-family: 'Redressed', cursive;
   font-size: 35px;
-  padding-top: 0px;
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -831,7 +836,8 @@ p {
 }
 
 .contact-details li {
-  padding-bottom: 10px;
+  font-size: 30px;
+  padding-bottom: 20px;
 }
 
 #contact input, #contact textarea {
@@ -894,7 +900,7 @@ a:hover {
   color: white;
 }
 .contact-cv {
-  color: #ecd500;
+  color: white;
 }
 
 @-webkit-keyframes animate-loading {
