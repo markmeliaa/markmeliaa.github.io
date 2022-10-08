@@ -782,6 +782,16 @@ p {
   position: relative;
 }
 
+.journal-block .journal-info .journal-txt h4 {
+  display: block;
+  font-size: 19px;
+  line-height: 24px;
+  margin: 0 0 13px 0;
+  font-weight: 500;
+  color: #086a91;
+  transition: all 0.5s ease-in-out 0s;
+}
+
 .journal-block .journal-info .journal-txt h4 a {
   display: block;
   font-size: 19px;
@@ -809,6 +819,8 @@ p {
 #contact {
   height: auto;
   width: 100%;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
 .contact-details {
