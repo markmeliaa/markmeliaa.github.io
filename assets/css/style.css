@@ -6,7 +6,7 @@
 */
 
 /*--------------------------------------------------------------
-# General
+# Global Style
 --------------------------------------------------------------*/
 body {
   background: #181A1B;
@@ -407,7 +407,7 @@ p {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  background: url("../img/home-bg.jpg") repeat scroll center center/cover;
+  background: url("../img/hero-image.jpg") repeat scroll center center/cover;
   height: 100vh;
   width: 100%;
 }
@@ -452,6 +452,7 @@ p {
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
+/*
 .breadcrumbs {
   padding: 110px 0 0 0;
   background-color: #181A1B;
@@ -505,10 +506,11 @@ p {
     display: inline-block;
   }
 }
+*/
 
-/*-----------------------------------------------------------------------------------*/
-/*  About
-/*-----------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
 #about {
   width: 100%;
   height: auto;
@@ -546,7 +548,7 @@ p {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Personal Traits
 --------------------------------------------------------------*/
 #services {
   background: black;
@@ -581,6 +583,7 @@ p {
   margin-top: 30px;
   position: relative;
 }
+
 .services-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
@@ -588,6 +591,7 @@ p {
   opacity: 1;
   border: 1px solid black;
 }
+
 .services-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #ed3c0d;
 }
@@ -599,6 +603,7 @@ p {
   position: relative;
   padding-bottom: 50px;
 }
+
 #portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 35px auto;
@@ -607,6 +612,7 @@ p {
   border-radius: 50px;
   padding: 2px 15px;
 }
+
 #portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
@@ -619,15 +625,19 @@ p {
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
+
 #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
   color: #086a91;
 }
+
 #portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
+
 #portfolio .portfolio-item {
   margin-bottom: 30px;
 }
+
 #portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
@@ -639,18 +649,21 @@ p {
   background: black;
   padding: 15px;
 }
+
 #portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
   color: #ecd500;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 #portfolio .portfolio-item .portfolio-info p {
   color: white;
   font-size: 14px;
   margin: 0;
   padding: 0;
 }
+
 #portfolio .portfolio-item .portfolio-info .preview-link, #portfolio .portfolio-item .portfolio-info .details-link {
   position: absolute;
   right: 40px;
@@ -658,42 +671,50 @@ p {
   top: calc(50% - 18px);
   color: white;
 }
+
 #portfolio .portfolio-item .portfolio-info .preview-link:hover, #portfolio .portfolio-item .portfolio-info .details-link:hover {
   color: #ed3c0d;
 }
+
 #portfolio .portfolio-item .portfolio-info .details-link {
   right: 10px;
 }
+
 #portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 20px;
 }
 
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+/*  /* Portfolio Page */
+/*--------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
+  padding-top: 100px;
 }
+
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
 }
+
 .portfolio-details .portfolio-details-slider .vertical-img {
   width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 .portfolio-details .portfolio-details-slider .promo-img {
   width: 85%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
+
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
@@ -703,13 +724,16 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #ed3c0d;
 }
+
 .portfolio-details .portfolio-info {
   padding: 30px;
   box-shadow: 0px 0 30px black;
 }
+
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
   font-weight: 700;
@@ -718,37 +742,44 @@ p {
   border-bottom: 1px solid #ecd500;
   color: #ecd500;
 }
+
 .portfolio-details .portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
+
 .portfolio-details .portfolio-info ul li {
   color: white;
 }
+
 .portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
+
 .portfolio-details .portfolio-info strong {
   color: #086a91;
 }
+
 .portfolio-details .portfolio-description {
   padding-top: 30px;
   text-align: justify;
 }
+
 .portfolio-details .portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
   text-align: center;
 }
+
 .portfolio-details .portfolio-description p {
   padding: 0;
   color: white;
 }
 
 /*--------------------------------------------------------------
-# Journal
+# Research
 --------------------------------------------------------------*/
 #journal, #journal-blog {
   height: auto;
@@ -813,136 +844,9 @@ p {
   line-height: 24px;
 }
 
-/*--------------------------------------------------------------
-# Journal
---------------------------------------------------------------*/
-#contact {
-  height: auto;
-  width: 100%;
-  padding-top: 130px;
-  padding-bottom: 130px;
-}
-
-.contact-details {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  color: white;
-}
-
-.contact-quote {
-  color: white;
-  font-family: 'Redressed', cursive;
-  font-size: 35px;
-  padding-top: 50px;
-  text-align: center;
-}
-
-.contact-quote-author {
-  color: #086a91;
-  font-family: "Poppins", helvetica;
-  font-size: 30px;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  text-align: center;
-}
-
-.contact-details li {
-  font-size: 30px;
-  padding-bottom: 20px;
-}
-
-#contact input, #contact textarea {
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-#contact textarea {
-  min-height: 160px;
-}
-
-/*
-.php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-.php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-.php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #086a91;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-.php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 15px;
-}
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #086a91;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-*/
-
-a:hover {
-  color: #ed3c0d;
-}
-
-.contact-mailto {
-  color: white;
-}
-.contact-cv {
-  color: white;
-}
-
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-/*--------------------------------------------------------------
-# Blog
---------------------------------------------------------------*/
-/*  Navbar fixd page */
-.subpage-nav {
-  display: block !important;
-}
-
-/*-----------------------------------------------------------------------------------*/
-/*  /* Single page */
-/*-----------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+/*  /* Research Page */
+/*--------------------------------------------------------------*/
 #journal-blog {
   padding-top: 140px;
 }
@@ -1023,7 +927,17 @@ a:hover {
   margin-left: 5px;
 }
 
-/* Comments */
+blockquote {
+  padding: 40px;
+  background-color: black;
+  margin: 30px 0;
+  border: none;
+  border-left: 4px solid #086a91;
+  color: #ecd500;
+}
+
+/* COMMENTS */
+/*
 .comments {
   background: #fff;
 }
@@ -1077,19 +991,65 @@ a:hover {
 .entry-comments-reply {
   padding-left: 10%;
 }
+*/
 
-/* Commonts form */
-.cmt {
-  background: #fff;
+/*--------------------------------------------------------------
+# CV-Resumé
+--------------------------------------------------------------*/
+#contact {
+  height: auto;
+  width: 100%;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
-blockquote {
-  padding: 40px;
-  background-color: black;
-  margin: 30px 0;
-  border: none;
-  border-left: 4px solid #086a91;
-  color: #ecd500;
+.contact-details {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.contact-quote {
+  color: white;
+  font-family: 'Redressed', cursive;
+  font-size: 35px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.contact-quote-author {
+  color: #086a91;
+  font-family: "Poppins", helvetica;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.contact-details li {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+#contact textarea {
+  min-height: 160px;
+}
+
+a:hover {
+  color: #ed3c0d;
+}
+
+.contact-mailto {
+  color: white;
+}
+.contact-cv {
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -1150,420 +1110,4 @@ blockquote {
 
 .credits a:hover {
   color: #ed3c0d;
-}
-
-/** Width between 1200x to 0
- *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- */
-/** Width between 992px to 1199px
- *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- */
-/** Width between 768px to 991px
- *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- */
-@media (min-width: 768px) and (max-width: 991px) {
-  /* Navbar */
-  nav {
-    padding: 10px 15px;
-  }
-
-  .nav-menu {
-    margin-top: 40px;
-    display: none;
-    float: none;
-    width: 100%;
-  }
-
-  .nav-menu li {
-    float: none;
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid white;
-    line-height: 45px;
-    margin-left: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .responsive {
-    float: right;
-    padding-top: 15px;
-    display: block;
-  }
-
-  /* About */
-  .head-info .header-content .cmaster h1 {
-    font-size: 32px;
-  }
-
-  #about .div-img-bg {
-    padding: 0;
-  }
-
-  #about .div-img-bg .about-img img {
-    margin-top: 0%;
-    margin-left: calc(0% - 0px);
-  }
-
-  #about .about-descr .p-heading {
-    font-size: 20px;
-  }
-
-  #about .about-descr .separator {
-    max-width: 100%;
-    margin-bottom: 0;
-  }
-
-  /* portfolio */
-  #portfolio .portfolio-list .nav li {
-    float: none;
-    margin: 20px;
-    display: inline-block;
-  }
-
-  /* journal */
-  #journal .journal-block .journal-info {
-    margin-bottom: 30px;
-  }
-
-  /* Contact */
-  .contact-contact {
-    margin-bottom: 30px;
-  }
-
-  /* Footer */
-  #footer .socials-media ul li {
-    margin-right: 0;
-    margin-left: 0;
-    float: none;
-    display: inline-block;
-  }
-}
-/** Width between 767px to 0
- *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- */
-@media (max-width: 767px) {
-  /* Navbar */
-  nav {
-    padding: 20px 15px;
-  }
-
-  .nav-menu {
-    margin-top: 40px;
-    display: none;
-    float: none;
-    width: 100%;
-  }
-
-  .nav-menu li {
-    float: none;
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid #f7f7f7;
-    line-height: 45px;
-    margin-left: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .responsive {
-    float: right;
-    padding-top: 15px;
-    display: block;
-  }
-
-  /* About */
-  .head-info .header-content h1 {
-    font-size: 32px;
-  }
-
-  #about .div-img-bg {
-    padding: 0;
-  }
-
-  #about .div-img-bg .about-img img {
-    margin-top: 0%;
-    margin-left: calc(0% - 0px);
-  }
-
-  #about .about-descr .p-heading {
-    font-size: 20px;
-  }
-
-  #about .about-descr .separator {
-    max-width: 100%;
-    margin-bottom: 0;
-  }
-
-  /* portfolio */
-  #portfolio .portfolio-list .nav li {
-    float: none;
-    margin: 20px;
-    display: inline-block;
-  }
-
-  /* journal */
-  #journal .journal-block .journal-info {
-    margin-bottom: 30px;
-  }
-
-  /* Contact */
-  .contact-contact {
-    margin-bottom: 30px;
-  }
-
-  /* Footer */
-  #footer .socials-media ul li {
-    margin-right: 0;
-    margin-left: 0;
-    float: none;
-    display: inline-block;
-  }
-}
-/** Width between 600px to 0
- *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- */
-@media (max-width: 600px) {
-  /* Navbar */
-  nav {
-    padding: 20px 15px;
-  }
-
-  .nav-menu {
-    margin-top: 40px;
-    display: none;
-    float: none;
-    width: 100%;
-  }
-
-  .nav-menu li {
-    float: none;
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid #f7f7f7;
-    line-height: 45px;
-    margin-left: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .responsive {
-    float: right;
-    padding-top: 15px;
-    display: block;
-  }
-
-  /* About */
-  .head-info .header-content h1 {
-    font-size: 32px;
-  }
-
-  #about .div-img-bg {
-    padding: 0;
-  }
-
-  #about .div-img-bg .about-img img {
-    margin-top: 0%;
-    margin-left: calc(0% - 0px);
-  }
-
-  #about .about-descr .p-heading {
-    font-size: 20px;
-  }
-
-  #about .about-descr .separator {
-    max-width: 100%;
-    margin-bottom: 0;
-  }
-
-  /* portfolio */
-  #portfolio .portfolio-list .nav li {
-    float: none;
-    margin: 10px;
-    display: inline-block;
-  }
-
-  /* journal */
-  #journal .journal-block .journal-info {
-    margin-bottom: 30px;
-  }
-
-  /* Contact */
-  .contact-contact {
-    margin-bottom: 30px;
-  }
-
-  /* Footer */
-  #footer .socials-media ul li {
-    margin-right: 0;
-    margin-left: 0;
-    float: none;
-    display: inline-block;
-  }
-}
-/** Width between 480px to 0
- *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- */
-@media (max-width: 480px) {
-  /* Navbar */
-  nav {
-    padding: 20px 15px;
-  }
-
-  .nav-menu {
-    margin-top: 40px;
-    display: none;
-    float: none;
-    width: 100%;
-  }
-
-  .nav-menu li {
-    float: none;
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid #f7f7f7;
-    line-height: 45px;
-    margin-left: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .responsive {
-    float: right;
-    padding-top: 15px;
-    display: block;
-  }
-
-  /* About */
-  .head-info .header-content h1 {
-    font-size: 32px;
-  }
-
-  #about .div-img-bg {
-    padding: 0;
-  }
-
-  #about .div-img-bg .about-img img {
-    margin-top: 0%;
-    margin-left: calc(0% - 0px);
-  }
-
-  #about .about-descr .p-heading {
-    font-size: 20px;
-  }
-
-  #about .about-descr .separator {
-    max-width: 100%;
-    margin-bottom: 0;
-  }
-
-  /* portfolio */
-  #portfolio .portfolio-list .nav li {
-    float: none;
-    margin: 20px;
-  }
-
-  /* journal */
-  #journal .journal-block .journal-info {
-    margin-bottom: 30px;
-  }
-
-  /* Contact */
-  .contact-contact {
-    margin-bottom: 30px;
-  }
-
-  /* Footer */
-  #footer .socials-media ul li {
-    margin-right: 0;
-    margin-left: 0;
-    float: none;
-    display: inline-block;
-  }
-}
-/** Width between 320px to 0
- *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- */
-@media (max-width: 320px) {
-  /* Navbar */
-  nav {
-    padding: 20px 15px;
-  }
-
-  .nav-menu {
-    margin-top: 40px;
-    display: none;
-    float: none;
-    width: 100%;
-  }
-
-  .nav-menu li {
-    float: none;
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid #f7f7f7;
-    line-height: 45px;
-    margin-left: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .responsive {
-    float: right;
-    padding-top: 15px;
-    display: block;
-  }
-
-  /* About */
-  .head-info .header-content h1 {
-    font-size: 32px;
-  }
-
-  #about .div-img-bg {
-    padding: 0;
-  }
-
-  #about .div-img-bg .about-img img {
-    margin-top: 0%;
-    margin-left: calc(0% - 0px);
-  }
-
-  #about .about-descr .p-heading {
-    font-size: 20px;
-  }
-
-  #about .about-descr .separator {
-    max-width: 100%;
-    margin-bottom: 0;
-  }
-
-  /* portfolio */
-  #portfolio .portfolio-list .nav li {
-    float: none;
-    margin: 20px;
-  }
-
-  /* journal */
-  #journal .journal-block .journal-info {
-    margin-bottom: 30px;
-  }
-
-  /* Contact */
-  .contact-contact {
-    margin-bottom: 30px;
-  }
-
-  /* Footer */
-  #footer .socials-media ul li {
-    margin-right: 0;
-    margin-left: 0;
-    float: none;
-    display: inline-block;
-  }
-
-  /* Single page */
-  .entry-comments-body span {
-    display: inline-block;
-    margin-right: 0;
-  }
 }
