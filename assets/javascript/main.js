@@ -229,4 +229,13 @@
 
   // Prevent mouse wheel scrolling
   window.addEventListener("wheel", e => e.preventDefault(), { passive:false })
+  
+  // Prevent mouse wheel click scrolling
+  document.body.onmousedown = function(e) {
+    if (e.button == 1) {
+        e.preventDefault();
+        return false;
+    }
+  }
+
 })()
