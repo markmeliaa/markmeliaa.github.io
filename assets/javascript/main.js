@@ -79,6 +79,7 @@
    }, true)
 
   // Show navbar highlights when scrolled outside the hero
+  /*
   let selectHeader = select('#header')
   if (selectHeader) {
     const headerScrolled = () => {
@@ -91,6 +92,7 @@
     window.addEventListener('load', headerScrolled)
     onscroll(document, headerScrolled)
   }
+  */
 
   // Back to top button
   let backtotop = select('.back-to-top')
@@ -140,8 +142,8 @@
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
+      typeSpeed: 70,
+      backSpeed: 110,
       backDelay: 2000
     });
   }
@@ -225,4 +227,6 @@
     }
   });
 
+  // Prevent mouse wheel scrolling
+  window.addEventListener("wheel", e => e.preventDefault(), { passive:false })
 })()

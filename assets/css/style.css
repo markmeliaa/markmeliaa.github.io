@@ -1,6 +1,11 @@
 /*--------------------------------------------------------------
 # Global Style
 --------------------------------------------------------------*/
+@font-face {
+  font-family: stratfordSerial;
+  src: url(../fonts/stratford-serial-bold.ttf);
+}
+
 body {
   background: #181A1B;
   color: #898989;
@@ -54,7 +59,7 @@ p {
 }
 
 ::selection {
-  background: #ecd500;
+  background: rgb(253, 208, 136);
   color: black;
 }
 
@@ -158,7 +163,7 @@ p {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ecd500;
+  background: #be9803;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -400,9 +405,10 @@ p {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  background: url("../img/hero-image.jpg") repeat scroll center center/cover;
+  background: url("../img/hero-image-1.jpg") repeat scroll center center/cover;
   height: 100vh;
   width: 100%;
+  text-align: right;
 }
 
 #hero .hero-content {
@@ -412,14 +418,17 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-left: -30px;
 }
 
 .hero-content h1 {
+  font-family: stratfordSerial;
   font-size: 40px;
   font-weight: 700;
+  margin-top: 550px;
   margin-bottom: 10px;
-  text-transform: uppercase;
-  color: white;
+  /*text-transform: uppercase;*/
+  color: rgb(254, 178, 55);
 }
 
 .hero-content p {
@@ -428,7 +437,7 @@ p {
   margin-top: 0;
   margin-bottom: 30px;
   text-transform: capitalize;
-  color: white;
+  color: rgb(253, 208, 136);
   font-weight: 500;
 }
 
@@ -438,7 +447,7 @@ p {
 }
 
 .hero-content .list-social li i {
-  color: white;
+  color: rgb(255, 231, 193);
   font-size: 15px;
 }
 
@@ -1049,8 +1058,8 @@ a:hover {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding-top: 40px;
+  padding-bottom: 5px;
   background: black;
 }
 
