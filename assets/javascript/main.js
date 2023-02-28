@@ -134,12 +134,27 @@
   });
   */
 
-  // Hero writting effect
+  // Hero help writting effect
   const typed = select('.typed')
   if (typed) {
     let typed_strings = typed.getAttribute('data-typed-items')
     typed_strings = typed_strings.split(',')
     new Typed('.typed', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 50,
+      backSpeed: 70,
+      backDelay: 1000,
+      showCursor: false
+    });
+  }
+
+  // Hero writting effect
+  const typed_new = select('.typed_new')
+  if (typed_new) {
+    let typed_strings = typed_new.getAttribute('data-typed-items')
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed_new', {
       strings: typed_strings,
       loop: true,
       typeSpeed: 70,

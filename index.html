@@ -13,7 +13,7 @@
   <style>
   /* width */
   ::-webkit-scrollbar {
-    width: 0px;
+    width: 3px;
   }
 
   /* Track */
@@ -57,7 +57,7 @@
   
 </head>
 
-<body>
+<body> <!--TODO: type this inside scroll="no" style="overflow: hidden"-->
   <!-- ======= Header ======= -->
   <!--
   <header id="header" class="fixed-top ">
@@ -105,7 +105,10 @@
   <div id="hero">
     <div class="container">
       <div class="hero-content">
-        <h1>I'm <span class="typed" data-typed-items="Mark Melia, a Programmer, a Game Designer, a Developer"></span></h1>
+        <p id ="help-quote"><span class="typed" data-typed-items=" HELP, ..., ..., ..., PLEASE HELP ME, 
+          ..., ..., I NEED YOUR HELP, ..., ..., I BEG YOU SCROLL DOWN, ..., ..., I DON'T KNOW WHAT ELSE TO DO, ..., ..."></span></p>
+
+        <h1>I'm <span class="typed_new" data-typed-items="Mark Melia, a Programmer, a Game Designer, a Developer"></span></h1>
         <p>Programmer, Game Designer, Developer</p>
 
         <ul class="list-unstyled list-social">
@@ -114,7 +117,8 @@
           <li><a class="contact-mailto" href="mailto:marcaalconmelia@gmail.com"><i class="bi bi-envelope-fill"></i></a></li>
           <li><a class="contact-cv" href="assets/docs/English-CV.pdf"><i class="bi-file-pdf-fill"></i></a></li>
         </ul>
-        
+
+        <a href="#about" id="scroll-to-down">SCROLL DOWN</a>
       </div>
     </div>
   </div>
@@ -124,42 +128,27 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <!--
-    <div id="about" class="paddsection">
+    <div id="about">
       <div class="container">
-        <div class="row justify-content-between">
-
-          <div class="col-lg-4">
-            <div class="div-img-bg">
-              <div class="about-img">
-                <img src="assets/img/self-portrait.jpg" class="img-responsive" alt="me">
-              </div>
-            </div>
+        <div class="col-lg-5">
+          <div class="about-img">
+            <img src="assets/img/self-portrait.jpg" class="img-responsive" alt="me">
           </div>
 
-          <div class="col-lg-7">
-            <div class="about-descr">
+          <div class="about-descr">
 
-              <p class="p-heading">IF YOU WANT TO GET TO KNOW ME BETTER...</p>
+            <p class="p-heading">IF YOU WANT TO GET TO KNOW ME BETTER...</p>
 
-              <p class="separator">My full name is Marc Alcón Meliá, I am 22 years old, I was born in Castellón and now I am living in Barcelona, not only because I like the city 
-                but also because I am pursuing a Master's degree here at the UPC Tech Talent School.</p>
-
-              <p class="separator">I really like coding, in particular coding anything gameplay or AI related, and I also like game design, as I have an outstanding imagination
-                since I was a child and I like to take the best out of it (with its due common sense and cohesion).</p>
-
-              <p class="separator">And when I am not programming I am most likely playing videogames, in particular games that involve strategy such as the <i>Fire Emblem Saga</i>, 
-                or games that involve teamwork, such as <i>Valorant</i>, <i>Overwatch 2</i>, <i>Splatoon 3</i>..., but I also try to take a break from videogames every now and then 
-                and read a good book or watch a nice serie (I recommend you <i>The OA</i>).
-              </p>
-
-            </div>
-
+            <p class="separator">My full name is Marc Alcón Meliá, I am 22 years old, I was born in Castellón and now I am living in Barcelona, not only because I like the city 
+              but also because I am pursuing a Master's degree here at the UPC Tech Talent School.</p>
+              
           </div>
         </div>
+        
+        <a href="#hero" id="scroll-to-up">SCROLL UP</a>
+        <a href="#footer" id="scroll-to-down">SCROLL DOWN</a>
       </div>
     </div>
-    -->
     <!-- End About Section -->
 
     <!-- ======= Personal Traits Section ======= -->

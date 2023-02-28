@@ -415,16 +415,14 @@ p {
   text-align: left;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   flex-direction: column;
-  margin-left: -30px;
 }
 
 .hero-content h1 {
   font-family: stratfordSerial;
   font-size: 40px;
   font-weight: 700;
-  margin-top: 570px;
   /*text-transform: uppercase;*/
   color: rgb(254, 178, 55);
 }
@@ -432,8 +430,6 @@ p {
 .hero-content p {
   font-size: 13px;
   letter-spacing: 3px;
-  margin-top: 0;
-  margin-bottom: 20px;
   text-transform: capitalize;
   color: rgb(253, 208, 136);
   font-weight: 500;
@@ -442,6 +438,7 @@ p {
 .hero-content .list-social li {
   float: left;
   margin-right: 20px;
+  margin-bottom: 30px;
 }
 
 .hero-content .list-social li i {
@@ -449,84 +446,37 @@ p {
   font-size: 15px;
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-/*
-.breadcrumbs {
-  padding: 110px 0 0 0;
-  background-color: #181A1B;
-  min-height: 40px;
-}
-@media (max-width: 992px) {
-  .breadcrumbs {
-    padding-top: 100px;
-  }
-}
-.breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 300;
-  margin: 0;
-}
-@media (max-width: 992px) {
-  .breadcrumbs h2 {
-    margin: 0 0 10px 0;
-  }
-}
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
+.hero-content #help-quote {
+  font-size: 10px;
+  color: rgb(255, 221, 167);
+  opacity: 0.25;
+  text-align: right;
 }
 
-.breadcrumbs a {
+#hero #scroll-to-down {
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: capitalize;
   color: white;
+  font-weight: 500;
+  text-align: right;
+  margin-bottom: 10px;
+  opacity: 0.5;
 }
-
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-  .breadcrumbs ol {
-    display: block;
-  }
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
-*/
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 #about {
+  background: url("../img/hero-image-2.jpg") repeat scroll center center/cover;
   width: 100%;
-  height: auto;
-  background: black;
-  padding-top: 120px;
+  height: 100vh;
 }
 
-#about .div-img-bg {
-  padding-bottom: 30px;
-  border: 20px solid #086a91;
-}
-
-#about .div-img-bg .about-img img {
+#about .about-img img {
   width: 100%;
   box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
-  margin-top: -60px;
+  margin-top: 60px;
   margin-left: 40px;
   height: 400px;
   -o-object-fit: cover;
@@ -545,6 +495,28 @@ p {
   margin-bottom: 0;
   text-align: justify;
   color: white;
+}
+
+#about #scroll-to-up {
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+
+#about #scroll-to-down {
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 500;
+  text-align: right;
+  margin-bottom: 10px;
+  opacity: 0.5;
 }
 
 /*--------------------------------------------------------------
