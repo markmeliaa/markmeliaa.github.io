@@ -169,15 +169,18 @@ p {
   border-radius: 4px;
   transition: all 0.4s;
 }
+
 .back-to-top i {
   font-size: 28px;
   color: black;
   line-height: 0;
 }
+
 .back-to-top:hover {
   background: #ffed48;
   color: black;
 }
+
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
@@ -194,9 +197,11 @@ p {
   top: -100%;
   box-shadow: 0px 2px 25px black;
 }
+
 #header.header-scrolled, #header.header-inner-pages {
   top: 0;
 }
+
 #header .logo {
   font-size: 30px;
   margin: 0;
@@ -207,13 +212,16 @@ p {
   font-family: "Playfair Display", sans-serif;
   font-style: italic;
 }
+
 #header .logo a {
   color: #ecd500;
 }
+
 #header .logo img {
   max-height: 50px;
   max-width: 499px;
 }
+
 @media (max-width: 992px) {
   #header {
     border: 0;
@@ -229,6 +237,7 @@ p {
 .navbar {
   padding: 0;
 }
+
 .navbar ul {
   margin: 0;
   padding: 0;
@@ -236,9 +245,11 @@ p {
   list-style: none;
   align-items: center;
 }
+
 .navbar li {
   position: relative;
 }
+
 .navbar a, .navbar a:focus {
   display: flex;
   align-items: center;
@@ -251,14 +262,17 @@ p {
   white-space: nowrap;
   transition: 0.3s;
 }
+
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
+
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #ecd500;
 }
+
 .navbar .dropdown ul {
   display: block;
   position: absolute;
@@ -273,35 +287,43 @@ p {
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
+
 .navbar .dropdown ul li {
   min-width: 200px;
 }
+
 .navbar .dropdown ul a {
   padding: 10px 20px;
   font-weight: 400;
 }
+
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
+
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
   color: #ecd500;
 }
+
 .navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
 }
+
 .navbar .dropdown .dropdown ul {
   top: 0;
   left: calc(100% - 30px);
   visibility: hidden;
 }
+
 .navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
   visibility: visible;
 }
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -322,6 +344,7 @@ p {
   line-height: 0;
   transition: 0.5s;
 }
+
 .mobile-nav-toggle.bi-x {
   color: #fff;
 }
@@ -335,6 +358,7 @@ p {
     display: none;
   }
 }
+
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -345,11 +369,13 @@ p {
   background: rgba(49, 49, 49, 0.9);
   transition: 0.3s;
 }
+
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
   top: 15px;
   right: 15px;
 }
+
 .navbar-mobile ul {
   display: block;
   position: absolute;
@@ -363,17 +389,21 @@ p {
   overflow-y: auto;
   transition: 0.3s;
 }
+
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
   color: white;
 }
+
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #ecd500;
 }
+
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
 }
+
 .navbar-mobile .dropdown ul {
   position: static;
   display: none;
@@ -385,18 +415,23 @@ p {
   background: black;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
+
 .navbar-mobile .dropdown ul li {
   min-width: 200px;
 }
+
 .navbar-mobile .dropdown ul a {
   padding: 10px 20px;
 }
+
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
 }
+
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
   color: #ecd500;
 }
+
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
@@ -417,6 +452,7 @@ p {
   display: flex;
   justify-content: end;
   flex-direction: column;
+  position: relative;
 }
 
 .hero-content h1 {
@@ -438,7 +474,7 @@ p {
 .hero-content .list-social li {
   float: left;
   margin-right: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .hero-content .list-social li i {
@@ -448,9 +484,11 @@ p {
 
 .hero-content #help-quote {
   font-size: 10px;
-  color: rgb(255, 221, 167);
-  opacity: 0.25;
+  color: rgb(250, 224, 181);
+  opacity: 0.20;
   text-align: right;
+  position: absolute;
+  top: -15px;
 }
 
 #hero #scroll-to-down {
@@ -459,18 +497,29 @@ p {
   text-transform: capitalize;
   color: white;
   font-weight: 500;
-  text-align: right;
-  margin-bottom: 10px;
-  opacity: 0.5;
+  opacity: 0.35;
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 #about {
-  background: url("../img/hero-image-2.jpg") repeat scroll center center/cover;
+  background: url("../img/about-image-2.jpg") repeat scroll center center/cover;
   width: 100%;
   height: 100vh;
+}
+
+#about .about-content {
+  height: 100vh;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
 }
 
 #about .about-img img {
@@ -484,17 +533,19 @@ p {
 }
 
 #about .about-descr .p-heading {
-  color: #ecd500;
-  font-family: "Sitka Small";
-  font-size: 24px;
-  text-align: justify;
+  font-family: stratfordSerial;
+  font-size: 30px;
+  font-weight: 700;
+  /*text-transform: uppercase;*/
+  color: rgb(31, 149, 84);
 }
 
 #about .about-descr .separator {
-  max-width: 95%;
-  margin-bottom: 0;
-  text-align: justify;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
   color: white;
+  font-weight: 500;
 }
 
 #about #scroll-to-up {
@@ -504,8 +555,9 @@ p {
   color: white;
   font-weight: 500;
   text-align: left;
-  margin-bottom: 10px;
-  opacity: 0.5;
+  opacity: 0.35;
+  position: absolute;
+  top: 20px;
 }
 
 #about #scroll-to-down {
@@ -514,9 +566,10 @@ p {
   text-transform: capitalize;
   color: white;
   font-weight: 500;
-  text-align: right;
-  margin-bottom: 10px;
-  opacity: 0.5;
+  opacity: 0.35;
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
 }
 
 /*--------------------------------------------------------------

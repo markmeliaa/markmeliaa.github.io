@@ -95,6 +95,7 @@
   */
 
   // Back to top button
+  /*
   let backtotop = select('.back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {
@@ -107,6 +108,7 @@
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
+  */
 
   // Mobile nav toggle
   on('click', '.mobile-nav-toggle', function(e) {
