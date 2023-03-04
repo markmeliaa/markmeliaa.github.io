@@ -136,12 +136,26 @@
   });
   */
 
+    // Hero writting effect
+    const typed = select('.typed')
+    if (typed) {
+      let typed_strings = typed.getAttribute('data-typed-items')
+      typed_strings = typed_strings.split(',')
+      new Typed('.typed', {
+        strings: typed_strings,
+        loop: true,
+        typeSpeed: 70,
+        backSpeed: 110,
+        backDelay: 2000
+      });
+    }
+
   // Hero help writting effect
-  const typed = select('.typed')
-  if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
+  const typed_help = select('.typed-help')
+  if (typed_help) {
+    let typed_strings = typed_help.getAttribute('data-typed-items')
     typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
+    new Typed('.typed-help', {
       strings: typed_strings,
       loop: true,
       typeSpeed: 50,
@@ -151,19 +165,20 @@
     });
   }
 
-  // Hero writting effect
-  const typed_new = select('.typed_new')
-  if (typed_new) {
-    let typed_strings = typed_new.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed_new', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 70,
-      backSpeed: 110,
-      backDelay: 2000
-    });
-  }
+    // About help writting effect
+    const typed_help_2 = select('.typed-help-2')
+    if (typed_help_2) {
+      let typed_strings = typed_help_2.getAttribute('data-typed-items')
+      typed_strings = typed_strings.split(',')
+      new Typed('.typed-help-2', {
+        strings: typed_strings,
+        loop: true,
+        typeSpeed: 50,
+        backSpeed: 70,
+        backDelay: 1000,
+        showCursor: false
+      });
+    }
 
   // Personal traits slider
   new Swiper('.services-slider', {
@@ -254,5 +269,8 @@
         return false;
     }
   }
+
+  // Lock screen orientation to portrait
+  window.screen.orientation.lock('portrait');
 
 })()

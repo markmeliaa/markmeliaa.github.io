@@ -1,11 +1,6 @@
 /*--------------------------------------------------------------
 # Global Style
 --------------------------------------------------------------*/
-@font-face {
-  font-family: stratfordSerial;
-  src: url(../fonts/stratford-serial-bold.ttf);
-}
-
 body {
   background: #181A1B;
   color: #898989;
@@ -503,11 +498,16 @@ p {
   right: 0px;
 }
 
+@font-face {
+  font-family: stratfordSerial;
+  src: url(../fonts/stratford-serial-bold.ttf);
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 #about {
-  background: url("../img/about-image-2.jpg") repeat scroll center center/cover;
+  background: url("../img/about-image-1.jpg") repeat scroll center center/cover;
   width: 100%;
   height: 100vh;
 }
@@ -515,37 +515,58 @@ p {
 #about .about-content {
   height: 100vh;
   text-align: left;
-  width: 100%;
+  width: 98%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   position: relative;
 }
 
-#about .about-img img {
+#about .about-img-container {
+  width: 20%;
+  height: 0;
+  padding-bottom: 20%;
+  box-shadow: 0px 0px 20px 0px rgba(244, 191, 16, 0.5);
+  position: absolute;
+  right: 10px;
+  top: 40px;
+}
+
+#about .about-img-container img {
   width: 100%;
-  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
-  margin-top: 60px;
-  margin-left: 40px;
-  height: 400px;
-  -o-object-fit: cover;
+  height: 100%;
   object-fit: cover;
+  object-position: 50% 15%;
+  position: absolute;
 }
 
 #about .about-descr .p-heading {
-  font-family: stratfordSerial;
+  font-family: juliusSansOne;
   font-size: 30px;
   font-weight: 700;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
   color: rgb(31, 149, 84);
 }
 
 #about .about-descr .separator {
-  font-size: 13px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1px;
+  /*text-transform: uppercase;*/
   color: white;
   font-weight: 500;
+  text-align: justify;
+}
+
+.about-content #help-quote {
+  font-size: 10px;
+  color: rgb(0, 115, 19);
+  opacity: 0.20;
+  text-align: right;
+  position: absolute;
+  top: 17px;
+  right: -22px;
+  writing-mode: vertical-lr;
+  font-weight: 750;
 }
 
 #about #scroll-to-up {
@@ -570,6 +591,11 @@ p {
   position: absolute;
   bottom: 20px;
   right: 0px;
+}
+
+@font-face {
+  font-family: juliusSansOne;
+  src: url(../fonts/JuliusSansOne-Regular.ttf);
 }
 
 /*--------------------------------------------------------------
