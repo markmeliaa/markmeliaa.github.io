@@ -548,7 +548,7 @@ p {
   color: rgb(31, 149, 84);
 }
 
-#about .about-descr .separator {
+#about .about-descr .about-text {
   font-size: 10px;
   letter-spacing: 1px;
   /*text-transform: uppercase;*/
@@ -601,50 +601,62 @@ p {
 /*--------------------------------------------------------------
 # Personal Traits
 --------------------------------------------------------------*/
-#services {
-  background: black;
-  position: relative;
-  padding-bottom: 80px;
+#traits {
+  background: url("../img/traits-image-2.jpg") repeat scroll center center/cover;
+  width: 100%;
+  height: 100vh;
 }
 
-.services-block span {
-  margin: 10px 0;
+#traits .traits-content {
+  height: 100vh;
+  text-align: left;
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   position: relative;
-  font-size: 13px;
-  color: #086a91;
-  letter-spacing: 0.1em;
-  font-weight: 500;
+}
+
+.traits-block .p-heading {
+  font-family: pixeled;
+  font-size: 20px;
+  font-weight: 700;
   text-transform: uppercase;
-  display: block;
+  color: rgb(129, 0, 22);
 }
 
-.services-block .separator {
-  margin: 0;
+.traits-block i {
+  font-size: 75px;
+  color: rgb(128, 37, 52);
+}
+
+#traits #scroll-to-up {
   font-size: 13px;
-  line-height: 22px;
-}
-
-.services-block i {
-  font-size: 44px;
+  letter-spacing: 3px;
+  text-transform: capitalize;
   color: white;
-  line-height: 44px;
+  font-weight: 500;
+  text-align: left;
+  opacity: 0.35;
+  position: absolute;
+  top: 20px;
 }
 
-.services-slider .swiper-pagination {
-  margin-top: 30px;
-  position: relative;
+#traits #scroll-to-down {
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 500;
+  opacity: 0.35;
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
 }
 
-.services-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #e98367;
-  opacity: 1;
-  border: 1px solid black;
-}
-
-.services-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ed3c0d;
+@font-face {
+  font-family: pixeled;
+  src: url(../fonts/Pixeled.ttf);
 }
 
 /*--------------------------------------------------------------
