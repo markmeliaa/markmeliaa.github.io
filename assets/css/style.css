@@ -7,6 +7,7 @@ html {
 
 body .cursor {
   pointer-events: none;
+  fill: #fdd088;
 }
 
 body .cursor__ball {
@@ -14,10 +15,17 @@ body .cursor__ball {
   top: 0;
   left: 0;
   /*mix-blend-mode: difference;*/
+  z-index: 1000;
 }
 
-body .cursor__ball circle {
-  fill: rgb(255, 255, 255);
+body .cursor__ball--big circle {
+  stroke: black;
+  stroke-width: 0.5;
+}
+
+body .cursor__ball--small circle {
+  stroke: black;
+  stroke-width: 0.5;
 }
 
 @media (max-width: 1024px) {
@@ -27,8 +35,8 @@ body .cursor__ball circle {
 }
 
 body {
-  background: #181A1B;
-  color: #898989;
+  background: #000000;
+  color: #ffffff;
   font-family: "Poppins", helvetica;
   font-size: 15px;
   font-weight: 300;
@@ -480,14 +488,14 @@ p {
   font-size: 40px;
   font-weight: 700;
   /*text-transform: uppercase;*/
-  color: rgb(254, 178, 55);
+  color: #feb237;
 }
 
 .hero-content p {
   font-size: 13px;
   letter-spacing: 3px;
   text-transform: capitalize;
-  color: rgb(253, 208, 136);
+  color: #fdd088;
   font-weight: 500;
 }
 
@@ -572,7 +580,7 @@ p {
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  color: rgb(31, 149, 84);
+  color: #1f9554;
 }
 
 #about .about-descr .about-text {

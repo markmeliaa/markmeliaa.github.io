@@ -303,14 +303,18 @@
     // Hover an element
     function onMouseHover() {
       TweenMax.to($bigBall, .3, {
-        scale: 3
+        scale: 3,
       })
     }
     function onMouseHoverOut() {
       TweenMax.to($bigBall, .3, {
         scale: 1
       })
-    } 
+    }
   }
 
+  // Scroll to the top of the page when refreshing
+  window.onload = function () {
+    window.scrollTo(0,0);
+  };
 })()

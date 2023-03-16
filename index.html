@@ -59,14 +59,14 @@
 
 <body> <!--TODO (type this inside the body): scroll="no" style="overflow: hidden"-->
 
-<div class="cursor">
-    <div class="cursor__ball cursor__ball--big ">
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big" id="big-ball">
       <svg height="30" width="30">
-        <circle cx="15" cy="15" r="10" opacity="0.3" stroke-width="0" stroke="black"></circle>
+        <circle cx="15" cy="15" r="10" opacity="0.5" stroke-width="0" stroke="black"></circle>
       </svg>
     </div>
     
-    <div class="cursor__ball cursor__ball--small">
+    <div class="cursor__ball cursor__ball--small" id="small-ball">
       <svg height="10" width="10">
         <circle cx="5" cy="5" r="4" opacity="0.7" stroke-width="0" stroke="black"></circle>
       </svg>
@@ -134,7 +134,18 @@
           ..., ..., I NEED YOUR HELP, ..., ..., I BEG YOU KEEP SCROLLING, ..., ..., I DON'T KNOW WHAT TO DO, ..., 
           ..."></span></p>
 
-        <a href="#about" id="scroll-to-down" class="hoverable">CLICK HERE TO GO DOWN</a>
+        <a href="#about" id="scroll-to-down" class="hoverable" onclick="changeStyleToAboutDown()">CLICK HERE TO GO DOWN</a>
+
+        <script>
+          function changeStyleToAboutDown(){
+            setTimeout(()=> {
+                var element = document.getElementsByClassName("cursor")[0];
+                element.style.fill = "#1f9554";
+            }
+            , 250);
+          }
+        </script>
+
       </div>
     </div>
   </div>
@@ -147,7 +158,17 @@
     <div id="about">
       <div class="container">
         <div class="about-content">
-          <a href="#hero" id="scroll-to-up" class="hoverable">CLICK HERE TO GO UP</a>
+          <a href="#hero" id="scroll-to-up" class="hoverable" onclick="changeStyleToHeroUp()">CLICK HERE TO GO UP</a>
+
+          <script>
+            function changeStyleToHeroUp(){
+              setTimeout(()=> {
+                var element = document.getElementsByClassName("cursor")[0];
+                element.style.fill = "#fdd088";
+              }
+              , 250);
+            }
+          </script>
 
           <div class="about-img-container">
             <img src="assets/img/self-portrait.jpg" alt="me">
@@ -173,7 +194,18 @@
             YOU NEED TO SAVE ME PLEASE, ..., ..., I FEEL... ALONE, ..., ..., ..., I DON'T KNOW HOW TO ESCAPE FROM HERE, ..., ...">
           </span></p>
 
-          <a href="#about" id="scroll-to-down" class="hoverable">CLICK HERE TO GO DOWN</a>
+          <a href="#about" id="scroll-to-down" class="hoverable" onclick="changeStyleToPortfolioDown()">CLICK HERE TO GO DOWN</a>
+
+          <script>
+            function changeStyleToPortfolioDown(){
+              setTimeout(()=> {
+                var element = document.getElementsByClassName("cursor")[0];
+                element.style.fill = "white";
+              }
+              , 250);
+            }
+          </script>
+          
         </div>
       </div>
     </div>
