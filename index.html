@@ -57,7 +57,7 @@
   
 </head>
 
-<body> <!--TODO (type this inside the body): scroll="no" style="overflow: hidden"-->
+<body scroll="no" style="overflow: hidden"> <!--TODOMine: (type this inside the body) scroll="no" style="overflow: hidden"-->
 
   <div class="cursor">
     <div class="cursor__ball cursor__ball--big" id="big-ball">
@@ -140,7 +140,7 @@
           function changeStyleToAboutDown(){
             setTimeout(()=> {
                 var element = document.getElementsByClassName("cursor")[0];
-                element.style.fill = "#1f9554";
+                element.style.fill = "#951f77";
             }
             , 250);
           }
@@ -164,7 +164,7 @@
             function changeStyleToHeroUp(){
               setTimeout(()=> {
                 var element = document.getElementsByClassName("cursor")[0];
-                element.style.fill = "#fdd088";
+                element.style.fill = "white";
               }
               , 250);
             }
@@ -182,7 +182,7 @@
               AND I'LL TRY TO KEEP THIS INTRODUCTION AS SHORT AS POSSIBLE.<br><br>
             
               I WAS BORN THE 02-02-2000, AND WHEN I WAS 5, MY PARENTS GAVE ME MY VERY
-              FIRST CONSOLE, A <b>GAME BOY MICRO</b>, AND WITH IT, MY PASSION FOR VIDEOGAMES TOOK OFF.<br><br>
+              FIRST CONSOLE, A <b style='color:#1f7095'>GAME BOY MICRO</b>, AND WITH IT, MY PASSION FOR VIDEOGAMES TOOK OFF.<br><br>
             
               SOME YEARS LATER, I DISCOVERED THAT I COULD WORK AS ONE OF THOSE PEOPLE INVOLVED IN THE 
               DEVELOPMENT OF A VIDEOGAME, AND THAT'S BEEN MY DREAM JOB SINCE THEN, TRYING TO GIVE OTHERS THE SAME JOY THAT 
@@ -194,13 +194,13 @@
             YOU NEED TO SAVE ME PLEASE, ..., ..., I FEEL... ALONE, ..., ..., ..., I DON'T KNOW HOW TO ESCAPE FROM HERE, ..., ...">
           </span></p>
 
-          <a href="#about" id="scroll-to-down" class="hoverable" onclick="changeStyleToPortfolioDown()">CLICK HERE TO GO DOWN</a>
+          <a href="#traits" id="scroll-to-down" class="hoverable" onclick="changeStyleToTraitsDown()">CLICK HERE TO GO DOWN</a>
 
           <script>
-            function changeStyleToPortfolioDown(){
+            function changeStyleToTraitsDown(){
               setTimeout(()=> {
                 var element = document.getElementsByClassName("cursor")[0];
-                element.style.fill = "white";
+                element.style.fill = "#ddad00";
               }
               , 250);
             }
@@ -212,11 +212,20 @@
     <!-- End About Section -->
 
     <!-- ======= Personal Traits Section ======= -->
-    <!--
     <div id="traits">
       <div class="container">
         <div class="traits-content">
-          <a href="#about" id="scroll-to-up" class="hoverable">CLICK HERE TO GO UP</a>
+          <a href="#about" id="scroll-to-up" class="hoverable" onclick="changeStyleToAboutUp()">CLICK HERE TO GO UP</a>
+
+          <script>
+            function changeStyleToAboutUp(){
+              setTimeout(()=> {
+                  var element = document.getElementsByClassName("cursor")[0];
+                  element.style.fill = "#951f77";
+              }
+              , 250);
+            }
+          </script>
 
           <div class="traits-block">
             <p class="p-heading">PERSONAL TRAITS</p>
@@ -225,11 +234,22 @@
             <i class="bi bi-controller"></i>
           </div>          
 
-          <a href="#traits" id="scroll-to-down" class="hoverable">CLICK HERE TO GO DOWN</a>
+          <a href="#traits" id="scroll-to-down" class="hoverable" onclick="changeStyleToPortfolioDown()">CLICK HERE TO GO DOWN</a>
+
+          <script>
+            function changeStyleToPortfolioDown(){
+              setTimeout(()=> {
+                var element = document.getElementsByClassName("cursor")[0];
+                element.style.fill = "white";
+              }
+              , 250);
+            }
+          </script>
+
         </div>
       </div>
     </div>
-    -->
+
     <!--
     <div id="services" class ="paddsection">
       <div class="container">

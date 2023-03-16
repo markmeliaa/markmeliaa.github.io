@@ -5,35 +5,6 @@ html {
   cursor: none;
 }
 
-body .cursor {
-  pointer-events: none;
-  fill: #fdd088;
-}
-
-body .cursor__ball {
-  position: absolute;
-  top: 0;
-  left: 0;
-  /*mix-blend-mode: difference;*/
-  z-index: 1000;
-}
-
-body .cursor__ball--big circle {
-  stroke: black;
-  stroke-width: 0.5;
-}
-
-body .cursor__ball--small circle {
-  stroke: black;
-  stroke-width: 0.5;
-}
-
-@media (max-width: 1024px) {
-  .cursor {
-    visibility: hidden;
-  }
-}
-
 body {
   background: #000000;
   color: #ffffff;
@@ -46,6 +17,36 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+}
+
+body .cursor {
+  pointer-events: none;
+  /*fill: #fdd088;*/
+  fill: white;
+}
+
+body .cursor__ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*mix-blend-mode: difference;*/
+  z-index: 1000;
+}
+
+body .cursor__ball--big circle {
+  stroke: black;
+  stroke-width: 0.25;
+}
+
+body .cursor__ball--small circle {
+  stroke: black;
+  stroke-width: 0.5;
+}
+
+@media (max-width: 1024px) {
+  .cursor {
+    visibility: hidden;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -87,7 +88,7 @@ p {
 }
 
 ::selection {
-  background: rgb(253, 208, 136);
+  background: white;
   color: black;
 }
 
@@ -493,7 +494,7 @@ p {
 
 .hero-content p {
   font-size: 13px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: capitalize;
   color: #fdd088;
   font-weight: 500;
@@ -561,7 +562,7 @@ p {
   width: 20%;
   height: 0;
   padding-bottom: 20%;
-  box-shadow: 0px 0px 20px 0px rgba(244, 191, 16, 0.5);
+  box-shadow: 0px 0px 20px 0px #951f77;
   position: absolute;
   right: 10px;
   top: 40px;
@@ -576,11 +577,11 @@ p {
 }
 
 #about .about-descr .p-heading {
-  font-family: juliusSansOne;
-  font-size: 30px;
-  font-weight: 700;
+  font-family: clipFont;
+  font-size: 35px;
+  font-weight: 100;
   text-transform: uppercase;
-  color: #1f9554;
+  color: #1f7095;
 }
 
 #about .about-descr .about-text {
@@ -594,8 +595,8 @@ p {
 
 .about-content #help-quote {
   font-size: 10px;
-  color: rgb(0, 115, 19);
-  opacity: 0.30;
+  color: #228fc1;
+  opacity: 0.25;
   text-align: right;
   position: absolute;
   top: 17px;
@@ -631,8 +632,8 @@ p {
 }
 
 @font-face {
-  font-family: juliusSansOne;
-  src: url(../fonts/JuliusSansOne-Regular.ttf);
+  font-family: clipFont;
+  src: url(../fonts/Clip.ttf);
 }
 
 /*--------------------------------------------------------------
@@ -655,16 +656,16 @@ p {
 }
 
 .traits-block .p-heading {
-  font-family: clipFont;
+  font-family: juliusSansOne;
   font-size: 35px;
   padding-top: 30px;
   text-transform: uppercase;
-  color: rgb(129, 0, 22);
+  color: #1f9554;
 }
 
 .traits-block i {
   font-size: 50px;
-  color: rgba(255, 0, 21, 0.605);
+  color: #ddad00;
 }
 
 #traits #scroll-to-up {
@@ -694,8 +695,8 @@ p {
 }
 
 @font-face {
-  font-family: clipFont;
-  src: url(../fonts/Clip.ttf);
+  font-family: juliusSansOne;
+  src: url(../fonts/JuliusSansOne-Regular.ttf);
 }
 
 /*--------------------------------------------------------------
