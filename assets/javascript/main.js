@@ -276,6 +276,7 @@
   }
     
   if (!isMobile()) {
+    // When not in mobile, replace the cursor by this animation
     const $bigBall = document.querySelector('.cursor__ball--big');
     const $smallBall = document.querySelector('.cursor__ball--small');
     const $hoverables = document.querySelectorAll('.hoverable');
@@ -289,7 +290,7 @@
 
     // Move the cursor
     function onMouseMove(e) {
-      TweenMax.to($bigBall, .4, {
+      TweenMax.to($bigBall, .5, {
         x: e.pageX - 15,
         y: e.pageY - 15
       })
