@@ -640,7 +640,7 @@ p {
 # Personal Traits
 --------------------------------------------------------------*/
 #traits {
-  background: url("../img/traits-image-1.jpg") repeat scroll center center/cover;
+  background: url("../img/port-image-1.jpg") repeat scroll center center/cover;
   width: 100%;
   height: 100vh;
 }
@@ -703,89 +703,103 @@ p {
 # Portfolio
 --------------------------------------------------------------*/
 #portfolio {
-  position: relative;
-  padding-bottom: 50px;
+  background: url("../img/port-image-2.jpg") repeat scroll center center/cover;
+  width: 100%;
+  height: 100vh;
 }
 
-#portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 35px auto;
-  list-style: none;
+#portfolio .portfolio-content {
+  height: 100vh;
   text-align: center;
-  border-radius: 50px;
-  padding: 2px 15px;
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
 }
 
-#portfolio #portfolio-flters li {
-  /*cursor: pointer;*/
-  display: inline-block;
-  padding: 10px 15px 8px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
+.p-heading {
+  font-family: juliusSansOne;
+  font-size: 35px;
+  padding-top: 30px;
   text-transform: uppercase;
-  color: white;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
+  color: #1f9554;
 }
 
-#portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-  color: #086a91;
+.portfolio-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
+.portfolio-block #portfolio-cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 922px;
+  width: calc(100% - 20px);
 }
 
-#portfolio .portfolio-item {
-  margin-bottom: 30px;
+.portfolio-block #work-card {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgb(31, 149, 84, 0.5);
+  height: 260px;
+  width: 300px;
+  border-radius: 10px;
+  position: relative;
 }
 
-#portfolio .portfolio-item .portfolio-info {
+.portfolio-block #work-card::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    rgb(221, 173, 0, 0.25),
+    transparent 40%
+  );
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  content: "";
+  border-radius: inherit;
+  z-index: 2;
   opacity: 0;
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  bottom: 0;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  background: black;
-  padding: 15px;
+  transition: opacity 500ms;
 }
 
-#portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
-  color: #ecd500;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-#portfolio .portfolio-item .portfolio-info p {
-  color: white;
-  font-size: 14px;
-  margin: 0;
-  padding: 0;
-}
-
-#portfolio .portfolio-item .portfolio-info .preview-link, #portfolio .portfolio-item .portfolio-info .details-link {
-  position: absolute;
-  right: 40px;
-  font-size: 24px;
-  top: calc(50% - 18px);
-  color: white;
-}
-
-#portfolio .portfolio-item .portfolio-info .preview-link:hover, #portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #ed3c0d;
-}
-
-#portfolio .portfolio-item .portfolio-info .details-link {
-  right: 10px;
-}
-
-#portfolio .portfolio-item:hover .portfolio-info {
+.portfolio-block #work-card:hover::before {
   opacity: 1;
+}
+
+#portfolio #scroll-to-up {
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 500;
+  text-align: left;
+  opacity: 0.35;
+  position: absolute;
+  top: 20px;
+  cursor: none;
+}
+
+#portfolio #scroll-to-down {
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 500;
+  opacity: 0.35;
+  position: absolute;
   bottom: 20px;
+  right: 0px;
+  cursor: none;
+}
+
+@font-face {
+  font-family: juliusSansOne;
+  src: url(../fonts/JuliusSansOne-Regular.ttf);
 }
 
 /*--------------------------------------------------------------*/

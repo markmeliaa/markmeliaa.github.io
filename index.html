@@ -194,7 +194,7 @@
             YOU NEED TO SAVE ME PLEASE, ..., ..., I FEEL... ALONE, ..., ..., ..., I DON'T KNOW HOW TO ESCAPE FROM HERE, ..., ...">
           </span></p>
 
-          <a href="#traits" id="scroll-to-down" class="hoverable" onclick="changeStyleToTraitsDown()">CLICK HERE TO GO DOWN</a>
+          <a href="#portfolio" id="scroll-to-down" class="hoverable" onclick="changeStyleToTraitsDown()">CLICK HERE TO GO DOWN</a>
 
           <script>
             function changeStyleToTraitsDown(){
@@ -212,6 +212,7 @@
     <!-- End About Section -->
 
     <!-- ======= Personal Traits Section ======= -->
+    <!--
     <div id="traits">
       <div class="container">
         <div class="traits-content">
@@ -234,7 +235,7 @@
             <i class="bi bi-controller"></i>
           </div>          
 
-          <a href="#traits" id="scroll-to-down" class="hoverable" onclick="changeStyleToPortfolioDown()">CLICK HERE TO GO DOWN</a>
+          <a href="#portfolio" id="scroll-to-down" class="hoverable" onclick="changeStyleToPortfolioDown()">CLICK HERE TO GO DOWN</a>
 
           <script>
             function changeStyleToPortfolioDown(){
@@ -249,7 +250,7 @@
         </div>
       </div>
     </div>
-
+    -->
     <!--
     <div id="services" class ="paddsection">
       <div class="container">
@@ -327,6 +328,50 @@
     <!-- End Personal Traits Section -->
 
     <!-- ======= Portfolio Section ======= -->
+
+    <div id="portfolio">
+      <div class="container">
+        <div class="portfolio-content">
+          <a href="#about" id="scroll-to-up" class="hoverable" onclick="changeStyleToAboutUp()">CLICK HERE TO GO UP</a>
+
+          <script>
+            function changeStyleToAboutUp(){
+              setTimeout(()=> {
+                  var element = document.getElementsByClassName("cursor")[0];
+                  element.style.fill = "#951f77";
+              }
+              , 250);
+            }
+          </script>
+
+          <p class="p-heading">PORTFOLIO</p>
+          <div class="portfolio-block">
+            <div id="portfolio-cards">
+              <div id="work-card" class="hoverable"></div>
+              <div id="work-card" class="hoverable"></div>
+              <div id="work-card" class="hoverable"></div>
+              <div id="work-card" class="hoverable"></div>
+              <div id="work-card" class="hoverable"></div>
+              <div id="work-card" class="hoverable"></div>
+            </div>  
+          </div>          
+
+          <a href="#portfolio" id="scroll-to-down" class="hoverable" onclick="changeStyleToPortfolioDown()">CLICK HERE TO GO DOWN</a>
+
+          <script>
+            function changeStyleToPortfolioDown(){
+              setTimeout(()=> {
+                var element = document.getElementsByClassName("cursor")[0];
+                element.style.fill = "white";
+              }
+              , 250);
+            }
+          </script>
+
+        </div>
+      </div>
+    </div>
+
     <!--
     <div id="portfolio" class="paddsection">
 
