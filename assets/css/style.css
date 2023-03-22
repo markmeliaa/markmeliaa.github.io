@@ -562,7 +562,7 @@ p {
   width: 20%;
   height: 0;
   padding-bottom: 20%;
-  box-shadow: 0px 0px 20px 0px #951f77;
+  box-shadow: 0px 0px 20px 0px #1f7095;
   position: absolute;
   right: 10px;
   top: 40px;
@@ -596,7 +596,7 @@ p {
 .about-content #help-quote {
   font-size: 10px;
   color: #228fc1;
-  opacity: 0.25;
+  opacity: 0.20;
   text-align: right;
   position: absolute;
   top: 17px;
@@ -723,7 +723,7 @@ p {
   font-size: 35px;
   padding-top: 30px;
   text-transform: uppercase;
-  color: #1f9554;
+  color: #ddad00;
 }
 
 .portfolio-block{
@@ -740,21 +740,20 @@ p {
   width: calc(100% - 20px);
 }
 
-.portfolio-block #work-card {
-  background-color: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgb(31, 149, 84, 0.5);
+#portfolio-cards:hover > .work-card > .work-card-border {
+  opacity: 1;
+}
+
+.portfolio-block .work-card {
+  background-color: rgba(255, 255, 255, 0.1);
   height: 260px;
   width: 300px;
   border-radius: 10px;
   position: relative;
 }
 
-.portfolio-block #work-card::before {
-  background: radial-gradient(
-    800px circle at var(--mouse-x) var(--mouse-y),
-    rgb(221, 173, 0, 0.25),
-    transparent 40%
-  );
+.portfolio-block .work-card::before,
+.portfolio-block .work-card > .work-card-border {
   height: 100%;
   width: 100%;
   left: 0px;
@@ -767,8 +766,144 @@ p {
   transition: opacity 500ms;
 }
 
-.portfolio-block #work-card:hover::before {
+.portfolio-block .work-card::before{
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    rgb(31, 149, 84, 0.1),
+    transparent 40%
+  );
+  z-index: 3;
+}
+
+.portfolio-block .work-card:hover::before {
   opacity: 1;
+}
+
+.portfolio-block .work-card > .work-card-content {
+  background-color: rgb(23, 23, 23);
+  height: calc(100% - 2px);
+  width: calc(100% -2px);
+  border-radius: inherit;
+  margin: 1px;
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio-block .work-card > .work-card-border {
+  background: radial-gradient(
+    400px circle at var(--mouse-x) var(--mouse-y),
+    rgb(31, 149, 84, 0.8),
+    transparent 40%
+  );
+  z-index: 1;
+}
+
+.card-image {
+  align-items: center;
+  display: flex;
+  height: 170px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-image > i {
+  font-size: 6em;
+  opacity: 0.25;
+  color: #00d24d;
+}
+
+.card-info-wrapper {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+.card-info {
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
+}
+
+.card-info-title > h3 {
+  font-size: 1.1em;
+  line-height: 20px;
+  color: rgb(255, 200, 0, 0.75);
+}
+
+.card-info-title > h4 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85em;
+  margin-top: 8px;
+}
+
+/* -- ↓ ↓ ↓ some card responsiveness ↓ ↓ ↓ -- */
+
+@media(max-width: 1050px) {
+  .portfolio-block {
+    align-items: flex-start;  
+    overflow: auto;
+  }
+  
+  #portfolio-cards {    
+    max-width: 1000px;
+    padding: 10px 0px;
+  }
+  
+  .work-card {
+    flex-shrink: 1;
+    width: calc(50% - 4px);
+  }
+}
+
+@media(max-width: 500px) {
+  .work-card {
+    height: 180px;
+  }
+  
+  .card-image {
+    height: 80px;  
+  }
+  
+  .card-image > i {
+    font-size: 3em;
+  }
+    
+  .card-info-wrapper {
+    padding: 0px 10px;
+  }
+  
+  .card-info > i { 
+    font-size: 0.8em; 
+  }
+  
+  .card-info-title > h3 {
+    font-size: 0.9em;
+  }
+
+  .card-info-title > h4 {
+    font-size: 0.8em;
+    margin-top: 4px;
+  }
+}
+
+@media(max-width: 320px) {
+  .work-card {
+    width: 100%;
+  }
+}
+
+
+.portfolio-content #help-quote {
+  font-size: 10px;
+  color: #ffc800;
+  opacity: 0.10;
+  text-align: left;
+  position: absolute;
+  bottom: 15px;
+  left: 180px;
+  font-weight: 750;
 }
 
 #portfolio #scroll-to-up {

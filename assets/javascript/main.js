@@ -180,6 +180,21 @@
       });
     }
 
+    // Portfolio help writting effect
+    const typed_help_3 = select('.typed-help-3')
+    if (typed_help_3) {
+      let typed_strings = typed_help_3.getAttribute('data-typed-items')
+      typed_strings = typed_strings.split(',')
+      new Typed('.typed-help-3', {
+        strings: typed_strings,
+        loop: true,
+        typeSpeed: 50,
+        backSpeed: 70,
+        backDelay: 1000,
+        showCursor: false
+      });
+    }
+
   // Personal traits slider
   new Swiper('.services-slider', {
     speed: 600,
@@ -319,22 +334,31 @@
     window.scrollTo(0,0);
     };
     */
+
+    // Mouse hover light efect over the portfolio work
+    /*
+    document.getElementById("portfolio-cards").onmousemove = e => {
+      for(const card of document.getElementsByClassName("work-card")) {
+        const rect = card.getBoundingClientRect(),
+              x = e.clientX - rect.left,
+              y = e.clientY - rect.top;
+
+        card.style.setProperty("--mouse-x", `${x}px`);
+        card.style.setProperty("--mouse-y", `${y}px`);
+      };
+    }
+    */
   }
 
-  // Mouse hover light efect over the portfolio work
-  const handleOnMouseMove = e => {
-    const { currentTarget: target } = e;
-
-    const rect = target.getBoundingClientRect(),
+  document.getElementById("portfolio-cards").onmousemove = e => {
+    for(const card of document.getElementsByClassName("work-card")) {
+      const rect = card.getBoundingClientRect(),
             x = e.clientX - rect.left,
             y = e.clientY - rect.top;
 
-    target.style.setProperty("--mouse-x", `${x}px`);
-    target.style.setProperty("--mouse-y", `${y}px`);
-  }
-
-  for(const card of document.querySelectorAll("#work-card")) {
-    card.onmousemove = e => handleOnMouseMove(e);
+      card.style.setProperty("--mouse-x", `${x}px`);
+      card.style.setProperty("--mouse-y", `${y}px`);
+    };
   }
 
 })()
