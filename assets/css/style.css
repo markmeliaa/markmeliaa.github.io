@@ -727,8 +727,9 @@ p {
 
 .portfolio-block{
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;  
+  overflow: auto;
 }
 
 .portfolio-block #portfolio-cards{
@@ -737,15 +738,16 @@ p {
   gap: 8px;
   max-width: 922px;
   width: calc(100% - 20px);
+  height: 68vh;
   align-items: center;
   justify-content: center;
 }
 
-#portfolio-cards:hover > .work-card > .work-card-border {
+#portfolio-cards:hover > #work-card > .work-card-border {
   opacity: 1;
 }
 
-.portfolio-block .work-card {
+.portfolio-block #work-card {
   background-color: rgba(255, 255, 255, 0.1);
   height: 260px;
   width: 300px;
@@ -753,8 +755,8 @@ p {
   position: relative;
 }
 
-.portfolio-block .work-card::before,
-.portfolio-block .work-card > .work-card-border {
+.portfolio-block #work-card::before,
+.portfolio-block #work-card > .work-card-border {
   height: 100%;
   width: 100%;
   left: 0px;
@@ -767,20 +769,20 @@ p {
   transition: opacity 500ms;
 }
 
-.portfolio-block .work-card::before{
+.portfolio-block #work-card::before{
   background: radial-gradient(
     800px circle at var(--mouse-x) var(--mouse-y),
-    rgb(31, 149, 84, 0.1),
+    rgb(31, 149, 84, 0.25),
     transparent 40%
   );
   z-index: 3;
 }
 
-.portfolio-block .work-card:hover::before {
+.portfolio-block #work-card:hover::before {
   opacity: 1;
 }
 
-.portfolio-block .work-card > .work-card-content {
+.portfolio-block #work-card > .work-card-content {
   background-color: rgb(23, 23, 23);
   height: calc(100% - 2px);
   width: calc(100% -2px);
@@ -790,7 +792,7 @@ p {
   z-index: 2;
 }
 
-.portfolio-block .work-card > .work-card-border {
+.portfolio-block #work-card > .work-card-border {
   background: radial-gradient(
     400px circle at var(--mouse-x) var(--mouse-y),
     rgb(31, 149, 84, 0.8),
@@ -863,7 +865,7 @@ p {
     width: 90vw;
   }
   
-  .portfolio-block .work-card {
+  .portfolio-block #work-card {
     flex-shrink: 1;
     width: calc(30% + 10px);
   }
@@ -891,7 +893,7 @@ p {
     width: 90vw;
   }
 
-  .portfolio-block .work-card {
+  .portfolio-block #work-card {
     flex-shrink: 1;
     width: 31%;
   }
@@ -929,7 +931,7 @@ p {
 }
 
 @media(max-width: 320px) {
-  .portfolio-block .work-card {
+  .portfolio-block #work-card {
     width: 100%;
   }
 

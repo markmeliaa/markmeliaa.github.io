@@ -275,7 +275,7 @@
   });
 
   // Prevent mouse wheel scrolling
-  window.addEventListener("wheel", e => e.preventDefault(), { passive:false })
+  //window.addEventListener("wheel", e => e.preventDefault(), { passive:false })
   
   // Prevent mouse wheel click scrolling
   document.body.onmousedown = function(e) {
@@ -351,7 +351,7 @@
   }
 
   document.getElementById("portfolio-cards").onmousemove = e => {
-    for(const card of document.getElementsByClassName("work-card")) {
+    for(const card of document.getElementsByClassName("hoverable")) {
       const rect = card.getBoundingClientRect(),
             x = e.clientX - rect.left,
             y = e.clientY - rect.top;
