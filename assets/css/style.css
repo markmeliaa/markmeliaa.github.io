@@ -772,7 +772,7 @@ p {
 .portfolio-block #work-card::before{
   background: radial-gradient(
     800px circle at var(--mouse-x) var(--mouse-y),
-    rgb(31, 149, 84, 0.25),
+    rgb(31, 149, 84, 0.1),
     transparent 40%
   );
   z-index: 3;
