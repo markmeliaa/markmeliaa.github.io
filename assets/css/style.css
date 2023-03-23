@@ -582,10 +582,11 @@ p {
   font-weight: 100;
   text-transform: uppercase;
   color: #1f7095;
+  padding-top: 30px;
 }
 
 #about .about-descr .about-text {
-  font-size: 10px;
+  font-size: 15px;
   letter-spacing: 1px;
   /*text-transform: uppercase;*/
   color: white;
@@ -593,6 +594,12 @@ p {
   text-align: justify;
 }
 
+@media(max-width: 320px) {
+
+  #about .about-descr .about-text {
+    font-size: 10px;
+  }
+}
 .about-content #help-quote {
   font-size: 10px;
   color: #228fc1;
