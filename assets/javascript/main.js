@@ -196,11 +196,11 @@
     }
 
   // Personal traits slider
-  new Swiper('.services-slider', {
-    speed: 600,
+  new Swiper('.traits-slider', {
+    speed: 500,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 4000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -210,15 +210,15 @@
       clickable: true
     },
     breakpoints: {
-      320: {
+      100: {
         slidesPerView: 1,
         spaceBetween: 20
       },
-      768: {
+      250: {
         slidesPerView: 2,
         spaceBetween: 20
       },
-      1200: {
+      700: {
         slidesPerView: 4,
         spaceBetween: 20
       }
