@@ -565,7 +565,7 @@ p {
   box-shadow: 0px 0px 20px 0px #1f7095;
   position: absolute;
   right: 10px;
-  top: 40px;
+  top: 60px;
 }
 
 #about .about-img-container img {
@@ -578,10 +578,10 @@ p {
 
 #about .about-descr .p-heading {
   font-family: clipFont;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 100;
   text-transform: uppercase;
-  color: #1f7095;
+  color: #108fc9;
   padding-top: 30px;
 }
 
@@ -590,26 +590,156 @@ p {
   letter-spacing: 1px;
   /*text-transform: uppercase;*/
   color: white;
-  font-weight: 200;
+  font-weight: 500;
   text-align: justify;
+  width: 70%;
 }
 
 @media(max-width: 320px) {
-
   #about .about-descr .about-text {
     font-size: 10px;
   }
 }
+
 .about-content #help-quote {
   font-size: 10px;
   color: #228fc1;
-  opacity: 0.20;
+  opacity: 0.15;
   text-align: right;
   position: absolute;
   top: 17px;
   right: -22px;
   writing-mode: vertical-lr;
   font-weight: 750;
+}
+
+#about .p-heading-small {
+  font-family: clipFont;
+  font-size: 30px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #108fc9;
+  padding-top: 10px;
+}
+
+.about-content .container {
+  padding-left: -100px;
+}
+
+.swiper-wrapper {
+  text-align: center;
+}
+
+.traits-block > img {
+  height: 140px;
+  justify-content: center;
+  filter: drop-shadow(0px 0px 5px #ed5ce1);
+  padding-bottom: 15px;
+}
+
+.traits-block > h3 {
+  font-size: 1.7em;
+  line-height: 20px;
+  color: #696969;
+  /*text-transform: uppercase;*/
+}
+
+.traits-block > #vodka-bottle-locked {
+  filter: grayscale(100%);
+}
+
+.traits-block > #vodka-bottle-unlocked {
+  filter: drop-shadow(0px 0px 5px #ffffff);
+}
+
+.traits-block > .vodka-quote {
+  text-indent: -9999px;
+  line-height: 0; /* Collapse the original line */
+}
+
+.traits-block > .vodka-quote::after {
+  content: "LOREM IPSUM";
+  text-indent: 0;
+  display: block;
+  line-height: initial; /* New content takes up original line height */
+  color: #ffffff;
+}
+
+.traits-block > #absinthe-bottle-locked {
+  filter: grayscale(100%);
+}
+
+.traits-block > #absinthe-bottle-unlocked {
+  filter: drop-shadow(0px 0px 5px #41912e);
+}
+
+.traits-block > .absinthe-quote {
+  text-indent: -9999px;
+  line-height: 0; /* Collapse the original line */
+}
+
+.traits-block > .absinthe-quote::after {
+  content: "LOREM IPSUM";
+  text-indent: 0;
+  display: block;
+  line-height: initial; /* New content takes up original line height */
+  color: #398229;
+}
+
+.traits-block > #tequila-bottle-locked {
+  filter: grayscale(100%);
+}
+
+.traits-block > #tequila-bottle-unlocked {
+  filter: drop-shadow(0px 0px 5px #f8d006);
+}
+
+.traits-block > .tequila-quote {
+  text-indent: -9999px;
+  line-height: 0; /* Collapse the original line */
+}
+
+.traits-block > .tequila-quote::after {
+  content: "LOREM IPSUM";
+  text-indent: 0;
+  display: block;
+  line-height: initial; /* New content takes up original line height */
+  color: #f8d006;
+}
+
+.traits-block > #bourbon-bottle-locked {
+  filter: drop-shadow(0px 0px 5px #932500);
+  filter: grayscale(100%);
+}
+
+.traits-block > #bourbon-bottle-unlocked {
+  filter: drop-shadow(0px 0px 5px #932500);
+}
+
+.traits-block > .bourbon-quote {
+  text-indent: -9999px;
+  line-height: 0; /* Collapse the original line */
+}
+
+.traits-block > .bourbon-quote::after {
+  content: "LOREM IPSUM";
+  text-indent: 0;
+  display: block;
+  line-height: initial; /* New content takes up original line height */
+  color: #932500;
+}
+
+#about .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #df8cca;
+  opacity: 1;
+  border: 1px solid black;
+  margin-top: -10px;
+}
+
+#about .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #cf57b1;
 }
 
 #about #scroll-to-up {
@@ -853,6 +983,17 @@ p {
   margin-top: 8px;
 }
 
+.portfolio-content #help-quote {
+  font-size: 10px;
+  color: #ffc800;
+  opacity: 0.10;
+  text-align: left;
+  position: absolute;
+  bottom: 15px;
+  left: 150px;
+  font-weight: 750;
+}
+
 /* -- ↓ ↓ ↓ some card responsiveness ↓ ↓ ↓ -- */
 
 @media(max-width: 1050px) {
@@ -890,6 +1031,10 @@ p {
   .card-info-title > h4 {
     font-size: 0.8em;
     margin-top: 4px;
+  }
+
+  .portfolio-content #help-quote {
+    color: #0c8a00;
   }
 }
 
@@ -964,17 +1109,11 @@ p {
     font-size: 0.8em;
     margin-top: 4px;
   }
-}
 
-.portfolio-content #help-quote {
-  font-size: 10px;
-  color: #ffc800;
-  opacity: 0.10;
-  text-align: left;
-  position: absolute;
-  bottom: 15px;
-  left: 150px;
-  font-weight: 750;
+  .portfolio-content #help-quote {
+    left: 20px;
+    color: #0c8a00;
+  }
 }
 
 #portfolio #scroll-to-up {
