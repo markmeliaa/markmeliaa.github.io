@@ -362,41 +362,69 @@
   }
 
   // Unlock vodka trait
+  const vodka_activator = document.querySelectorAll('.help-quote-1');
   const vodka = document.querySelectorAll('.vodka-bottle-locked');
-  for (const drink of vodka) {
-    drink.addEventListener('click', function handleClick() {
+  const vodka_quotes = document.querySelectorAll('.vodka-no-quote');
+
+  for (const activator of vodka_activator) {
+    activator.addEventListener('dblclick', function handleClick() {
       for (const drink of vodka) {
         drink.classList.add('vodka-bottle-unlocked');
+      }
+
+      for (const quotes of vodka_quotes) {
+        quotes.classList.add('vodka-quote');
       }
     });
   }
 
   // Unlock absinthe trait
+  const absinthe_activator = document.querySelectorAll('.p-heading-small'); // Activator placeholder
   const absinthe = document.querySelectorAll('.absinthe-bottle-locked');
-  for (const drink of absinthe) {
-    drink.addEventListener('click', function handleClick() {
+  const absinthe_quotes = document.querySelectorAll('.absinthe-no-quote');
+
+  for (const activator of absinthe_activator) {
+    activator.addEventListener('dblclick', function handleClick() {
       for (const drink of absinthe) {
         drink.classList.add('absinthe-bottle-unlocked');
+      }
+
+      for (const quotes of absinthe_quotes) {
+        quotes.classList.add('absinthe-quote');
       }
     });
   }
 
   // Unlock tequila trait
+  const tequila_activator = document.querySelectorAll('.help-quote-3');
   const tequila = document.querySelectorAll('.tequila-bottle-locked');
-  for (const drink of tequila) {
-    drink.addEventListener('click', function handleClick() {
+  const tequila_quotes = document.querySelectorAll('.tequila-no-quote');
+
+  for (const activator of tequila_activator) {
+    activator.addEventListener('dblclick', function handleClick() {
       for (const drink of tequila) {
         drink.classList.add('tequila-bottle-unlocked');
+      }
+
+      for (const quotes of tequila_quotes) {
+        quotes.classList.add('tequila-quote');
       }
     });
   }
 
   // Unlock bourbon trait
+  const bourbon_activator = document.querySelectorAll('.p-heading-small'); // Activator placeholder
   const bourbon = document.querySelectorAll('.bourbon-bottle-locked');
-  for (const drink of bourbon) {
-    drink.addEventListener('click', function handleClick() {
+  const bourbon_quotes = document.querySelectorAll('.bourbon-no-quote');
+
+  for (const activator of bourbon_activator) {
+    activator.addEventListener('dblclick', function handleClick() {
       for (const drink of bourbon) {
         drink.classList.add('bourbon-bottle-unlocked');
+      }
+
+      for (const quotes of bourbon_quotes) {
+        quotes.classList.add('bourbon-quote');
       }
     });
   }

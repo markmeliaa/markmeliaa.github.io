@@ -512,10 +512,10 @@ p {
   cursor: none;
 }
 
-.hero-content #help-quote {
+.hero-content .help-quote-1 {
   font-size: 10px;
-  color: rgb(250, 224, 181);
-  opacity: 0.20;
+  color: rgb(255, 255, 255);
+  opacity: 0.15;
   text-align: right;
   position: absolute;
   top: -15px;
@@ -595,7 +595,7 @@ p {
   width: 70%;
 }
 
-.about-content #help-quote {
+.about-content .help-quote-2 {
   font-size: 10px;
   color: #228fc1;
   opacity: 0.15;
@@ -1016,7 +1016,7 @@ p {
   margin-top: 8px;
 }
 
-.portfolio-content #help-quote {
+.portfolio-content .help-quote-3 {
   font-size: 10px;
   color: #ffc800;
   opacity: 0.10;
@@ -1065,7 +1065,7 @@ p {
     margin-top: 4px;
   }
 
-  .portfolio-content #help-quote {
+  .portfolio-content .help-quote-3 {
     color: #0c8a00;
   }
 }
@@ -1106,7 +1106,7 @@ p {
     margin-top: 4px;
   }
 
-  .portfolio-content #help-quote {
+  .portfolio-content .help-quote-3 {
     color: #0c8a00;
   }
 }
@@ -1183,7 +1183,7 @@ p {
     margin-top: 4px;
   }
 
-  .portfolio-content #help-quote {
+  .portfolio-content .help-quote-3 {
     left: 20px;
     color: #0c8a00;
   }
