@@ -204,41 +204,27 @@
 
                 <div class="swiper-slide">
                   <div class="traits-block">
-                    <img id="vodka-bottle-locked" src="assets/img/traits/trait-img-1.png" onclick="activateVodka()"> 
-                    <!--When unlocked, change to unlocked-->
+                    <img class="vodka-bottle-locked" src="assets/img/traits/trait-img-1.png"> <!--When unlocked, change to unlocked-->
                     <h3>LOCKED</h3> <!--When unlocked, add to h3 class="vodka-quote"-->
-
-                    <script>
-                      function activateVodka(){
-                        var element = document.getElementsByClassName("cursor")[0];
-                      }
-                    </script>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
                   <div class="traits-block">
-                    <img id="absinthe-bottle-locked" src="assets/img/traits/trait-img-2.png" onclick="activateAbsinthe()"> 
-                    <!--When unlocked, change to unlocked-->
+                    <img class="absinthe-bottle-locked" src="assets/img/traits/trait-img-2.png"> <!--When unlocked, change to unlocked-->
                     <h3>LOCKED</h3> <!--When unlocked, add to h3 class="absinthe-quote"-->
-
-                    <script>
-                      function activateAbsinthe(){
-                        var element = document.getElementsByClassName("cursor")[0];
-                      }
-                    </script>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
                   <div class="traits-block">
-                    <img id="tequila-bottle-locked" src="assets/img/traits/trait-img-3.png" onclick="activateTequila()"> 
-                    <!--When unlocked, change to unlocked-->
+                    <img class="tequila-bottle-locked" src="assets/img/traits/trait-img-3.png"> <!--When unlocked, change to unlocked-->
                     <h3>LOCKED</h3> <!--When unlocked, add to h3 class="tequila-quote"-->
 
                     <script>
                       function activateTequila(){
                         var element = document.getElementsByClassName("cursor")[0];
+                        element.style.fill = "orange";
                       }
                     </script>
                   </div>
@@ -246,13 +232,13 @@
 
                 <div class="swiper-slide">
                   <div class="traits-block">
-                    <img id="bourbon-bottle-locked" src="assets/img/traits/trait-img-4.png" onclick="activateBurbon()"> 
-                    <!--When unlocked, change to unlocked-->
+                    <img class="bourbon-bottle-locked" src="assets/img/traits/trait-img-4.png"> <!--When unlocked, change to unlocked-->
                     <h3>LOCKED</h3> <!--When unlocked, add to h3 class="bourbon-quote"-->
 
                     <script>
                       function activateBurbon(){
                         var element = document.getElementsByClassName("cursor")[0];
+                        element.style.fill = "brown";
                       }
                     </script>
                   </div>

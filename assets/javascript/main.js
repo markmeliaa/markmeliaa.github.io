@@ -361,4 +361,44 @@
     };
   }
 
+  // Unlock vodka trait
+  const vodka = document.querySelectorAll('.vodka-bottle-locked');
+  for (const drink of vodka) {
+    drink.addEventListener('click', function handleClick() {
+      for (const drink of vodka) {
+        drink.classList.add('vodka-bottle-unlocked');
+      }
+    });
+  }
+
+  // Unlock absinthe trait
+  const absinthe = document.querySelectorAll('.absinthe-bottle-locked');
+  for (const drink of absinthe) {
+    drink.addEventListener('click', function handleClick() {
+      for (const drink of absinthe) {
+        drink.classList.add('absinthe-bottle-unlocked');
+      }
+    });
+  }
+
+  // Unlock tequila trait
+  const tequila = document.querySelectorAll('.tequila-bottle-locked');
+  for (const drink of tequila) {
+    drink.addEventListener('click', function handleClick() {
+      for (const drink of tequila) {
+        drink.classList.add('tequila-bottle-unlocked');
+      }
+    });
+  }
+
+  // Unlock bourbon trait
+  const bourbon = document.querySelectorAll('.bourbon-bottle-locked');
+  for (const drink of bourbon) {
+    drink.addEventListener('click', function handleClick() {
+      for (const drink of bourbon) {
+        drink.classList.add('bourbon-bottle-unlocked');
+      }
+    });
+  }
+
 })()

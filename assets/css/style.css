@@ -637,11 +637,11 @@ p {
   /*text-transform: uppercase;*/
 }
 
-.traits-block > #vodka-bottle-locked {
+.traits-block > .vodka-bottle-locked {
   filter: grayscale(100%);
 }
 
-.traits-block > #vodka-bottle-unlocked {
+.traits-block > .vodka-bottle-unlocked {
   filter: drop-shadow(0px 0px 5px #ffffff);
 }
 
@@ -658,11 +658,11 @@ p {
   color: #ffffff;
 }
 
-.traits-block > #absinthe-bottle-locked {
+.traits-block > .absinthe-bottle-locked {
   filter: grayscale(100%);
 }
 
-.traits-block > #absinthe-bottle-unlocked {
+.traits-block > .absinthe-bottle-unlocked {
   filter: drop-shadow(0px 0px 5px #41912e);
 }
 
@@ -679,11 +679,11 @@ p {
   color: #398229;
 }
 
-.traits-block > #tequila-bottle-locked {
+.traits-block > .tequila-bottle-locked {
   filter: grayscale(100%);
 }
 
-.traits-block > #tequila-bottle-unlocked {
+.traits-block > .tequila-bottle-unlocked {
   filter: drop-shadow(0px 0px 5px #f8d006);
 }
 
@@ -700,12 +700,12 @@ p {
   color: #f8d006;
 }
 
-.traits-block > #bourbon-bottle-locked {
+.traits-block > .bourbon-bottle-locked {
   filter: drop-shadow(0px 0px 5px #932500);
   filter: grayscale(100%);
 }
 
-.traits-block > #bourbon-bottle-unlocked {
+.traits-block > .bourbon-bottle-unlocked {
   filter: drop-shadow(0px 0px 5px #932500);
 }
 
