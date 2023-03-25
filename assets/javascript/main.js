@@ -367,7 +367,7 @@
   const vodka_quotes = document.querySelectorAll('.vodka-no-quote');
 
   for (const activator of vodka_activator) {
-    activator.addEventListener('dblclick', function handleClick() {
+    activator.addEventListener('click', function handleClick() {
       for (const drink of vodka) {
         drink.classList.add('vodka-bottle-unlocked');
       }
@@ -384,7 +384,7 @@
   const absinthe_quotes = document.querySelectorAll('.absinthe-no-quote');
 
   for (const activator of absinthe_activator) {
-    activator.addEventListener('dblclick', function handleClick() {
+    activator.addEventListener('click', function handleClick() {
       for (const drink of absinthe) {
         drink.classList.add('absinthe-bottle-unlocked');
       }
@@ -401,7 +401,7 @@
   const tequila_quotes = document.querySelectorAll('.tequila-no-quote');
 
   for (const activator of tequila_activator) {
-    activator.addEventListener('dblclick', function handleClick() {
+    activator.addEventListener('click', function handleClick() {
       for (const drink of tequila) {
         drink.classList.add('tequila-bottle-unlocked');
       }
@@ -418,13 +418,47 @@
   const bourbon_quotes = document.querySelectorAll('.bourbon-no-quote');
 
   for (const activator of bourbon_activator) {
-    activator.addEventListener('dblclick', function handleClick() {
+    activator.addEventListener('click', function handleClick() {
       for (const drink of bourbon) {
         drink.classList.add('bourbon-bottle-unlocked');
       }
 
       for (const quotes of bourbon_quotes) {
         quotes.classList.add('bourbon-quote');
+      }
+    });
+  }
+
+  // Unlock blue whisper trait
+  const blue_whisper_activator = document.querySelectorAll('.help-quote-2');
+  const blue_whisper = document.querySelectorAll('.blue-whisper-bottle-locked');
+  const blue_whisper_quotes = document.querySelectorAll('.blue-whisper-no-quote');
+
+  for (const activator of blue_whisper_activator) {
+    activator.addEventListener('click', function handleClick() {
+      for (const drink of blue_whisper) {
+        drink.classList.add('blue-whisper-bottle-unlocked');
+      }
+
+      for (const quotes of blue_whisper_quotes) {
+        quotes.classList.add('blue-whisper-quote');
+      }
+    });
+  }
+
+  // Unlock red secret trait
+  const red_secret_activator = document.querySelectorAll('.p-heading-small'); // Activator placeholder
+  const red_secret = document.querySelectorAll('.red-secret-bottle-locked');
+  const red_secret_quotes = document.querySelectorAll('.red-secret-no-quote');
+
+  for (const activator of red_secret_activator) {
+    activator.addEventListener('click', function handleClick() {
+      for (const drink of red_secret) {
+        drink.classList.add('red-secret-bottle-unlocked');
+      }
+
+      for (const quotes of red_secret_quotes) {
+        quotes.classList.add('red-secret-quote');
       }
     });
   }

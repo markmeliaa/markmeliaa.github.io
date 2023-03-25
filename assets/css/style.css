@@ -722,6 +722,50 @@ p {
   color: #932500;
 }
 
+.traits-block > .blue-whisper-bottle-locked {
+  filter: drop-shadow(0px 0px 5px #2346c8);
+  filter: grayscale(100%);
+}
+
+.traits-block > .blue-whisper-bottle-unlocked {
+  filter: drop-shadow(0px 0px 5px #2346c8);
+}
+
+.traits-block > .blue-whisper-quote {
+  text-indent: -9999px;
+  line-height: 0; /* Collapse the original line */
+}
+
+.traits-block > .blue-whisper-quote::after {
+  content: "LOREM IPSUM";
+  text-indent: 0;
+  display: block;
+  line-height: initial; /* New content takes up original line height */
+  color: #2346c8;
+}
+
+.traits-block > .red-secret-bottle-locked {
+  filter: drop-shadow(0px 0px 5px #b90000);
+  filter: grayscale(100%);
+}
+
+.traits-block > .red-secret-bottle-unlocked {
+  filter: drop-shadow(0px 0px 5px #b90000);
+}
+
+.traits-block > .red-secret-quote {
+  text-indent: -9999px;
+  line-height: 0; /* Collapse the original line */
+}
+
+.traits-block > .red-secret-quote::after {
+  content: "LOREM IPSUM";
+  text-indent: 0;
+  display: block;
+  line-height: initial; /* New content takes up original line height */
+  color: #b90000;
+}
+
 #about .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
@@ -830,6 +874,41 @@ p {
 }
 
 @media(max-width: 400px) {
+  #about .about-descr .p-heading {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+
+  #about .about-img-container {
+    top: 40px;
+  }
+
+  #about .about-descr .about-text {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    width: 100%;
+  }
+
+  #about .p-heading-small {
+    font-size: 20px;
+    margin-top: -20px;
+  }
+
+  .traits-slider {
+    margin-top: -20px;
+  }
+
+  .traits-block > img {
+    height: 70px;
+    padding-bottom: 15px;
+  }
+
+  .traits-block > h3 {
+    font-size: 0.9em;
+  }
+}
+
+@media(max-width: 300px) {
   #about .about-descr .p-heading {
     font-size: 25px;
     padding-top: 30px;
