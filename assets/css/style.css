@@ -622,6 +622,7 @@ p {
 
 .swiper-wrapper {
   text-align: center;
+  height: 210px;
 }
 
 .traits-block > img {
@@ -767,8 +768,6 @@ p {
 }
 
 #about .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
   background-color: #df8cca;
   opacity: 1;
   border: 1px solid black;
@@ -821,6 +820,15 @@ p {
     font-size: 20px;
     margin-top: -15px;
   }
+
+  .swiper-wrapper {
+    height: 170px;
+  } 
+
+  .traits-block > img {
+    height: 100px;
+    padding-bottom: 15px;
+  }
 }
 
 @media(max-width: 1020px) {
@@ -842,6 +850,10 @@ p {
     font-size: 30px;
     margin-top: 15px;
   }
+
+  .traits-block > h3 {
+    font-size: 1.3em;
+  }
 }
 
 @media(max-width: 600px) {
@@ -862,6 +874,10 @@ p {
   #about .p-heading-small {
     font-size: 25px;
   }
+
+  .swiper-wrapper {
+    height: 160px;
+  }  
 
   .traits-block > img {
     height: 100px;
@@ -894,6 +910,10 @@ p {
     margin-top: -20px;
   }
 
+  .swiper-wrapper {
+    height: 120px;
+  }  
+
   .traits-slider {
     margin-top: -20px;
   }
@@ -922,12 +942,17 @@ p {
     font-size: 8px;
     letter-spacing: 0.5px;
     width: 100%;
+    margin-top: -5px;
   }
 
   #about .p-heading-small {
     font-size: 15px;
     margin-top: -20px;
   }
+
+  .swiper-wrapper {
+    height: 120px;
+  }  
 
   .traits-slider {
     margin-top: -20px;
