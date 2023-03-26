@@ -1,2 +1,2 @@
 # Mark's portfolio
-My personal portfolio, hosted in GitHub.
+My personal portfolio, hosted in GitHub Pages.

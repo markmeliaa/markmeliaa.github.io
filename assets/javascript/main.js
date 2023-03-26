@@ -463,4 +463,17 @@
     });
   }
 
+  // Manage traits modal
+  const open_traits_modal = document.getElementById('traits-question-mark');
+  const traits_modal_container = document.getElementById('traits-modal-container');
+  const close_traits_modal = document.getElementById('traits-modal-close');
+
+  open_traits_modal.addEventListener('click', () => {
+    traits_modal_container.classList.add('show');
+  })
+
+  close_traits_modal.addEventListener('click', () => {
+    traits_modal_container.classList.remove('show');
+  })
+
 })()
