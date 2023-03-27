@@ -615,6 +615,15 @@ p {
   color: #108fc9;
   padding-top: 10px;
   display: inline;
+  padding-right: 10px;
+  position: relative;
+}
+
+#about .traits-question-container {
+  display: inline;
+  user-select: none;
+  position: absolute;
+  padding-top: 2px;
 }
 
 #about #traits-question-mark {
@@ -623,6 +632,10 @@ p {
   font-weight: 300;
   color: #108fc9;
   padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  background-color: #00354b;
+  box-shadow: 2px 2px 2px #000000;
 }
 
 /* -----------------Traits Help Modal----------------- */
@@ -658,12 +671,15 @@ p {
 
 .traits-modal h1 {
   text-align: center;
+  font-family: clipFont;
+  color: #ed5ce1;
 }
 
 .traits-modal p {
   text-align: justify;
   font-weight: 600;
   text-transform: uppercase;
+  color: #ffffff;
   opacity: 0.7;
 }
 
@@ -710,17 +726,20 @@ p {
   padding: 40px 50px;
   width: 700px;
   max-width: 100%;
-  box-shadow: 0px 0px 10px #ffffff;
+  box-shadow: 0px 0px 10px #ababab;
 }
 
 .vodka-trait-modal h1 {
   text-align: center;
+  font-family: perfectDos;
+  color: #ababab;
 }
 
 .vodka-trait-modal p {
   text-align: justify;
   font-weight: 600;
   text-transform: uppercase;
+  color: #ffffff;
   opacity: 0.7;
 }
 
@@ -772,12 +791,15 @@ p {
 
 .absinthe-trait-modal h1 {
   text-align: center;
+  font-family: perfectDos;
+  color: #398229;
 }
 
 .absinthe-trait-modal p {
   text-align: justify;
   font-weight: 600;
   text-transform: uppercase;
+  color: #ffffff;
   opacity: 0.7;
 }
 
@@ -829,12 +851,15 @@ p {
 
 .tequila-trait-modal h1 {
   text-align: center;
+  font-family: perfectDos;
+  color: #f8d006;
 }
 
 .tequila-trait-modal p {
   text-align: justify;
   font-weight: 600;
   text-transform: uppercase;
+  color: #ffffff;
   opacity: 0.7;
 }
 
@@ -886,12 +911,15 @@ p {
 
 .bourbon-trait-modal h1 {
   text-align: center;
+  font-family: perfectDos;
+  color: #932500;
 }
 
 .bourbon-trait-modal p {
   text-align: justify;
   font-weight: 600;
   text-transform: uppercase;
+  color: #ffffff;
   opacity: 0.7;
 }
 
@@ -943,12 +971,15 @@ p {
 
 .blue-whisper-trait-modal h1 {
   text-align: center;
+  font-family: perfectDos;
+  color: #2346c8;
 }
 
 .blue-whisper-trait-modal p {
   text-align: justify;
   font-weight: 600;
   text-transform: uppercase;
+  color: #ffffff;
   opacity: 0.7;
 }
 
@@ -1000,12 +1031,15 @@ p {
 
 .red-secret-trait-modal h1 {
   text-align: center;
+  font-family: perfectDos;
+  color: #b90000;
 }
 
 .red-secret-trait-modal p {
   text-align: justify;
   font-weight: 600;
   text-transform: uppercase;
+  color: #ffffff;
   opacity: 0.7;
 }
 
@@ -1025,7 +1059,11 @@ p {
 }
 
 .about-content .container {
-  padding-left: -100px;
+  padding-left: 0px;
+}
+
+.traits-slider {
+  user-select: none;
 }
 
 .swiper-wrapper {
@@ -1038,11 +1076,13 @@ p {
   justify-content: center;
   filter: drop-shadow(0px 0px 5px #ed5ce1);
   padding-bottom: 15px;
+  padding-top: 5px;
 }
 
 .traits-block > h3 {
-  font-size: 1.7em;
+  font-size: 2.0em;
   color: #696969;
+  font-family: perfectDos;
   /*text-transform: uppercase;*/
 }
 
@@ -1052,7 +1092,7 @@ p {
 }
 
 .traits-block > .vodka-bottle-unlocked {
-  filter: drop-shadow(0px 0px 5px #ffffff);
+  filter: drop-shadow(0px 0px 5px #ababab);
   pointer-events: auto;
 }
 
@@ -1066,7 +1106,7 @@ p {
   text-indent: 0;
   display: block;
   line-height: initial; /* New content takes up original line height */
-  color: #ffffff;
+  color: #ababab;
 }
 
 .traits-block > .absinthe-bottle-locked {
@@ -1545,7 +1585,7 @@ p {
   }
 
   .swiper-wrapper {
-    height: 120px;
+    height: 110px;
   }  
 
   .traits-slider {
@@ -1590,7 +1630,7 @@ p {
   .traits-block > img {
     height: 60px;
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 15px;
   }
 
   .traits-block > h3 {
@@ -1601,6 +1641,11 @@ p {
 @font-face {
   font-family: clipFont;
   src: url(../fonts/Clip.ttf);
+}
+
+@font-face {
+  font-family: perfectDos;
+  src: url(../fonts/Perfect-DOS-VGA-437.ttf);
 }
 
 /*--------------------------------------------------------------
