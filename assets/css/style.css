@@ -625,7 +625,7 @@ p {
   padding-left: 5px;
 }
 
-/* Traits Modal Container */
+/* -----------------Traits Help Modal----------------- */
 .traits-modal-container {
   background-color: rgb(0, 0, 0, 0.7);
   display: flex;
@@ -647,7 +647,6 @@ p {
   pointer-events: auto;
 }
 
-/* Traits Modal Content */
 .traits-modal {
   background-color: black;
   border-radius: 10px;
@@ -668,7 +667,6 @@ p {
   opacity: 0.7;
 }
 
-/* Traits Modal Close Button */
 #traits-modal-close {
   color: #ffffff;
   float: right;
@@ -681,6 +679,348 @@ p {
 #traits-modal-close:hover,
 #traits-modal-close:focus {
   color: #ed5ce1;
+  text-decoration: none;
+}
+
+/* -----------------Vodka Trait Modal----------------- */
+.vodka-trait-modal-container {
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.vodka-trait-modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.vodka-trait-modal {
+  background-color: black;
+  border-radius: 10px;
+  padding: 40px 50px;
+  width: 700px;
+  max-width: 100%;
+  box-shadow: 0px 0px 10px #ffffff;
+}
+
+.vodka-trait-modal h1 {
+  text-align: center;
+}
+
+.vodka-trait-modal p {
+  text-align: justify;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+#vodka-trait-modal-close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-right: -25px;
+}
+
+#vodka-trait-modal-close:hover,
+#vodka-trait-modal-close:focus {
+  color: #ababab;
+  text-decoration: none;
+}
+
+/* -----------------Absinthe Trait Modal----------------- */
+.absinthe-trait-modal-container {
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.absinthe-trait-modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.absinthe-trait-modal {
+  background-color: black;
+  border-radius: 10px;
+  padding: 40px 50px;
+  width: 700px;
+  max-width: 100%;
+  box-shadow: 0px 0px 10px #398229;
+}
+
+.absinthe-trait-modal h1 {
+  text-align: center;
+}
+
+.absinthe-trait-modal p {
+  text-align: justify;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+#absinthe-trait-modal-close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-right: -25px;
+}
+
+#absinthe-trait-modal-close:hover,
+#absinthe-trait-modal-close:focus {
+  color: #398229;
+  text-decoration: none;
+}
+
+/* -----------------Tequila Trait Modal----------------- */
+.tequila-trait-modal-container {
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.tequila-trait-modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tequila-trait-modal {
+  background-color: black;
+  border-radius: 10px;
+  padding: 40px 50px;
+  width: 700px;
+  max-width: 100%;
+  box-shadow: 0px 0px 10px #f8d006;
+}
+
+.tequila-trait-modal h1 {
+  text-align: center;
+}
+
+.tequila-trait-modal p {
+  text-align: justify;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+#tequila-trait-modal-close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-right: -25px;
+}
+
+#tequila-trait-modal-close:hover,
+#tequila-trait-modal-close:focus {
+  color: #f8d006;
+  text-decoration: none;
+}
+
+/* -----------------Bourbon Trait Modal----------------- */
+.bourbon-trait-modal-container {
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.bourbon-trait-modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.bourbon-trait-modal {
+  background-color: black;
+  border-radius: 10px;
+  padding: 40px 50px;
+  width: 700px;
+  max-width: 100%;
+  box-shadow: 0px 0px 10px #932500;
+}
+
+.bourbon-trait-modal h1 {
+  text-align: center;
+}
+
+.bourbon-trait-modal p {
+  text-align: justify;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+#bourbon-trait-modal-close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-right: -25px;
+}
+
+#bourbon-trait-modal-close:hover,
+#bourbon-trait-modal-close:focus {
+  color: #932500;
+  text-decoration: none;
+}
+
+/* -----------------Blue Whisper Trait Modal----------------- */
+.blue-whisper-trait-modal-container {
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.blue-whisper-trait-modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.blue-whisper-trait-modal {
+  background-color: black;
+  border-radius: 10px;
+  padding: 40px 50px;
+  width: 700px;
+  max-width: 100%;
+  box-shadow: 0px 0px 10px #2346c8;
+}
+
+.blue-whisper-trait-modal h1 {
+  text-align: center;
+}
+
+.blue-whisper-trait-modal p {
+  text-align: justify;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+#blue-whisper-trait-modal-close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-right: -25px;
+}
+
+#blue-whisper-trait-modal-close:hover,
+#blue-whisper-trait-modal-close:focus {
+  color: #2346c8;
+  text-decoration: none;
+}
+
+/* -----------------Red Secret Trait Modal----------------- */
+.red-secret-trait-modal-container {
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.red-secret-trait-modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.red-secret-trait-modal {
+  background-color: black;
+  border-radius: 10px;
+  padding: 40px 50px;
+  width: 700px;
+  max-width: 100%;
+  box-shadow: 0px 0px 10px #b90000;
+}
+
+.red-secret-trait-modal h1 {
+  text-align: center;
+}
+
+.red-secret-trait-modal p {
+  text-align: justify;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+#red-secret-trait-modal-close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-right: -25px;
+}
+
+#red-secret-trait-modal-close:hover,
+#red-secret-trait-modal-close:focus {
+  color: #b90000;
   text-decoration: none;
 }
 
@@ -731,10 +1071,12 @@ p {
 
 .traits-block > .absinthe-bottle-locked {
   filter: grayscale(100%);
+  pointer-events: none;
 }
 
 .traits-block > .absinthe-bottle-unlocked {
-  filter: drop-shadow(0px 0px 5px #41912e);
+  filter: drop-shadow(0px 0px 5px #398229);
+  pointer-events: auto;
 }
 
 .traits-block > .absinthe-quote {
@@ -752,10 +1094,12 @@ p {
 
 .traits-block > .tequila-bottle-locked {
   filter: grayscale(100%);
+  pointer-events: none;
 }
 
 .traits-block > .tequila-bottle-unlocked {
   filter: drop-shadow(0px 0px 5px #f8d006);
+  pointer-events: auto;
 }
 
 .traits-block > .tequila-quote {
@@ -772,12 +1116,13 @@ p {
 }
 
 .traits-block > .bourbon-bottle-locked {
-  filter: drop-shadow(0px 0px 5px #932500);
   filter: grayscale(100%);
+  pointer-events: none;
 }
 
 .traits-block > .bourbon-bottle-unlocked {
   filter: drop-shadow(0px 0px 5px #932500);
+  pointer-events: auto;
 }
 
 .traits-block > .bourbon-quote {
@@ -794,12 +1139,13 @@ p {
 }
 
 .traits-block > .blue-whisper-bottle-locked {
-  filter: drop-shadow(0px 0px 5px #2346c8);
   filter: grayscale(100%);
+  pointer-events: none;
 }
 
 .traits-block > .blue-whisper-bottle-unlocked {
   filter: drop-shadow(0px 0px 5px #2346c8);
+  pointer-events: auto;
 }
 
 .traits-block > .blue-whisper-quote {
@@ -816,12 +1162,13 @@ p {
 }
 
 .traits-block > .red-secret-bottle-locked {
-  filter: drop-shadow(0px 0px 5px #b90000);
   filter: grayscale(100%);
+  pointer-events: none;
 }
 
 .traits-block > .red-secret-bottle-unlocked {
   filter: drop-shadow(0px 0px 5px #b90000);
+  pointer-events: auto;
 }
 
 .traits-block > .red-secret-quote {

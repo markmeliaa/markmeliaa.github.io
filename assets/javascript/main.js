@@ -363,12 +363,12 @@
 
   // Unlock vodka trait
   const vodka_activator = document.querySelectorAll('.help-quote-1');
-  const vodka = document.querySelectorAll('.vodka-bottle-locked');
+  const vodka_images = document.querySelectorAll('.vodka-bottle-locked');
   const vodka_quotes = document.querySelectorAll('.vodka-no-quote');
 
   for (const activator of vodka_activator) {
     activator.addEventListener('click', function handleClick() {
-      for (const drink of vodka) {
+      for (const drink of vodka_images) {
         drink.classList.add('vodka-bottle-unlocked');
       }
 
@@ -380,12 +380,12 @@
 
   // Unlock absinthe trait
   const absinthe_activator = document.querySelectorAll('.p-heading-small'); // Activator placeholder
-  const absinthe = document.querySelectorAll('.absinthe-bottle-locked');
+  const absinthe_images = document.querySelectorAll('.absinthe-bottle-locked');
   const absinthe_quotes = document.querySelectorAll('.absinthe-no-quote');
 
   for (const activator of absinthe_activator) {
     activator.addEventListener('click', function handleClick() {
-      for (const drink of absinthe) {
+      for (const drink of absinthe_images) {
         drink.classList.add('absinthe-bottle-unlocked');
       }
 
@@ -397,12 +397,12 @@
 
   // Unlock tequila trait
   const tequila_activator = document.querySelectorAll('.help-quote-3');
-  const tequila = document.querySelectorAll('.tequila-bottle-locked');
+  const tequila_images = document.querySelectorAll('.tequila-bottle-locked');
   const tequila_quotes = document.querySelectorAll('.tequila-no-quote');
 
   for (const activator of tequila_activator) {
     activator.addEventListener('click', function handleClick() {
-      for (const drink of tequila) {
+      for (const drink of tequila_images) {
         drink.classList.add('tequila-bottle-unlocked');
       }
 
@@ -414,12 +414,12 @@
 
   // Unlock bourbon trait
   const bourbon_activator = document.querySelectorAll('.p-heading-small'); // Activator placeholder
-  const bourbon = document.querySelectorAll('.bourbon-bottle-locked');
+  const bourbon_images = document.querySelectorAll('.bourbon-bottle-locked');
   const bourbon_quotes = document.querySelectorAll('.bourbon-no-quote');
 
   for (const activator of bourbon_activator) {
     activator.addEventListener('click', function handleClick() {
-      for (const drink of bourbon) {
+      for (const drink of bourbon_images) {
         drink.classList.add('bourbon-bottle-unlocked');
       }
 
@@ -431,12 +431,12 @@
 
   // Unlock blue whisper trait
   const blue_whisper_activator = document.querySelectorAll('.help-quote-2');
-  const blue_whisper = document.querySelectorAll('.blue-whisper-bottle-locked');
+  const blue_whisper_images = document.querySelectorAll('.blue-whisper-bottle-locked');
   const blue_whisper_quotes = document.querySelectorAll('.blue-whisper-no-quote');
 
   for (const activator of blue_whisper_activator) {
     activator.addEventListener('click', function handleClick() {
-      for (const drink of blue_whisper) {
+      for (const drink of blue_whisper_images) {
         drink.classList.add('blue-whisper-bottle-unlocked');
       }
 
@@ -448,12 +448,12 @@
 
   // Unlock red secret trait
   const red_secret_activator = document.querySelectorAll('.p-heading-small'); // Activator placeholder
-  const red_secret = document.querySelectorAll('.red-secret-bottle-locked');
+  const red_secret_images = document.querySelectorAll('.red-secret-bottle-locked');
   const red_secret_quotes = document.querySelectorAll('.red-secret-no-quote');
 
   for (const activator of red_secret_activator) {
     activator.addEventListener('click', function handleClick() {
-      for (const drink of red_secret) {
+      for (const drink of red_secret_images) {
         drink.classList.add('red-secret-bottle-unlocked');
       }
 
@@ -463,7 +463,7 @@
     });
   }
 
-  // Manage traits modal
+  // Manage help traits modal
   const open_traits_modal = document.getElementById('traits-question-mark');
   const traits_modal_container = document.getElementById('traits-modal-container');
   const close_traits_modal = document.getElementById('traits-modal-close');
@@ -474,6 +474,90 @@
 
   close_traits_modal.addEventListener('click', () => {
     traits_modal_container.classList.remove('show');
+  })
+
+  // Manage vodka trait modal
+  const vodka_trait_modal_container = document.getElementById('vodka-trait-modal-container');
+  const close_vodka_trait_modal = document.getElementById('vodka-trait-modal-close');
+
+  for (const drink of vodka_images) {
+    drink.addEventListener('click', () => {
+      vodka_trait_modal_container.classList.add('show');
+    })
+  }
+
+  close_vodka_trait_modal.addEventListener('click', () => {
+    vodka_trait_modal_container.classList.remove('show');
+  })
+
+  // Manage absinthe trait modal
+  const absinthe_trait_modal_container = document.getElementById('absinthe-trait-modal-container');
+  const close_absinthe_trait_modal = document.getElementById('absinthe-trait-modal-close');
+
+  for (const drink of absinthe_images) {
+    drink.addEventListener('click', () => {
+      absinthe_trait_modal_container.classList.add('show');
+    })
+  }
+
+  close_absinthe_trait_modal.addEventListener('click', () => {
+    absinthe_trait_modal_container.classList.remove('show');
+  })
+
+  // Manage tequila trait modal
+  const tequila_trait_modal_container = document.getElementById('tequila-trait-modal-container');
+  const close_tequila_trait_modal = document.getElementById('tequila-trait-modal-close');
+
+  for (const drink of tequila_images) {
+    drink.addEventListener('click', () => {
+      tequila_trait_modal_container.classList.add('show');
+    })
+  }
+
+  close_tequila_trait_modal.addEventListener('click', () => {
+    tequila_trait_modal_container.classList.remove('show');
+  })
+
+  // Manage bourbon trait modal
+  const bourbon_trait_modal_container = document.getElementById('bourbon-trait-modal-container');
+  const close_bourbon_trait_modal = document.getElementById('bourbon-trait-modal-close');
+
+  for (const drink of bourbon_images) {
+    drink.addEventListener('click', () => {
+      bourbon_trait_modal_container.classList.add('show');
+    })
+  }
+
+  close_bourbon_trait_modal.addEventListener('click', () => {
+    bourbon_trait_modal_container.classList.remove('show');
+  })
+
+  // Manage blue whisper trait modal
+  const blue_whisper_trait_modal_container = document.getElementById('blue-whisper-trait-modal-container');
+  const close_blue_whisper_trait_modal = document.getElementById('blue-whisper-trait-modal-close');
+
+  for (const drink of blue_whisper_images) {
+    drink.addEventListener('click', () => {
+      blue_whisper_trait_modal_container.classList.add('show');
+    })
+  }
+
+  close_blue_whisper_trait_modal.addEventListener('click', () => {
+    blue_whisper_trait_modal_container.classList.remove('show');
+  })
+
+  // Manage red secret trait modal
+  const red_secret_trait_modal_container = document.getElementById('red-secret-trait-modal-container');
+  const close_red_secret_trait_modal = document.getElementById('red-secret-trait-modal-close');
+
+  for (const drink of red_secret_images) {
+    drink.addEventListener('click', () => {
+      red_secret_trait_modal_container.classList.add('show');
+    })
+  }
+
+  close_red_secret_trait_modal.addEventListener('click', () => {
+    red_secret_trait_modal_container.classList.remove('show');
   })
 
 })()
