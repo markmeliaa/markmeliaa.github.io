@@ -1341,7 +1341,6 @@ p {
 
   .traits-modal {
     padding: 30px 30px;
-    width: 600px;
   }
 
   #traits-modal-close {
@@ -1351,7 +1350,6 @@ p {
 
   .vodka-trait-modal {
     padding: 30px 30px;
-    width: 600px;
   }
 
   #vodka-trait-modal-close {
@@ -1361,7 +1359,6 @@ p {
 
   .absinthe-trait-modal {
     padding: 30px 30px;
-    width: 600px;
   }
 
   #absinthe-trait-modal-close {
@@ -1371,7 +1368,6 @@ p {
 
   .tequila-trait-modal {
     padding: 30px 30px;
-    width: 600px;
   }
 
   #tequila-trait-modal-close {
@@ -1381,7 +1377,6 @@ p {
 
   .bourbon-trait-modal {
     padding: 30px 30px;
-    width: 600px;
   }
 
   #bourbon-trait-modal-close {
@@ -1391,7 +1386,6 @@ p {
 
   .blue-whisper-trait-modal {
     padding: 30px 30px;
-    width: 600px;
   }
 
   #blue-whisper-trait-modal-close {
@@ -1401,7 +1395,6 @@ p {
 
   .red-secret-trait-modal {
     padding: 30px 30px;
-    width: 600px;
   }
 
   #red-secret-trait-modal-close {
@@ -1444,7 +1437,6 @@ p {
   
   .traits-modal {
     padding: 30px 10px;
-    width: 400px;
   }
 
   #traits-modal-close {
@@ -1454,7 +1446,6 @@ p {
 
   .vodka-trait-modal {
     padding: 30px 10px;
-    width: 400px;
   }
 
   #vodka-trait-modal-close {
@@ -1464,7 +1455,6 @@ p {
 
   .absinthe-trait-modal {
     padding: 30px 10px;
-    width: 400px;
   }
 
   #absinthe-trait-modal-close {
@@ -1474,7 +1464,6 @@ p {
 
   .tequila-trait-modal {
     padding: 30px 10px;
-    width: 400px;
   }
 
   #tequila-trait-modal-close {
@@ -1484,7 +1473,6 @@ p {
 
   .bourbon-trait-modal {
     padding: 30px 10px;
-    width: 400px;
   }
 
   #bourbon-trait-modal-close {
@@ -1494,7 +1482,6 @@ p {
 
   .blue-whisper-trait-modal {
     padding: 30px 10px;
-    width: 400px;
   }
 
   #blue-whisper-trait-modal-close {
@@ -1504,7 +1491,6 @@ p {
 
   .red-secret-trait-modal {
     padding: 30px 10px;
-    width: 400px;
   }
 
   #red-secret-trait-modal-close {
@@ -1545,34 +1531,10 @@ p {
 
   .swiper-wrapper {
     height: 120px;
-  }  
-
-  .traits-modal {
-    width: 300px;
   }
 
-  .vodka-trait-modal {
-    width: 300px;
-  }
-
-  .absinthe-trait-modal {
-    width: 300px;
-  }
-
-  .tequila-trait-modal {
-    width: 300px;
-  }
-
-  .bourbon-trait-modal {
-    width: 300px;
-  }
-
-  .blue-whisper-trait-modal {
-    width: 300px;
-  }
-
-  .red-secret-trait-modal {
-    width: 300px;
+  .traits-modal h1 {
+    padding-top: 10px;
   }
 
   .traits-block > img {
@@ -1617,7 +1579,6 @@ p {
 
   .traits-modal {
     padding: 30px 10px;
-    width: 200px;
   }
 
   #traits-modal-close {
@@ -1625,29 +1586,17 @@ p {
     margin-right: 0px;
   }
 
-  .vodka-trait-modal {
-    width: 200px;
+  .traits-modal h1 {
+    font-size: 20px;
+    padding-top: 10px;
   }
-
-  .absinthe-trait-modal {
-    width: 200px;
+  
+  .traits-modal p {
+    font-size: 10px;
   }
-
-
-  .tequila-trait-modal {
-    width: 200px;
-  }
-
-  .bourbon-trait-modal {
-    width: 200px;
-  }
-
-  .blue-whisper-trait-modal {
-    width: 200px;
-  }
-
-  .red-secret-trait-modal {
-    width: 200px;
+  
+  .traits-modal .small-disclaimer {
+    font-size: 7px;
   }
 
   .traits-block > img {
