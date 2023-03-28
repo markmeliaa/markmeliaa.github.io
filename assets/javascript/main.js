@@ -361,6 +361,8 @@
     };
   }
 
+  //------------------- TRAIT BOTTLE ACTIVATORS -------------------//
+
   // Unlock vodka trait
   const vodka_activator = document.querySelectorAll('.help-quote-1');
   const vodka_images = document.querySelectorAll('.vodka-bottle-locked');
@@ -379,7 +381,7 @@
   }
 
   // Unlock absinthe trait
-  const absinthe_activator = document.querySelectorAll('.p-heading-small'); // Activator placeholder
+  const absinthe_activator = document.querySelectorAll('.help-quote-1'); // Activator placeholder
   const absinthe_images = document.querySelectorAll('.absinthe-bottle-locked');
   const absinthe_quotes = document.querySelectorAll('.absinthe-no-quote');
 
@@ -413,7 +415,7 @@
   }
 
   // Unlock bourbon trait
-  const bourbon_activator = document.querySelectorAll('.p-heading-small'); // Activator placeholder
+  const bourbon_activator = document.querySelectorAll('.help-quote-3'); // Activator placeholder
   const bourbon_images = document.querySelectorAll('.bourbon-bottle-locked');
   const bourbon_quotes = document.querySelectorAll('.bourbon-no-quote');
 
@@ -447,7 +449,7 @@
   }
 
   // Unlock red secret trait
-  const red_secret_activator = document.querySelectorAll('.p-heading-small'); // Activator placeholder
+  const red_secret_activator = document.querySelectorAll('.help-quote-2'); // Activator placeholder
   const red_secret_images = document.querySelectorAll('.red-secret-bottle-locked');
   const red_secret_quotes = document.querySelectorAll('.red-secret-no-quote');
 
@@ -462,6 +464,57 @@
       }
     });
   }
+
+  // Global trait activator
+  const general_traits_activator = document.querySelector('.unlock-all-traits');
+
+  general_traits_activator.addEventListener('click', function handleClick() {
+    for (const drink of vodka_images) {
+      drink.classList.add('vodka-bottle-unlocked');
+    }
+    for (const quotes of vodka_quotes) {
+      quotes.classList.add('vodka-quote');
+    }
+
+    for (const drink of absinthe_images) {
+      drink.classList.add('absinthe-bottle-unlocked');
+    }
+    for (const quotes of absinthe_quotes) {
+      quotes.classList.add('absinthe-quote');
+    }
+
+    for (const drink of tequila_images) {
+      drink.classList.add('tequila-bottle-unlocked');
+    }
+    for (const quotes of tequila_quotes) {
+      quotes.classList.add('tequila-quote');
+    }
+
+    for (const drink of bourbon_images) {
+      drink.classList.add('bourbon-bottle-unlocked');
+    }
+    for (const quotes of bourbon_quotes) {
+      quotes.classList.add('bourbon-quote');
+    }
+
+    for (const drink of blue_whisper_images) {
+      drink.classList.add('blue-whisper-bottle-unlocked');
+    }
+    for (const quotes of blue_whisper_quotes) {
+      quotes.classList.add('blue-whisper-quote');
+    }
+
+    for (const drink of red_secret_images) {
+      drink.classList.add('red-secret-bottle-unlocked');
+    }
+    for (const quotes of red_secret_quotes) {
+      quotes.classList.add('red-secret-quote');
+    }
+  });
+
+  //------------------- TRAIT BOTTLE ACTIVATORS -------------------//
+
+  //------------------- TRAIT MODAL ACTIVATORS -------------------//
 
   // Manage help traits modal
   const open_traits_modal = document.getElementById('traits-question-mark');
@@ -559,5 +612,7 @@
   close_red_secret_trait_modal.addEventListener('click', () => {
     red_secret_trait_modal_container.classList.remove('show');
   })
+
+  //------------------- TRAIT MODAL ACTIVATORS -------------------//
 
 })()

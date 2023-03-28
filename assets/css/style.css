@@ -65,7 +65,6 @@ h4 {
 }
 
 a {
-  color: #ecd500;
   text-decoration: none !important;
   transition: all 0.5s ease-in-out 0s;
 }
@@ -664,8 +663,8 @@ p {
   background-color: black;
   border-radius: 10px;
   padding: 40px 50px;
-  width: 700px;
-  max-width: 100%;
+  width: 900px;
+  max-width: 80%;
   box-shadow: 0px 0px 10px #ed5ce1;
 }
 
@@ -677,10 +676,34 @@ p {
 
 .traits-modal p {
   text-align: justify;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 500;
   color: #ffffff;
-  opacity: 0.7;
+  opacity: 0.8;
+}
+
+.traits-modal .small-disclaimer {
+  text-align: justify;
+  font-size: 12px;
+  font-weight: 300px;
+}
+
+.traits-modal .unlock-all-traits {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+  background-color: white;
+  border-radius: 3px;
+  opacity: 1.0;
+  padding-left: 3px;
+  padding-right: 3px;
+  box-shadow: 2px 2px 2px #ed5ce1;
+  margin-left: 2px;
+  margin-right: 2px;
+  user-select: none;
+}
+
+.traits-modal .unlock-all-traits:hover {
+  color: #ed5ce1;
 }
 
 #traits-modal-close {
@@ -724,7 +747,7 @@ p {
   background-color: black;
   border-radius: 10px;
   padding: 40px 50px;
-  width: 700px;
+  width: 900px;
   max-width: 100%;
   box-shadow: 0px 0px 10px #ababab;
 }
@@ -784,7 +807,7 @@ p {
   background-color: black;
   border-radius: 10px;
   padding: 40px 50px;
-  width: 700px;
+  width: 900px;
   max-width: 100%;
   box-shadow: 0px 0px 10px #398229;
 }
@@ -844,7 +867,7 @@ p {
   background-color: black;
   border-radius: 10px;
   padding: 40px 50px;
-  width: 700px;
+  width: 900px;
   max-width: 100%;
   box-shadow: 0px 0px 10px #f8d006;
 }
@@ -904,7 +927,7 @@ p {
   background-color: black;
   border-radius: 10px;
   padding: 40px 50px;
-  width: 700px;
+  width: 900px;
   max-width: 100%;
   box-shadow: 0px 0px 10px #932500;
 }
@@ -964,7 +987,7 @@ p {
   background-color: black;
   border-radius: 10px;
   padding: 40px 50px;
-  width: 700px;
+  width: 900px;
   max-width: 100%;
   box-shadow: 0px 0px 10px #2346c8;
 }
@@ -1024,7 +1047,7 @@ p {
   background-color: black;
   border-radius: 10px;
   padding: 40px 50px;
-  width: 700px;
+  width: 900px;
   max-width: 100%;
   box-shadow: 0px 0px 10px #b90000;
 }
@@ -2353,10 +2376,6 @@ blockquote {
 
 #contact textarea {
   min-height: 160px;
-}
-
-a:hover {
-  color: #ed3c0d;
 }
 
 /*--------------------------------------------------------------
