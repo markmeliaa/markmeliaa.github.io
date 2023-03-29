@@ -1560,6 +1560,24 @@ p {
     margin-bottom: -15px;
   }
 
+  .vodka-trait-modal h1 {
+    font-size: 15px;
+    padding-top: 5px;
+  }
+  
+  .vodka-trait-modal p {
+    font-size: 8px;
+  }
+
+  .absinthe-trait-modal h1 {
+    font-size: 15px;
+    padding-top: 5px;
+  }
+  
+  .absinthe-trait-modal p {
+    font-size: 8px;
+  }
+
   .traits-block > img {
     height: 70px;
     padding-bottom: 15px;
