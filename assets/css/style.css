@@ -1194,7 +1194,7 @@ p {
 }
 
 .traits-block > .bourbon-quote::after {
-  content: "ADAPTABLE";
+  content: "DECISIVE";
   text-indent: 0;
   display: block;
   line-height: initial; /* New content takes up original line height */
