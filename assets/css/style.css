@@ -1092,6 +1092,7 @@ p {
 .swiper-wrapper {
   text-align: center;
   height: 210px;
+  padding-top: 10px;
 }
 
 .traits-block > img {
@@ -1125,7 +1126,7 @@ p {
 }
 
 .traits-block > .vodka-quote::after {
-  content: "LOREM IPSUM";
+  content: "CREATIVE";
   text-indent: 0;
   display: block;
   line-height: initial; /* New content takes up original line height */
@@ -1148,7 +1149,7 @@ p {
 }
 
 .traits-block > .absinthe-quote::after {
-  content: "LOREM IPSUM";
+  content: "OPTIMISTIC";
   text-indent: 0;
   display: block;
   line-height: initial; /* New content takes up original line height */
@@ -1171,7 +1172,7 @@ p {
 }
 
 .traits-block > .tequila-quote::after {
-  content: "LOREM IPSUM";
+  content: "CURIOUS";
   text-indent: 0;
   display: block;
   line-height: initial; /* New content takes up original line height */
@@ -1194,7 +1195,7 @@ p {
 }
 
 .traits-block > .bourbon-quote::after {
-  content: "LOREM IPSUM";
+  content: "PASSIONATE";
   text-indent: 0;
   display: block;
   line-height: initial; /* New content takes up original line height */
@@ -1217,7 +1218,7 @@ p {
 }
 
 .traits-block > .blue-whisper-quote::after {
-  content: "LOREM IPSUM";
+  content: "CLEVER";
   text-indent: 0;
   display: block;
   line-height: initial; /* New content takes up original line height */
@@ -1240,7 +1241,7 @@ p {
 }
 
 .traits-block > .red-secret-quote::after {
-  content: "LOREM IPSUM";
+  content: "ASSERTIVE";
   text-indent: 0;
   display: block;
   line-height: initial; /* New content takes up original line height */
@@ -1498,6 +1499,19 @@ p {
     margin-right: 0px;
   }
 
+  .traits-modal h1 {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  
+  .traits-modal p {
+    font-size: 12px;
+  }
+  
+  .traits-modal .small-disclaimer {
+    font-size: 8px;
+  }
+
   .traits-block > img {
     height: 100px;
     padding-bottom: 15px;
@@ -1511,16 +1525,16 @@ p {
 @media(max-width: 400px) {
   #about .about-descr .p-heading {
     font-size: 30px;
-    padding-top: 30px;
+    padding-top: 40px;
   }
 
   #about .about-img-container {
-    top: 40px;
+    top: 20px;
   }
 
   #about .about-descr .about-text {
     font-size: 10px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0px;
     width: 100%;
   }
 
@@ -1534,7 +1548,17 @@ p {
   }
 
   .traits-modal h1 {
-    padding-top: 10px;
+    font-size: 15px;
+    padding-top: 5px;
+  }
+  
+  .traits-modal p {
+    font-size: 10px;
+  }
+  
+  .traits-modal .small-disclaimer {
+    font-size: 7px;
+    margin-bottom: -15px;
   }
 
   .traits-block > img {
@@ -1587,16 +1611,23 @@ p {
   }
 
   .traits-modal h1 {
-    font-size: 20px;
-    padding-top: 10px;
+    font-size: 15px;
+    padding-top: 5px;
   }
   
   .traits-modal p {
-    font-size: 10px;
+    font-size: 8px;
+  }
+
+  .traits-modal br {
+    display: block;
+    content: "";
+    margin: 5px 5px;
   }
   
   .traits-modal .small-disclaimer {
-    font-size: 7px;
+    font-size: 6px;
+    margin-bottom: -15px;
   }
 
   .traits-block > img {
