@@ -1194,7 +1194,7 @@ p {
 }
 
 .traits-block > .bourbon-quote::after {
-  content: "DECISIVE";
+  content: "SHARP-WITTED";
   text-indent: 0;
   display: block;
   line-height: initial; /* New content takes up original line height */
@@ -1577,6 +1577,16 @@ p {
   .absinthe-trait-modal p {
     font-size: 8px;
   }
+
+  .tequila-trait-modal h1 {
+    font-size: 15px;
+    padding-top: 5px;
+  }
+  
+  .tequila-trait-modal p {
+    font-size: 8px;
+  }
+
 
   .traits-block > img {
     height: 70px;
