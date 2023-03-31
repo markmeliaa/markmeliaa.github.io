@@ -367,7 +367,6 @@ p {
 .mobile-nav-toggle {
   color: white;
   font-size: 28px;
-  cursor: pointer;
   display: none;
   line-height: 0;
   transition: 0.5s;
@@ -476,7 +475,7 @@ p {
 #hero .hero-content {
   height: 100vh;
   text-align: left;
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: end;
   flex-direction: column;
@@ -550,7 +549,7 @@ p {
 #about .about-content {
   height: 100vh;
   text-align: left;
-  width: 98%;
+  width: 95%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1656,7 +1655,7 @@ p {
 #portfolio .portfolio-content {
   height: 100vh;
   text-align: center;
-  width: 98%;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1675,6 +1674,7 @@ p {
   justify-content: center;
   align-items: flex-start;  
   overflow: auto;
+  width: 94%;
 }
 
 .portfolio-block #portfolio-cards{
@@ -1721,6 +1721,8 @@ p {
     transparent 40%
   );
   z-index: 3;
+
+
 }
 
 .portfolio-block #work-card:hover::before {

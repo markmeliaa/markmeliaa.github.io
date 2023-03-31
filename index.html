@@ -25,7 +25,7 @@
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #be9803; 
-    border-radius: 10px;
+    border-radius: 5px;
   }
 
   /* Handle on hover */
@@ -51,6 +51,7 @@
   <!--<link href="assets/externals/boxicons/css/boxicons.min.css" rel="stylesheet">-->
   <!--<link href="assets/externals/glightbox/css/glightbox.min.css" rel="stylesheet">-->
   <link href="assets/externals/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/externals/docslider.js/docSlider.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -117,46 +118,44 @@
   <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h1>I'm <span class="typed" data-typed-items="Mark Melia, a Programmer, a Designer, a Game Dev"></span></h1>
-        <p>Programmer, Designer, Game Dev</p>
+  <div class="docSlider">
+    <section id="hero">
+      <div class="inner container">
+        <div class="hero-content">
+          <h1>I'm <span class="typed" data-typed-items="Mark Melia, a Programmer, a Designer, a Game Dev"></span></h1>
+          <p>Programmer, Designer, Game Dev</p>
 
-        <ul class="list-unstyled list-social">
-          <li><a href="https://twitter.com/mark_meliaa" class="hoverable"><i class=" bi bi-twitter" title="My personal Twitter account"></i></a></li>
-          <li><a href="https://github.com/markmeliaa" class="hoverable"><i class="bi bi-github" title="All my GitHub projects"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/markmeliaa/" class="hoverable"><i class="bi bi-linkedin" title="My work and formation"></i></a></li>
-          <!--<li><a href="mailto:marcaalconmelia@gmail.com" class="hoverable"><i class="bi bi-envelope-fill"></i></a></li>-->
-          <li><a href="https://markmeliaa.itch.io/" class="hoverable"><i class="bi bi-shop-window" title="Some of my playable projects"></i></a></li>
-        </ul>
+          <ul class="list-unstyled list-social">
+            <li><a href="https://twitter.com/mark_meliaa" class="hoverable"><i class=" bi bi-twitter" title="My personal Twitter account"></i></a></li>
+            <li><a href="https://github.com/markmeliaa" class="hoverable"><i class="bi bi-github" title="All my GitHub projects"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/markmeliaa/" class="hoverable"><i class="bi bi-linkedin" title="My work and formation"></i></a></li>
+            <!--<li><a href="mailto:marcaalconmelia@gmail.com" class="hoverable"><i class="bi bi-envelope-fill"></i></a></li>-->
+            <li><a href="https://markmeliaa.itch.io/" class="hoverable"><i class="bi bi-shop-window" title="Some of my playable projects"></i></a></li>
+          </ul>
 
-        <p class="help-quote-1"><span class="typed-help" data-typed-items="HELP,...,HELP!!,...,...,PLEASE HELP ME,
-          ...,...,I NEED YOUR HELP,...,...,I BEG YOU KEEP SCROLLING,...,...,I DON'T KNOW WHAT TO DO,...,..."></span></p>
+          <p class="help-quote-1"><span class="typed-help" data-typed-items="HELP,...,HELP!!,...,...,PLEASE HELP ME,
+            ...,...,I NEED YOUR HELP,...,...,I BEG YOU KEEP SCROLLING,...,...,I DON'T KNOW WHAT TO DO,...,..."></span></p>
 
-        <a href="#about" id="scroll-to-down" class="hoverable" onclick="changeStyleToAboutDown()">CLICK HERE TO GO DOWN</a>
+          <a href="#about" id="scroll-to-down" class="hoverable" onclick="changeStyleToAboutDown()">CLICK HERE TO GO DOWN</a>
 
-        <script>
-          function changeStyleToAboutDown(){
-            setTimeout(()=> {
-                var element = document.getElementsByClassName("cursor")[0];
-                element.style.fill = "#cf57b1";
+          <script>
+            function changeStyleToAboutDown(){
+              setTimeout(()=> {
+                  var element = document.getElementsByClassName("cursor")[0];
+                  element.style.fill = "#cf57b1";
+              }
+              , 275);
             }
-            , 275);
-          }
-        </script>
+          </script>
 
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- End Hero -->
-
-  <!-- ======= #main ======= -->
-  <main id="main">
+    </section>
+    <!-- End Hero -->
 
     <!-- ======= About Section ======= -->
     <section id="about">
-      <div class="container">
+      <div class="inner container">
         <div class="about-content">
           <a href="#hero" id="scroll-to-up" class="hoverable" onclick="changeStyleToHeroUp()">CLICK HERE TO GO UP</a>
 
@@ -370,7 +369,7 @@
     <!-- ======= Portfolio Section ======= -->
 
     <section id="portfolio">
-      <div class="container">
+      <div class="inner container">
         <div class="portfolio-content">
           <a href="#about" id="scroll-to-up" class="hoverable" onclick="changeStyleToAboutUp()">CLICK HERE TO GO UP</a>
 
@@ -708,11 +707,10 @@
     </div>
     -->
     <!-- End Contact Section -->
-
-  </main>
-  <!-- End #main -->
+  </div>
 
   <!-- ======= Footer ======= -->
+  <!--
   <div id="footer" class="text-center">
     <div class="socials-media text-center">
       <ul class="list-unstyled">
@@ -725,6 +723,7 @@
 
     <p>Thanks for checking!</p>
   </div>
+  -->
   <!-- End Footer -->
 
   <!-- Back to top button -->
@@ -737,6 +736,8 @@
   <script src="assets/externals/swiper/swiper-bundle.min.js"></script>
   <script src="assets/externals/typed.js/typed.min.js"></script>
   <script src="assets/externals/tweenmax.js/tweenmax.min.js"></script>
+  <script src="assets/externals/docslider.js/docSlider.min.js"></script>
+  <script>docSlider.init();</script>
 
   <!-- Main JS File -->
   <script src="assets/javascript/main.js"></script>
