@@ -1438,7 +1438,7 @@ p {
   }
 
   .vodka-trait-modal {
-    padding: 30px 10px;
+    padding: 30px 20px;
   }
 
   #vodka-trait-modal-close {
@@ -1447,7 +1447,7 @@ p {
   }
 
   .absinthe-trait-modal {
-    padding: 30px 10px;
+    padding: 30px 20px;
   }
 
   #absinthe-trait-modal-close {
@@ -1456,7 +1456,7 @@ p {
   }
 
   .tequila-trait-modal {
-    padding: 30px 10px;
+    padding: 30px 20px;
   }
 
   #tequila-trait-modal-close {
@@ -1465,7 +1465,7 @@ p {
   }
 
   .bourbon-trait-modal {
-    padding: 30px 10px;
+    padding: 30px 20px;
   }
 
   #bourbon-trait-modal-close {
@@ -1474,7 +1474,7 @@ p {
   }
 
   .blue-whisper-trait-modal {
-    padding: 30px 10px;
+    padding: 30px 20px;
   }
 
   #blue-whisper-trait-modal-close {
@@ -1483,7 +1483,7 @@ p {
   }
 
   .red-secret-trait-modal {
-    padding: 30px 10px;
+    padding: 30px 20px;
   }
 
   #red-secret-trait-modal-close {
@@ -1540,7 +1540,7 @@ p {
   }
 
   .traits-modal h1 {
-    font-size: 15px;
+    font-size: 25px;
     padding-top: 5px;
   }
   
@@ -1820,12 +1820,32 @@ p {
   width: 900px;
   max-width: 80%;
   box-shadow: 0px 0px 10px #1f9554cc;
+  position: relative;
+}
+
+.custom-engine-modal .modal-img-container {
+  width: 40%;
+  height: 40%;
+  padding-bottom: 40%;
+  position: absolute;
+  filter: drop-shadow(0px 0px 5px #ddad00);
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.custom-engine-modal .modal-img {
+  width: 90%;
+  height: 90%;
+  object-fit: fill;
+  object-position: 50% 40%;
+  position: absolute;
 }
 
 .custom-engine-modal h1 {
   text-align: center;
   font-family: clipFont;
-  color: #1f9554cc;
+  color: #1f9554;
 }
 
 .custom-engine-modal p {
@@ -1833,6 +1853,8 @@ p {
   font-weight: 500;
   color: #ffffff;
   opacity: 0.8;
+  width: 100%;
+  padding-left: 50%;
 }
 
 .custom-engine-modal .small-disclaimer {
@@ -1841,7 +1863,7 @@ p {
   font-weight: 300px;
 }
 
-.custom-engine-modal .unlock-all-traits {
+.custom-engine-modal .click-button {
   text-transform: uppercase;
   font-weight: 600;
   color: #000000;
@@ -1856,7 +1878,7 @@ p {
   user-select: none;
 }
 
-.custom-engine-modal .unlock-all-traits:hover {
+.custom-engine-modal .click-button:hover {
   color: #1f9554;
 }
 
@@ -1965,6 +1987,31 @@ p {
     margin-top: 4px;
   }
 
+  .custom-engine-modal {
+    padding: 30px 30px;
+  }
+
+  #custom-engine-modal-close {
+    margin-top: -15px;
+    margin-right: -15px;
+  }
+
+  .custom-engine-modal p {
+    padding-left: 0%;
+  }
+
+  .custom-engine-modal .modal-img-container {
+    position: static;
+    width: 60%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    margin-left: 18%;
+  }
+  
+  .custom-engine-modal .modal-img {
+    position: static;
+  }
+
   .portfolio-content .help-quote-3 {
     color: #0c8a00;
   }
@@ -2012,6 +2059,31 @@ p {
     font-size: 0.8em;
     margin-top: 4px;
   }
+
+  .custom-engine-modal {
+    padding: 30px 10px;
+  }
+
+  #custom-engine-modal-close {
+    margin-top: -20px;
+    margin-right: 0px;
+  }
+
+  .custom-engine-modal p {
+    padding-left: 0%;
+  }
+
+  .custom-engine-modal .modal-img-container {
+    position: static;
+    width: 60%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    margin-left: 18%;
+  }
+  
+  .custom-engine-modal .modal-img {
+    position: static;
+  }
 }
 
 @media(max-width: 400px) {
@@ -2042,9 +2114,85 @@ p {
     margin-top: 4px;
   }
 
+  .custom-engine-modal h1 {
+    font-size: 25px;
+    padding-top: 5px;
+  }
+  
+  .custom-engine-modal p {
+    font-size: 10px;
+    padding-left: 0%;
+  }
+  
+  .custom-engine-modal .small-disclaimer {
+    font-size: 7px;
+    margin-bottom: -15px;
+  }
+
+  .custom-engine-modal .modal-img-container {
+    position: static;
+    width: 100%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    margin-left: 0px;
+  }
+  
+  .custom-engine-modal .modal-img {
+    position: static;
+  }
+
   .portfolio-content .help-quote-3 {
     left: 20px;
     color: #0c8a00;
+  }
+}
+
+@media(max-width: 300px) {
+  .custom-engine-modal {
+    padding: 30px 10px;
+    position: static;
+  }
+
+  #custom-engine-modal-close {
+    margin-top: -20px;
+    margin-right: 0px;
+  }
+
+  .custom-engine-modal h1 {
+    font-size: 15px;
+    padding-top: 5px;
+  }
+  
+  .custom-engine-modal p {
+    font-size: 8px;
+    padding-left: 0%;
+  }
+
+  .custom-engine-modal br {
+    display: block;
+    content: "";
+    margin: 5px 5px;
+  }
+
+  .custom-engine-modal img {
+    opacity: 1;
+  }
+  
+  .custom-engine-modal .small-disclaimer {
+    font-size: 6px;
+    margin-bottom: -15px;
+  }
+
+  .custom-engine-modal .modal-img-container {
+    position: static;
+    width: 100%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    margin-left: 0px;
+  }
+  
+  .custom-engine-modal .modal-img {
+    position: static;
   }
 }
 
