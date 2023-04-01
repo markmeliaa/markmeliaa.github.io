@@ -617,4 +617,21 @@
 
   //------------------- TRAIT MODAL ACTIVATORS -------------------//
 
+  //------------------- PORTFOLIO MODAL ACTIVATORS -------------------//
+
+  // Manage custom engine modal
+  const open_custom_engine_modal = document.getElementById('custom-engine-card');
+  const custom_engine_modal_container = document.getElementById('custom-engine-modal-container');
+  const close_custom_engine_modal = document.getElementById('custom-engine-modal-close');
+
+  open_custom_engine_modal.addEventListener('click', () => {
+    custom_engine_modal_container.classList.add('show');
+  })
+
+  close_custom_engine_modal.addEventListener('click', () => {
+    custom_engine_modal_container.classList.remove('show');
+  })
+
+  //------------------- PORTFOLIO MODAL ACTIVATORS -------------------//
+
 })()
