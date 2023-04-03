@@ -632,7 +632,7 @@
     custom_engine_modal_container.classList.remove('show');
   })
 
-  // Manage custom engine modal
+  // Manage ophiuchus modal
   const open_ophiuchus_modal = document.getElementById('ophiuchus-card');
   const ophiuchus_modal_container = document.getElementById('ophiuchus-modal-container');
   const close_ophiuchus_modal = document.getElementById('ophiuchus-modal-close');
@@ -643,6 +643,19 @@
 
   close_ophiuchus_modal.addEventListener('click', () => {
     ophiuchus_modal_container.classList.remove('show');
+  })
+
+  // Manage custom wordle modal
+  const open_custom_wordle_modal = document.getElementById('custom-wordle-card');
+  const custom_wordle_modal_container = document.getElementById('custom-wordle-modal-container');
+  const close_custom_wordle_modal = document.getElementById('custom-wordle-modal-close');
+
+  open_custom_wordle_modal.addEventListener('click', () => {
+    custom_wordle_modal_container.classList.add('show');
+  })
+
+  close_custom_wordle_modal.addEventListener('click', () => {
+    custom_wordle_modal_container.classList.remove('show');
   })
 
   //------------------- PORTFOLIO MODAL ACTIVATORS -------------------//
