@@ -2219,6 +2219,220 @@ p {
   text-decoration: none;
 }
 
+/* -----------------2d Strat Game Modal----------------- */
+.strat-game-modal-container {
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.strat-game-modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.strat-game-modal {
+  background-color: black;
+  border-radius: 10px;
+  padding: 40px 50px;
+  width: 900px;
+  max-width: 80%;
+  box-shadow: 0px 0px 10px #1f9554cc;
+  position: relative;
+}
+
+.strat-game-modal .modal-img-container {
+  width: 40%;
+  height: 40%;
+  padding-bottom: 40%;
+  position: absolute;
+  filter: drop-shadow(0px 0px 5px #ddad00);
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.strat-game-modal .modal-img {
+  width: 90%;
+  height: 90%;
+  object-fit: fill;
+  object-position: 50% 40%;
+  position: absolute;
+}
+
+.strat-game-modal h1 {
+  text-align: center;
+  font-family: clipFont;
+  color: #1f9554;
+}
+
+.strat-game-modal p {
+  text-align: justify;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: 0.8;
+  width: 100%;
+  padding-left: 50%;
+}
+
+.strat-game-modal .small-disclaimer {
+  text-align: justify;
+  font-size: 12px;
+  font-weight: 300px;
+}
+
+.strat-game-modal .click-button {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+  background-color: white;
+  border-radius: 3px;
+  opacity: 1.0;
+  padding-left: 3px;
+  padding-right: 3px;
+  box-shadow: 2px 2px 2px #1f9554;
+  margin-left: 2px;
+  margin-right: 2px;
+  user-select: none;
+  cursor: none;
+}
+
+.strat-game-modal .click-button:hover {
+  color: #ddad00;
+}
+
+#strat-game-modal-close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-right: -25px;
+}
+
+#strat-game-modal-close:hover,
+#strat-game-modal-close:focus {
+  color: #1f9554;
+  text-decoration: none;
+}
+
+/* -----------------The Antidote Modal----------------- */
+.antidote-modal-container {
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.antidote-modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.antidote-modal {
+  background-color: black;
+  border-radius: 10px;
+  padding: 40px 50px;
+  width: 900px;
+  max-width: 80%;
+  box-shadow: 0px 0px 10px #1f9554cc;
+  position: relative;
+}
+
+.antidote-modal .modal-img-container {
+  width: 40%;
+  height: 40%;
+  padding-bottom: 40%;
+  position: absolute;
+  filter: drop-shadow(0px 0px 5px #ddad00);
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.antidote-modal .modal-img {
+  width: 90%;
+  height: 90%;
+  object-fit: fill;
+  object-position: 50% 40%;
+  position: absolute;
+}
+
+.antidote-modal h1 {
+  text-align: center;
+  font-family: clipFont;
+  color: #1f9554;
+}
+
+.antidote-modal p {
+  text-align: justify;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: 0.8;
+  width: 100%;
+  padding-left: 50%;
+}
+
+.antidote-modal .small-disclaimer {
+  text-align: justify;
+  font-size: 12px;
+  font-weight: 300px;
+}
+
+.antidote-modal .click-button {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+  background-color: white;
+  border-radius: 3px;
+  opacity: 1.0;
+  padding-left: 3px;
+  padding-right: 3px;
+  box-shadow: 2px 2px 2px #1f9554;
+  margin-left: 2px;
+  margin-right: 2px;
+  user-select: none;
+  cursor: none;
+}
+
+.antidote-modal .click-button:hover {
+  color: #ddad00;
+}
+
+#antidote-modal-close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-right: -25px;
+}
+
+#antidote-modal-close:hover,
+#antidote-modal-close:focus {
+  color: #1f9554;
+  text-decoration: none;
+}
+
 .portfolio-content .help-quote-3 {
   font-size: 10px;
   color: #ffc800;
@@ -2406,6 +2620,56 @@ p {
   }
   
   .chess-and-tails-modal .modal-img {
+    position: static;
+  }
+
+  .strat-game-modal {
+    padding: 30px 30px;
+  }
+
+  #strat-game-modal-close {
+    margin-top: -15px;
+    margin-right: -15px;
+  }
+
+  .strat-game-modal p {
+    padding-left: 0%;
+  }
+
+  .strat-game-modal .modal-img-container {
+    position: static;
+    width: 60%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    margin-left: 18%;
+  }
+  
+  .strat-game-modal .modal-img {
+    position: static;
+  }
+
+  .antidote-modal {
+    padding: 30px 30px;
+  }
+
+  #antidote-modal-close {
+    margin-top: -15px;
+    margin-right: -15px;
+  }
+
+  .antidote-modal p {
+    padding-left: 0%;
+  }
+
+  .antidote-modal .modal-img-container {
+    position: static;
+    width: 60%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    margin-left: 18%;
+  }
+  
+  .antidote-modal .modal-img {
     position: static;
   }
 
@@ -2601,6 +2865,78 @@ p {
   .chess-and-tails-modal .modal-img {
     position: static;
   }
+
+  .strat-game-modal {
+    padding: 30px 10px;
+  }
+
+  #strat-game-modal-close {
+    margin-top: -20px;
+    margin-right: 0px;
+  }
+
+  .strat-game-modal p {
+    padding-left: 0%;
+  }
+
+  .strat-game-modal .small-disclaimer {
+    text-align: justify;
+    font-size: 10px;
+  }
+
+  .strat-game-modal .small-disclaimer br {
+    display: block;
+    content: "";
+    margin: 5px 5px;
+  }
+
+  .strat-game-modal .modal-img-container {
+    position: static;
+    width: 60%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    margin-left: 18%;
+  }
+
+  .strat-game-modal .modal-img {
+    position: static;
+  }
+
+  .antidote-modal {
+    padding: 30px 10px;
+  }
+
+  #antidote-modal-close {
+    margin-top: -20px;
+    margin-right: 0px;
+  }
+
+  .antidote-modal p {
+    padding-left: 0%;
+  }
+
+  .antidote-modal .small-disclaimer {
+    text-align: justify;
+    font-size: 10px;
+  }
+
+  .antidote-modal .small-disclaimer br {
+    display: block;
+    content: "";
+    margin: 5px 5px;
+  }
+
+  .antidote-modal .modal-img-container {
+    position: static;
+    width: 60%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    margin-left: 18%;
+  }
+
+  .antidote-modal .modal-img {
+    position: static;
+  }
 }
 
 @media(max-width: 400px) {
@@ -2753,6 +3089,68 @@ p {
   }
   
   .chess-and-tails-modal .modal-img {
+    position: static;
+  }
+
+  .strat-game-modal h1 {
+    font-size: 25px;
+    padding-top: 5px;
+  }
+  
+  .strat-game-modal p {
+    font-size: 10px;
+    padding-left: 0%;
+  }
+  
+  .strat-game-modal .small-disclaimer {
+    font-size: 7px;
+    margin-bottom: -15px;
+  }
+
+  .strat-game-modal .small-disclaimer br {
+    content: normal;
+  }
+
+  .strat-game-modal .modal-img-container {
+    position: static;
+    width: 70%;
+    padding-bottom: 0%;
+    padding-left: 35%;
+    margin-left: 0px;
+  }
+  
+  .strat-game-modal .modal-img {
+    position: static;
+  }
+
+  .antidote-modal h1 {
+    font-size: 25px;
+    padding-top: 5px;
+  }
+  
+  .antidote-modal p {
+    font-size: 10px;
+    padding-left: 0%;
+  }
+  
+  .antidote-modal .small-disclaimer {
+    font-size: 7px;
+    margin-bottom: -15px;
+  }
+
+  .antidote-modal .small-disclaimer br {
+    content: normal;
+  }
+
+  .antidote-modal .modal-img-container {
+    position: static;
+    width: 70%;
+    padding-bottom: 0%;
+    padding-left: 35%;
+    margin-left: 0px;
+  }
+  
+  .antidote-modal .modal-img {
     position: static;
   }
 
@@ -2950,6 +3348,100 @@ p {
   .chess-and-tails-modal .modal-img {
     position: static;
   }
+
+  .strat-game-modal {
+    padding: 30px 10px;
+    position: static;
+  }
+
+  #strat-game-modal-close {
+    margin-top: -20px;
+    margin-right: 0px;
+  }
+
+  .strat-game-modal h1 {
+    font-size: 15px;
+    padding-top: 5px;
+  }
+  
+  .strat-game-modal p {
+    font-size: 8px;
+    padding-left: 0%;
+  }
+
+  .strat-game-modal br {
+    display: block;
+    content: "";
+    margin: 5px 5px;
+  }
+
+  .strat-game-modal img {
+    opacity: 1;
+  }
+  
+  .strat-game-modal .small-disclaimer {
+    font-size: 6px;
+    margin-bottom: -15px;
+  }
+
+  .strat-game-modal .modal-img-container {
+    position: static;
+    width: 100%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    margin-left: 0px;
+  }
+  
+  .strat-game-modal .modal-img {
+    position: static;
+  }
+
+  .antidote-modal {
+    padding: 30px 10px;
+    position: static;
+  }
+
+  #antidote-modal-close {
+    margin-top: -20px;
+    margin-right: 0px;
+  }
+
+  .antidote-modal h1 {
+    font-size: 15px;
+    padding-top: 5px;
+  }
+  
+  .antidote-modal p {
+    font-size: 8px;
+    padding-left: 0%;
+  }
+
+  .antidote-modal br {
+    display: block;
+    content: "";
+    margin: 5px 5px;
+  }
+
+  .antidote-modal img {
+    opacity: 1;
+  }
+  
+  .antidote-modal .small-disclaimer {
+    font-size: 6px;
+    margin-bottom: -15px;
+  }
+
+  .antidote-modal .modal-img-container {
+    position: static;
+    width: 100%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    margin-left: 0px;
+  }
+  
+  .antidote-modal .modal-img {
+    position: static;
+  }
 }
 
 #portfolio #scroll-to-up {
@@ -2981,6 +3473,11 @@ p {
 @font-face {
   font-family: juliusSansOne;
   src: url(../fonts/JuliusSansOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: curveThin;
+  src: url(../fonts/CURVE-Thin.ttf);
 }
 
 /*--------------------------------------------------------------*/

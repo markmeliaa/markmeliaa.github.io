@@ -671,6 +671,32 @@
     chess_and_tails_modal_container.classList.remove('show');
   })
 
+  // Manage 2d strat game modal
+  const open_strat_game_modal = document.getElementById('2d-strat-game-card');
+  const strat_game_modal_container = document.getElementById('strat-game-modal-container');
+  const close_strat_game_modal = document.getElementById('strat-game-modal-close');
+
+  open_strat_game_modal.addEventListener('click', () => {
+    strat_game_modal_container.classList.add('show');
+  })
+
+  close_strat_game_modal.addEventListener('click', () => {
+    strat_game_modal_container.classList.remove('show');
+  })
+
+  // Manage the antidote modal
+  const open_antidote_modal = document.getElementById('the-antidote-card');
+  const antidote_modal_container = document.getElementById('antidote-modal-container');
+  const close_antidote_modal = document.getElementById('antidote-modal-close');
+
+  open_antidote_modal.addEventListener('click', () => {
+    antidote_modal_container.classList.add('show');
+  })
+
+  close_antidote_modal.addEventListener('click', () => {
+    antidote_modal_container.classList.remove('show');
+  })
+
   //------------------- PORTFOLIO MODAL ACTIVATORS -------------------//
 
 })()
