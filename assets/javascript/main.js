@@ -632,6 +632,19 @@
     custom_engine_modal_container.classList.remove('show');
   })
 
+  // Manage custom engine modal
+  const open_ophiuchus_modal = document.getElementById('ophiuchus-card');
+  const ophiuchus_modal_container = document.getElementById('ophiuchus-modal-container');
+  const close_ophiuchus_modal = document.getElementById('ophiuchus-modal-close');
+
+  open_ophiuchus_modal.addEventListener('click', () => {
+    ophiuchus_modal_container.classList.add('show');
+  })
+
+  close_ophiuchus_modal.addEventListener('click', () => {
+    ophiuchus_modal_container.classList.remove('show');
+  })
+
   //------------------- PORTFOLIO MODAL ACTIVATORS -------------------//
 
 })()
