@@ -2143,6 +2143,10 @@ p {
     margin-bottom: -15px;
   }
 
+  .custom-engine-modal .small-disclaimer br {
+    content: normal;
+  }
+
   .custom-engine-modal .modal-img-container {
     position: static;
     width: 70%;
@@ -2195,12 +2199,6 @@ p {
   .custom-engine-modal .small-disclaimer {
     font-size: 6px;
     margin-bottom: -15px;
-  }
-
-  .custom-engine-modal .small-disclaimer br {
-    display: block;
-    content: "";
-    margin: 5px 5px;
   }
 
   .custom-engine-modal .modal-img-container {
