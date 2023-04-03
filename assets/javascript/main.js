@@ -658,6 +658,19 @@
     custom_wordle_modal_container.classList.remove('show');
   })
 
+  // Manage chess and tails modal
+  const open_chess_and_tails_modal = document.getElementById('chess-and-tails-card');
+  const chess_and_tails_modal_container = document.getElementById('chess-and-tails-modal-container');
+  const close_chess_and_tails_modal = document.getElementById('chess-and-tails-modal-close');
+
+  open_chess_and_tails_modal.addEventListener('click', () => {
+    chess_and_tails_modal_container.classList.add('show');
+  })
+
+  close_chess_and_tails_modal.addEventListener('click', () => {
+    chess_and_tails_modal_container.classList.remove('show');
+  })
+
   //------------------- PORTFOLIO MODAL ACTIVATORS -------------------//
 
 })()

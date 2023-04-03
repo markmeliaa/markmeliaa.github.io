@@ -2112,6 +2112,113 @@ p {
   text-decoration: none;
 }
 
+/* -----------------Chess and Tails Modal----------------- */
+.chess-and-tails-modal-container {
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.chess-and-tails-modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.chess-and-tails-modal {
+  background-color: black;
+  border-radius: 10px;
+  padding: 40px 50px;
+  width: 900px;
+  max-width: 80%;
+  box-shadow: 0px 0px 10px #1f9554cc;
+  position: relative;
+}
+
+.chess-and-tails-modal .modal-img-container {
+  width: 40%;
+  height: 40%;
+  padding-bottom: 40%;
+  position: absolute;
+  filter: drop-shadow(0px 0px 5px #ddad00);
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.chess-and-tails-modal .modal-img {
+  width: 90%;
+  height: 90%;
+  object-fit: fill;
+  object-position: 50% 40%;
+  position: absolute;
+}
+
+.chess-and-tails-modal h1 {
+  text-align: center;
+  font-family: clipFont;
+  color: #1f9554;
+}
+
+.chess-and-tails-modal p {
+  text-align: justify;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: 0.8;
+  width: 100%;
+  padding-left: 50%;
+}
+
+.chess-and-tails-modal .small-disclaimer {
+  text-align: justify;
+  font-size: 12px;
+  font-weight: 300px;
+}
+
+.chess-and-tails-modal .click-button {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+  background-color: white;
+  border-radius: 3px;
+  opacity: 1.0;
+  padding-left: 3px;
+  padding-right: 3px;
+  box-shadow: 2px 2px 2px #1f9554;
+  margin-left: 2px;
+  margin-right: 2px;
+  user-select: none;
+  cursor: none;
+}
+
+.chess-and-tails-modal .click-button:hover {
+  color: #ddad00;
+}
+
+#chess-and-tails-modal-close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-right: -25px;
+}
+
+#chess-and-tails-modal-close:hover,
+#chess-and-tails-modal-close:focus {
+  color: #1f9554;
+  text-decoration: none;
+}
+
 .portfolio-content .help-quote-3 {
   font-size: 10px;
   color: #ffc800;
@@ -2277,6 +2384,31 @@ p {
     position: static;
   }
 
+  .chess-and-tails-modal {
+    padding: 30px 30px;
+  }
+
+  #chess-and-tails-modal-close {
+    margin-top: -15px;
+    margin-right: -15px;
+  }
+
+  .chess-and-tails-modal p {
+    padding-left: 0%;
+  }
+
+  .chess-and-tails-modal .modal-img-container {
+    position: static;
+    width: 60%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    margin-left: 18%;
+  }
+  
+  .chess-and-tails-modal .modal-img {
+    position: static;
+  }
+
   .portfolio-content .help-quote-3 {
     color: #0c8a00;
   }
@@ -2433,6 +2565,42 @@ p {
   .custom-wordle-modal .modal-img {
     position: static;
   }
+
+  .chess-and-tails-modal {
+    padding: 30px 10px;
+  }
+
+  #chess-and-tails-modal-close {
+    margin-top: -20px;
+    margin-right: 0px;
+  }
+
+  .chess-and-tails-modal p {
+    padding-left: 0%;
+  }
+
+  .chess-and-tails-modal .small-disclaimer {
+    text-align: justify;
+    font-size: 10px;
+  }
+
+  .chess-and-tails-modal .small-disclaimer br {
+    display: block;
+    content: "";
+    margin: 5px 5px;
+  }
+
+  .chess-and-tails-modal .modal-img-container {
+    position: static;
+    width: 60%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    margin-left: 18%;
+  }
+
+  .chess-and-tails-modal .modal-img {
+    position: static;
+  }
 }
 
 @media(max-width: 400px) {
@@ -2554,6 +2722,37 @@ p {
   }
   
   .custom-wordle-modal .modal-img {
+    position: static;
+  }
+
+  .chess-and-tails-modal h1 {
+    font-size: 25px;
+    padding-top: 5px;
+  }
+  
+  .chess-and-tails-modal p {
+    font-size: 10px;
+    padding-left: 0%;
+  }
+  
+  .chess-and-tails-modal .small-disclaimer {
+    font-size: 7px;
+    margin-bottom: -15px;
+  }
+
+  .chess-and-tails-modal .small-disclaimer br {
+    content: normal;
+  }
+
+  .chess-and-tails-modal .modal-img-container {
+    position: static;
+    width: 70%;
+    padding-bottom: 0%;
+    padding-left: 35%;
+    margin-left: 0px;
+  }
+  
+  .chess-and-tails-modal .modal-img {
     position: static;
   }
 
@@ -2702,6 +2901,53 @@ p {
   }
   
   .custom-wordle-modal .modal-img {
+    position: static;
+  }
+
+  .chess-and-tails-modal {
+    padding: 30px 10px;
+    position: static;
+  }
+
+  #chess-and-tails-modal-close {
+    margin-top: -20px;
+    margin-right: 0px;
+  }
+
+  .chess-and-tails-modal h1 {
+    font-size: 15px;
+    padding-top: 5px;
+  }
+  
+  .chess-and-tails-modal p {
+    font-size: 8px;
+    padding-left: 0%;
+  }
+
+  .chess-and-tails-modal br {
+    display: block;
+    content: "";
+    margin: 5px 5px;
+  }
+
+  .chess-and-tails-modal img {
+    opacity: 1;
+  }
+  
+  .chess-and-tails-modal .small-disclaimer {
+    font-size: 6px;
+    margin-bottom: -15px;
+  }
+
+  .chess-and-tails-modal .modal-img-container {
+    position: static;
+    width: 100%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    margin-left: 0px;
+  }
+  
+  .chess-and-tails-modal .modal-img {
     position: static;
   }
 }
