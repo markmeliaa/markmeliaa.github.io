@@ -2696,11 +2696,11 @@ p {
   .portfolio-block .work-card {
     flex-shrink: 1;
     width: 31%;
-    height: 200px;
+    height: 210px;
   }
   
   .card-image {
-    height: 80px;  
+    height: 70px;  
   }
   
   .card-image > i {
