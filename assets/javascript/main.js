@@ -1,157 +1,23 @@
 (function() {
   "use strict";
 
-  // Easy selector helper function
-  const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
-    } else {
-      return document.querySelector(el)
-    }
+  //------------------- TYPED EFFECT FUNCTIONS -------------------//
+  // Hero writting effect
+  const typed = document.querySelector('.typed');
+  if (typed) {
+    let typed_strings = typed.getAttribute('data-typed-items')
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 70,
+      backSpeed: 110,
+      backDelay: 2000
+    });
   }
-
-  // Easy event listener function
-  const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
-    if (selectEl) {
-      if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
-      } else {
-        selectEl.addEventListener(type, listener)
-      }
-    }
-  }
-
-  // Easy on scroll event listener 
-  const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
-  }
-
-  // Change navbar highlight depending on the page section you are
-  let navbarlinks = select('#navbar .scrollto', true)
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
-      } else {
-        navbarlink.classList.remove('active')
-      }
-    })
-  }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
-
-  // When a navbar highlight is clicked, scrolls to it
-  const scrollto = (el) => {
-    let header = select('#header')
-    let offset = header.offsetHeight
-
-    if (!header.classList.contains('header-scrolled')) {
-      offset -= 16
-    }
-
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos - offset,
-      behavior: 'smooth'
-    })
-  }
-
-  // Scroll with offset when a navbar highlight is clicked
-  on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
-
-       let navbar = select('#navbar')
-       if (navbar.classList.contains('navbar-mobile')) {
-         navbar.classList.remove('navbar-mobile')
-         let navbarToggle = select('.mobile-nav-toggle')
-         navbarToggle.classList.toggle('bi-list')
-         navbarToggle.classList.toggle('bi-x')
-       }
-       scrollto(this.hash)
-      }
-   }, true)
-
-  // Show navbar highlights when scrolled outside the hero
-  /*
-  let selectHeader = select('#header')
-  if (selectHeader) {
-    const headerScrolled = () => {
-      if (window.scrollY > 100) {
-        selectHeader.classList.add('header-scrolled')
-      } else {
-        selectHeader.classList.remove('header-scrolled')
-      }
-    }
-    window.addEventListener('load', headerScrolled)
-    onscroll(document, headerScrolled)
-  }
-  */
-
-  // Back to top button
-  /*
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
-  */
-
-  // Mobile nav toggle
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
-
-  // Mobile nav dropdowns activate
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
-    }
-  }, true)
-
-  // Scroll with offset on page load with hash links in the url (should be deleted)
-  /*
-  window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
-      }
-    }
-  });
-  */
-
-    // Hero writting effect
-    const typed = select('.typed')
-    if (typed) {
-      let typed_strings = typed.getAttribute('data-typed-items')
-      typed_strings = typed_strings.split(',')
-      new Typed('.typed', {
-        strings: typed_strings,
-        loop: true,
-        typeSpeed: 70,
-        backSpeed: 110,
-        backDelay: 2000
-      });
-    }
 
   // Hero help writting effect
-  const typed_help = select('.typed-help')
+  const typed_help = document.querySelector('.typed-help');
   if (typed_help) {
     let typed_strings = typed_help.getAttribute('data-typed-items')
     typed_strings = typed_strings.split(',')
@@ -165,35 +31,37 @@
     });
   }
 
-    // About help writting effect
-    const typed_help_2 = select('.typed-help-2')
-    if (typed_help_2) {
-      let typed_strings = typed_help_2.getAttribute('data-typed-items')
-      typed_strings = typed_strings.split(',')
-      new Typed('.typed-help-2', {
-        strings: typed_strings,
-        loop: true,
-        typeSpeed: 50,
-        backSpeed: 70,
-        backDelay: 1000,
-        showCursor: false
-      });
-    }
+  // About help writting effect
+  const typed_help_2 = document.querySelector('.typed-help-2');
+  if (typed_help_2) {
+    let typed_strings = typed_help_2.getAttribute('data-typed-items')
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed-help-2', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 50,
+      backSpeed: 70,
+      backDelay: 1000,
+      showCursor: false
+    });
+  }
 
-    // Portfolio help writting effect
-    const typed_help_3 = select('.typed-help-3')
-    if (typed_help_3) {
-      let typed_strings = typed_help_3.getAttribute('data-typed-items')
-      typed_strings = typed_strings.split(',')
-      new Typed('.typed-help-3', {
-        strings: typed_strings,
-        loop: true,
-        typeSpeed: 50,
-        backSpeed: 70,
-        backDelay: 1000,
-        showCursor: false
-      });
-    }
+  // Portfolio help writting effect
+  const typed_help_3 = document.querySelector('.typed-help-3');
+  if (typed_help_3) {
+    let typed_strings = typed_help_3.getAttribute('data-typed-items')
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed-help-3', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 50,
+      backSpeed: 70,
+      backDelay: 1000,
+      showCursor: false
+    });
+  }
+
+  //------------------- TYPED EFFECT FUNCTIONS -------------------//
 
   // Personal traits slider
   new Swiper('.traits-slider', {
@@ -224,66 +92,6 @@
       }
     }
   });
-
-  // Porfolio filters on click
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-      });
-
-      let portfolioFilters = select('#portfolio-flters li', true);
-
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
-
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-
-      }, true);
-    }
-
-  });
-
-  // Initiate portfolio lightbox (should be deleted)
-  /*
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-  */
-
-  // Image slider for each portfolio page
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  // Prevent mouse wheel scrolling
-  //window.addEventListener("wheel", e => e.preventDefault(), { passive:false })
-  
-  // Prevent mouse wheel click scrolling
-  document.body.onmousedown = function(e) {
-    if (e.button == 1) {
-        e.preventDefault();
-        return false;
-    }
-  }
 
   // Cursor for computer
   window.mobileAndTabletCheck = function() {
@@ -337,8 +145,7 @@
     };
     */
 
-    // Mouse hover light efect over the portfolio work
-    /*
+    // Mouse hover light efect over the portfolio work cards
     document.getElementById("portfolio-cards").onmousemove = e => {
       for(const card of document.getElementsByClassName("work-card")) {
         const rect = card.getBoundingClientRect(),
@@ -349,18 +156,6 @@
         card.style.setProperty("--mouse-y", `${y}px`);
       };
     }
-    */
-  }
-
-  document.getElementById("portfolio-cards").onmousemove = e => {
-    for(const card of document.getElementsByClassName("hoverable")) {
-      const rect = card.getBoundingClientRect(),
-            x = e.clientX - rect.left,
-            y = e.clientY - rect.top;
-
-      card.style.setProperty("--mouse-x", `${x}px`);
-      card.style.setProperty("--mouse-y", `${y}px`);
-    };
   }
 
   //------------------- TRAIT BOTTLE ACTIVATORS -------------------//
@@ -698,5 +493,4 @@
   })
 
   //------------------- PORTFOLIO MODAL ACTIVATORS -------------------//
-
 })()

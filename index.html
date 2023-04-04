@@ -9,41 +9,12 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- ======= Lateral Navbar ======= -->
-  <style>
-  /* width */
-  ::-webkit-scrollbar {
-    width: 3px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 0; 
-    border-radius: 5px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #be9803; 
-    border-radius: 5px;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #645000; 
-  }
-  </style>
-  <!-- End Lateral Navbar -->
-  
-</head>
-
   <!-- Icons -->
   <link href="assets/img/icons-logos/circle-icon-1.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i
     |Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
 
   <!-- External CSS Files -->
   <link href="externals/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -56,8 +27,9 @@
   
 </head>
 
-<body scroll="no" style="overflow: hidden"> <!--TODOMine: (type this inside the body) scroll="no" style="overflow: hidden"-->
+<body scroll="no" style="overflow: hidden">
 
+  <!-- ======= Custom Cursor ======= -->
   <div class="cursor">
     <div class="cursor__ball cursor__ball--big" id="big-ball">
       <svg height="30" width="30">
@@ -71,52 +43,11 @@
       </svg>
     </div>
   </div>
-  
-  <!-- ======= Header ======= -->
-  <!--
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-between">
+  <!-- End Custom Cursor -->
 
-      <a href="index.html" class="logo"><img src="assets/img/icons-logos/square-icon.png" alt="" class="img-fluid"></a>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li class="dropdown"><a class="nav-link scrollto" href="#portfolio"><span>Portolio</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li class="dropdown"><a href="#portfolio"><span>C++</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="portfolio-entries/portfolio-details-SFML-wordle.html">SFML Wordle</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#portfolio"><span>C#</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="portfolio-entries/portfolio-details-ophiuchus.html">Ophiuchus</a></li>
-                  <li><a href="portfolio-entries/portfolio-details-chess-and-tails.html">Chess & Tails</a></li>
-                  <li><a href="portfolio-entries/portfolio-details-2d-strategy-game.html">2D Strategy Game</a></li>
-                  <li><a href="portfolio-entries/portfolio-details-the-antidote.html">The Antidote</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown"><a class="nav-link scrollto" href="#journal"><span>Research</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a>The trajectory of powerful AIs (WIP)</a></li>
-              <li><a href="research-entries/research-single-neuralnetwork.html">A neural net developed with Python</a></li>
-              <li><a href="research-entries/research-single-concurrency.html">Concurrency in Unity</a></li>
-            </ul>
-          <li><a class="nav-link scrollto" href="#contact">CV - Resumé</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-    </div>
-  </header> 
-  -->
-  <!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
   <div class="docSlider">
+
+    <!-- ======= Hero Section ======= -->
     <section id="hero">
       <div class="inner container">
         <div class="hero-content">
@@ -365,7 +296,6 @@
     <!-- End About Section -->
 
     <!-- ======= Portfolio Section ======= -->
-
     <section id="portfolio">
       <div class="inner container">
         <div class="portfolio-content">
@@ -725,73 +655,6 @@
         </div>
       </div>
     </section>
-
-    <!--
-    <div id="portfolio" class="paddsection">
-
-      <div class="container">
-        <div class="section-title text-center">
-          <h2>My Portfolio</h2>
-        </div>
-      </div>
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-cpp">C++</li>
-              <li data-filter=".filter-cs">C#</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-cs">
-            <img src="assets/img/portfolio/ophiuchus/port-img-ophiu-main.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4><a href="portfolio-entries/portfolio-details-ophiuchus.html">OPHIUCHUS</a></h4>
-              <p>Procedural narrative applied into a rogue-lite</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-cpp">
-            <img src="assets/img/portfolio/wordle/port-img-wordle-main.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4><a href="portfolio-entries/portfolio-details-SFML-wordle.html">SFML WORDLE</a></h4>
-              <p>The famous game but developed in C++</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-cs">
-            <img src="assets/img/portfolio/chess-and-tails/port-img-chess-main.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4><a href="portfolio-entries/portfolio-details-chess-and-tails.html">CHESS & TAILS</a></h4>
-              <p>2022 GLOBAL GAMEJAM -- THEME: <b>DUALITY</b></p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-cs">
-            <img src="assets/img/portfolio/2d-strategy-game/port-img-strat-main.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4><a href="portfolio-entries/portfolio-details-2d-strategy-game.html">2D STRATEGY GAME</a></h4>
-              <p>An RTS with advanced AI techniques applied</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-cs">
-            <img src="assets/img/portfolio/the-antidote/port-img-antidote-main.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4><a href="portfolio-entries/portfolio-details-the-antidote.html">THE ANTIDOTE</a></h4>
-              <p>Will you be able to save Mr.Barclay?</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    -->
     <!-- End Portfolio Section -->
 
     <!-- ======= Research Section ======= -->
@@ -893,26 +756,6 @@
     <!-- End Contact Section -->
   </div>
 
-  <!-- ======= Footer ======= -->
-  <!--
-  <div id="footer" class="text-center">
-    <div class="socials-media text-center">
-      <ul class="list-unstyled">
-        <li><a href="https://github.com/markmeliaa"><i class="bi bi-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/markmeliaa/"><i class="bi bi-linkedin"></i></a></li>
-        <li><a class="contact-mailto" href="mailto:marcaalconmelia@gmail.com"><i class="bi bi-envelope-fill"></i></a></li>
-        <li><a class="contact-cv" href="assets/docs/English-CV.pdf"><i class="bi-file-pdf-fill"></i></a></li>
-      </ul>
-    </div>
-
-    <p>Thanks for checking!</p>
-  </div>
-  -->
-  <!-- End Footer -->
-
-  <!-- Back to top button -->
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
   <!-- External JS Files -->
   <script src="externals/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="externals/swiper/swiper-bundle.min.js"></script>
@@ -920,6 +763,7 @@
   <script src="externals/tweenmax.js/tweenmax.min.js"></script>
   <script src="externals/docslider.js/docSlider.min.js"></script>
 
+  <!-- Slider effect only on computer devices -->
   <script>
     window.mobileAndTabletCheck = function() {
       let check = false;
