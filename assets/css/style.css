@@ -1446,7 +1446,7 @@ p {
   padding-bottom: 40%;
   position: absolute;
   filter: drop-shadow(0px 0px 5px #ddad00);
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: left;
   margin-left: 15px;
 }
@@ -1477,6 +1477,12 @@ p {
 
 .custom-engine-modal .small-disclaimer {
   text-align: justify;
+  font-size: 12px;
+  font-weight: 300px;
+}
+
+.custom-engine-modal .acomplishments {
+  text-align: left;
   font-size: 12px;
   font-weight: 300px;
 }
@@ -1589,6 +1595,12 @@ p {
   font-weight: 300px;
 }
 
+.ophiuchus-modal .acomplishments {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 300px;
+}
+
 .ophiuchus-modal .click-button {
   text-transform: uppercase;
   font-weight: 600;
@@ -1693,6 +1705,12 @@ p {
 
 .custom-wordle-modal .small-disclaimer {
   text-align: justify;
+  font-size: 12px;
+  font-weight: 300px;
+}
+
+.custom-wordle-modal .acomplishments {
+  text-align: left;
   font-size: 12px;
   font-weight: 300px;
 }
@@ -1805,6 +1823,12 @@ p {
   font-weight: 300px;
 }
 
+.chess-and-tails-modal .acomplishments {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 300px;
+}
+
 .chess-and-tails-modal .click-button {
   text-transform: uppercase;
   font-weight: 600;
@@ -1913,6 +1937,12 @@ p {
   font-weight: 300px;
 }
 
+.strat-game-modal .acomplishments {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 300px;
+}
+
 .strat-game-modal .click-button {
   text-transform: uppercase;
   font-weight: 600;
@@ -2017,6 +2047,12 @@ p {
 
 .antidote-modal .small-disclaimer {
   text-align: justify;
+  font-size: 12px;
+  font-weight: 300px;
+}
+
+.antidote-modal .acomplishments {
+  text-align: left;
   font-size: 12px;
   font-weight: 300px;
 }
@@ -2164,11 +2200,13 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 18%;
+    margin-left: 26%;
+    margin-top: 5%;
   }
   
   .custom-engine-modal .modal-img {
     position: static;
+    width: 150px;
   }
 
   .ophiuchus-modal {
@@ -2189,11 +2227,13 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 18%;
+    margin-left: 26%;
+    margin-top: 5%;
   }
   
   .ophiuchus-modal .modal-img {
     position: static;
+    width: 150px;
   }
 
   .custom-wordle-modal {
@@ -2214,11 +2254,13 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 18%;
+    margin-left: 26%;
+    margin-top: 5%;
   }
   
   .custom-wordle-modal .modal-img {
     position: static;
+    width: 150px;
   }
 
   .chess-and-tails-modal {
@@ -2239,11 +2281,13 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 18%;
+    margin-left: 26%;
+    margin-top: 5%;
   }
   
   .chess-and-tails-modal .modal-img {
     position: static;
+    width: 150px;
   }
 
   .strat-game-modal {
@@ -2264,11 +2308,13 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 18%;
+    margin-left: 26%;
+    margin-top: 5%;
   }
   
   .strat-game-modal .modal-img {
     position: static;
+    width: 150px;
   }
 
   .antidote-modal {
@@ -2289,15 +2335,43 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 18%;
+    margin-left: 26%;
+    margin-top: 5%;
   }
   
   .antidote-modal .modal-img {
     position: static;
+    width: 150px;
   }
 
   .portfolio-content .help-quote-3 {
     color: #0c8a00;
+  }
+}
+
+@media(max-width: 800px) {
+  .custom-engine-modal .modal-img-container {
+    margin-left: 24%;
+  }
+
+  .ophiuchus-modal .modal-img-container {
+    margin-left: 24%;
+  }
+
+  .custom-wordle-modal .modal-img-container {
+    margin-left: 24%;
+  }
+
+  .chess-and-tails-modal .modal-img-container {
+    margin-left: 24%;
+  }
+
+  .strat-game-modal .modal-img-container {
+    margin-left: 24%;
+  }
+
+  .antidote-modal .modal-img-container {
+    margin-left: 24%;
   }
 }
 
@@ -2363,10 +2437,13 @@ p {
     font-size: 10px;
   }
 
+  .custom-engine-modal .acomplishments {
+    text-align: left;
+    font-size: 10px;
+  }
+
   .custom-engine-modal .small-disclaimer br {
-    display: block;
-    content: "";
-    margin: 5px 5px;
+    content: normal;
   }
 
   .custom-engine-modal .modal-img-container {
@@ -2374,7 +2451,7 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 18%;
+    margin-left: 22%;
   }
 
   .custom-engine-modal .modal-img {
@@ -2399,10 +2476,13 @@ p {
     font-size: 10px;
   }
 
+  .ophiuchus-modal .acomplishments {
+    text-align: left;
+    font-size: 10px;
+  }
+
   .ophiuchus-modal .small-disclaimer br {
-    display: block;
-    content: "";
-    margin: 5px 5px;
+    content: normal;
   }
 
   .ophiuchus-modal .modal-img-container {
@@ -2410,7 +2490,7 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 18%;
+    margin-left: 22%;
   }
 
   .ophiuchus-modal .modal-img {
@@ -2435,10 +2515,13 @@ p {
     font-size: 10px;
   }
 
+  .custom-wordle-modal .acomplishments {
+    text-align: left;
+    font-size: 10px;
+  }
+
   .custom-wordle-modal .small-disclaimer br {
-    display: block;
-    content: "";
-    margin: 5px 5px;
+    content: normal;
   }
 
   .custom-wordle-modal .modal-img-container {
@@ -2446,7 +2529,7 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 18%;
+    margin-left: 22%;
   }
 
   .custom-wordle-modal .modal-img {
@@ -2471,10 +2554,13 @@ p {
     font-size: 10px;
   }
 
+  .chess-and-tails-modal .acomplishments {
+    text-align: left;
+    font-size: 10px;
+  }
+
   .chess-and-tails-modal .small-disclaimer br {
-    display: block;
-    content: "";
-    margin: 5px 5px;
+    content: normal;
   }
 
   .chess-and-tails-modal .modal-img-container {
@@ -2482,7 +2568,7 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 18%;
+    margin-left: 22%;
   }
 
   .chess-and-tails-modal .modal-img {
@@ -2507,10 +2593,13 @@ p {
     font-size: 10px;
   }
 
+  .strat-game-modal .acomplishments {
+    text-align: left;
+    font-size: 10px;
+  }
+
   .strat-game-modal .small-disclaimer br {
-    display: block;
-    content: "";
-    margin: 5px 5px;
+    content: normal;
   }
 
   .strat-game-modal .modal-img-container {
@@ -2518,7 +2607,7 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 18%;
+    margin-left: 22%;
   }
 
   .strat-game-modal .modal-img {
@@ -2543,10 +2632,13 @@ p {
     font-size: 10px;
   }
 
+  .antidote-modal .acomplishments {
+    text-align: left;
+    font-size: 10px;
+  }
+
   .antidote-modal .small-disclaimer br {
-    display: block;
-    content: "";
-    margin: 5px 5px;
+    content: normal;
   }
 
   .antidote-modal .modal-img-container {
@@ -2554,11 +2646,37 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 18%;
+    margin-left: 22%;
   }
 
   .antidote-modal .modal-img {
     position: static;
+  }
+}
+
+@media(max-width: 500px) {
+  .custom-engine-modal .modal-img-container {
+    margin-left: 18%;
+  }
+
+  .ophiuchus-modal .modal-img-container {
+    margin-left: 18%;
+  }
+
+  .custom-wordle-modal .modal-img-container {
+    margin-left: 18%;
+  }
+
+  .chess-and-tails-modal .modal-img-container {
+    margin-left: 18%;
+  }
+
+  .strat-game-modal .modal-img-container {
+    margin-left: 18%;
+  }
+
+  .antidote-modal .modal-img-container {
+    margin-left: 18%;
   }
 }
 
@@ -2606,6 +2724,12 @@ p {
     margin-bottom: -15px;
   }
 
+  .custom-engine-modal .acomplishments {
+    text-align: left;
+    font-size: 7px;
+    margin-bottom: -15px;
+  }
+
   .custom-engine-modal .small-disclaimer br {
     content: normal;
   }
@@ -2614,8 +2738,8 @@ p {
     position: static;
     width: 70%;
     padding-bottom: 0%;
-    padding-left: 35%;
-    margin-left: 0px;
+    padding-left: 25%;
+    margin-left: 0%;
   }
   
   .custom-engine-modal .modal-img {
@@ -2637,6 +2761,12 @@ p {
     margin-bottom: -15px;
   }
 
+  .ophiuchus-modal .acomplishments {
+    text-align: left;
+    font-size: 7px;
+    margin-bottom: -15px;
+  }
+
   .ophiuchus-modal .small-disclaimer br {
     content: normal;
   }
@@ -2645,8 +2775,8 @@ p {
     position: static;
     width: 70%;
     padding-bottom: 0%;
-    padding-left: 35%;
-    margin-left: 0px;
+    padding-left: 25%;
+    margin-left: 0%;
   }
   
   .ophiuchus-modal .modal-img {
@@ -2668,6 +2798,12 @@ p {
     margin-bottom: -15px;
   }
 
+  .custom-wordle-modal .acomplishments {
+    text-align: left;
+    font-size: 7px;
+    margin-bottom: -15px;
+  }
+
   .custom-wordle-modal .small-disclaimer br {
     content: normal;
   }
@@ -2676,8 +2812,8 @@ p {
     position: static;
     width: 70%;
     padding-bottom: 0%;
-    padding-left: 35%;
-    margin-left: 0px;
+    padding-left: 25%;
+    margin-left: 0%;
   }
   
   .custom-wordle-modal .modal-img {
@@ -2699,6 +2835,12 @@ p {
     margin-bottom: -15px;
   }
 
+  .chess-and-tails-modal .acomplishments {
+    text-align: left;
+    font-size: 7px;
+    margin-bottom: -15px;
+  }
+
   .chess-and-tails-modal .small-disclaimer br {
     content: normal;
   }
@@ -2707,8 +2849,8 @@ p {
     position: static;
     width: 70%;
     padding-bottom: 0%;
-    padding-left: 35%;
-    margin-left: 0px;
+    padding-left: 25%;
+    margin-left: 0%;
   }
   
   .chess-and-tails-modal .modal-img {
@@ -2730,6 +2872,12 @@ p {
     margin-bottom: -15px;
   }
 
+  .strat-game-modal .acomplishments {
+    text-align: left;
+    font-size: 7px;
+    margin-bottom: -15px;
+  }
+
   .strat-game-modal .small-disclaimer br {
     content: normal;
   }
@@ -2738,8 +2886,8 @@ p {
     position: static;
     width: 70%;
     padding-bottom: 0%;
-    padding-left: 35%;
-    margin-left: 0px;
+    padding-left: 25%;
+    margin-left: 0%;
   }
   
   .strat-game-modal .modal-img {
@@ -2761,6 +2909,12 @@ p {
     margin-bottom: -15px;
   }
 
+  .antidote-modal .acomplishments {
+    text-align: left;
+    font-size: 7px;
+    margin-bottom: -15px;
+  }
+
   .antidote-modal .small-disclaimer br {
     content: normal;
   }
@@ -2769,8 +2923,8 @@ p {
     position: static;
     width: 70%;
     padding-bottom: 0%;
-    padding-left: 35%;
-    margin-left: 0px;
+    padding-left: 25%;
+    margin-left: 0%;
   }
   
   .antidote-modal .modal-img {
@@ -2819,16 +2973,24 @@ p {
     margin-bottom: -15px;
   }
 
+  .custom-engine-modal .acomplishments {
+    text-align: left;
+    font-size: 6px;
+    margin-bottom: -15px;
+  }
+
   .custom-engine-modal .modal-img-container {
     position: static;
     width: 100%;
     padding-bottom: 0%;
-    padding-left: 10%;
+    margin-bottom: -10%;
+    padding-left: 30%;
     margin-left: 0px;
   }
   
   .custom-engine-modal .modal-img {
     position: static;
+    width: 80px;
   }
 
   .ophiuchus-modal {
@@ -2866,16 +3028,24 @@ p {
     margin-bottom: -15px;
   }
 
+  .ophiuchus-modal .acomplishments {
+    text-align: left;
+    font-size: 6px;
+    margin-bottom: -15px;
+  }
+
   .ophiuchus-modal .modal-img-container {
     position: static;
     width: 100%;
     padding-bottom: 0%;
-    padding-left: 10%;
+    margin-bottom: -10%;
+    padding-left: 30%;
     margin-left: 0px;
   }
   
   .ophiuchus-modal .modal-img {
     position: static;
+    width: 80px;
   }
 
   .custom-wordle-modal {
@@ -2913,16 +3083,24 @@ p {
     margin-bottom: -15px;
   }
 
+  .custom-wordle-modal .acomplishments {
+    text-align: left;
+    font-size: 6px;
+    margin-bottom: -15px;
+  }
+
   .custom-wordle-modal .modal-img-container {
     position: static;
     width: 100%;
     padding-bottom: 0%;
-    padding-left: 10%;
+    margin-bottom: -10%;
+    padding-left: 30%;
     margin-left: 0px;
   }
   
   .custom-wordle-modal .modal-img {
     position: static;
+    width: 80px;
   }
 
   .chess-and-tails-modal {
@@ -2960,16 +3138,24 @@ p {
     margin-bottom: -15px;
   }
 
+  .chess-and-tails-modal .acomplishments {
+    text-align: left;
+    font-size: 6px;
+    margin-bottom: -15px;
+  }
+
   .chess-and-tails-modal .modal-img-container {
     position: static;
     width: 100%;
     padding-bottom: 0%;
-    padding-left: 10%;
+    margin-bottom: -10%;
+    padding-left: 30%;
     margin-left: 0px;
   }
   
   .chess-and-tails-modal .modal-img {
     position: static;
+    width: 80px;
   }
 
   .strat-game-modal {
@@ -3007,16 +3193,24 @@ p {
     margin-bottom: -15px;
   }
 
+  .strat-game-modal .acomplishments {
+    text-align: left;
+    font-size: 6px;
+    margin-bottom: -15px;
+  }
+
   .strat-game-modal .modal-img-container {
     position: static;
     width: 100%;
     padding-bottom: 0%;
-    padding-left: 10%;
+    margin-bottom: -10%;
+    padding-left: 30%;
     margin-left: 0px;
   }
   
   .strat-game-modal .modal-img {
     position: static;
+    width: 80px;
   }
 
   .antidote-modal {
@@ -3054,16 +3248,24 @@ p {
     margin-bottom: -15px;
   }
 
+  .antidote-modal .acomplishments {
+    text-align: left;
+    font-size: 6px;
+    margin-bottom: -15px;
+  }
+
   .antidote-modal .modal-img-container {
     position: static;
     width: 100%;
     padding-bottom: 0%;
-    padding-left: 10%;
+    margin-bottom: -10%;
+    padding-left: 30%;
     margin-left: 0px;
   }
   
   .antidote-modal .modal-img {
     position: static;
+    width: 80px;
   }
 }
 
