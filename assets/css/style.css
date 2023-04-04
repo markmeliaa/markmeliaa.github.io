@@ -1783,6 +1783,8 @@ p {
   line-height: 20px;
   color: rgb(255, 200, 0, 0.75);
   text-transform: uppercase;
+  font-family: lazenbyComp;
+  letter-spacing: 2px;
 }
 
 .card-info-title > h4 {
@@ -1844,7 +1846,8 @@ p {
 
 .custom-engine-modal h1 {
   text-align: center;
-  font-family: clipFont;
+  font-family: lazenbyComp;
+  letter-spacing: 2.5px;
   color: #1f9554;
 }
 
@@ -1951,7 +1954,8 @@ p {
 
 .ophiuchus-modal h1 {
   text-align: center;
-  font-family: clipFont;
+  font-family: lazenbyComp;
+  letter-spacing: 2.5px;
   color: #1f9554;
 }
 
@@ -2058,7 +2062,8 @@ p {
 
 .custom-wordle-modal h1 {
   text-align: center;
-  font-family: clipFont;
+  font-family: lazenbyComp;
+  letter-spacing: 2.5px;
   color: #1f9554;
 }
 
@@ -2165,7 +2170,8 @@ p {
 
 .chess-and-tails-modal h1 {
   text-align: center;
-  font-family: clipFont;
+  font-family: lazenbyComp;
+  letter-spacing: 2.5px;
   color: #1f9554;
 }
 
@@ -2272,7 +2278,8 @@ p {
 
 .strat-game-modal h1 {
   text-align: center;
-  font-family: clipFont;
+  font-family: lazenbyComp;
+  letter-spacing: 2.5px;
   color: #1f9554;
 }
 
@@ -2379,7 +2386,8 @@ p {
 
 .antidote-modal h1 {
   text-align: center;
-  font-family: clipFont;
+  font-family: lazenbyComp;
+  letter-spacing: 2.5px;
   color: #1f9554;
 }
 
@@ -3476,8 +3484,8 @@ p {
 }
 
 @font-face {
-  font-family: curveThin;
-  src: url(../fonts/CURVE-Thin.ttf);
+  font-family: lazenbyComp;
+  src: url(../fonts/LazenbyCompLiquid.ttf);
 }
 
 /*--------------------------------------------------------------*/
