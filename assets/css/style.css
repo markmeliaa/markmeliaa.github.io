@@ -2200,13 +2200,13 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 26%;
+    margin-left: 23%;
     margin-top: 5%;
   }
   
   .custom-engine-modal .modal-img {
     position: static;
-    width: 150px;
+    width: 200px;
   }
 
   .ophiuchus-modal {
@@ -2227,13 +2227,13 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 26%;
+    margin-left: 23%;
     margin-top: 5%;
   }
   
   .ophiuchus-modal .modal-img {
     position: static;
-    width: 150px;
+    width: 200px;
   }
 
   .custom-wordle-modal {
@@ -2254,13 +2254,13 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 26%;
+    margin-left: 23%;
     margin-top: 5%;
   }
   
   .custom-wordle-modal .modal-img {
     position: static;
-    width: 150px;
+    width: 200px;
   }
 
   .chess-and-tails-modal {
@@ -2281,13 +2281,13 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 26%;
+    margin-left: 23%;
     margin-top: 5%;
   }
   
   .chess-and-tails-modal .modal-img {
     position: static;
-    width: 150px;
+    width: 200px;
   }
 
   .strat-game-modal {
@@ -2308,13 +2308,13 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 26%;
+    margin-left: 23%;
     margin-top: 5%;
   }
   
   .strat-game-modal .modal-img {
     position: static;
-    width: 150px;
+    width: 200px;
   }
 
   .antidote-modal {
@@ -2335,13 +2335,13 @@ p {
     width: 60%;
     padding-bottom: 0%;
     padding-left: 10%;
-    margin-left: 26%;
+    margin-left: 23%;
     margin-top: 5%;
   }
   
   .antidote-modal .modal-img {
     position: static;
-    width: 150px;
+    width: 200px;
   }
 
   .portfolio-content .help-quote-3 {
@@ -2354,24 +2354,48 @@ p {
     margin-left: 24%;
   }
 
+  .custom-engine-modal .modal-img {
+    width: 150px;
+  }
+
   .ophiuchus-modal .modal-img-container {
     margin-left: 24%;
+  }
+
+  .ophiuchus-modal .modal-img {
+    width: 150px;
   }
 
   .custom-wordle-modal .modal-img-container {
     margin-left: 24%;
   }
 
+  .custom-wordle-modal .modal-img {
+    width: 150px;
+  }
+
   .chess-and-tails-modal .modal-img-container {
     margin-left: 24%;
+  }
+
+  .chess-and-tails-modal .modal-img {
+    width: 150px;
   }
 
   .strat-game-modal .modal-img-container {
     margin-left: 24%;
   }
 
+  .strat-game-modal .modal-img {
+    width: 150px;
+  }
+
   .antidote-modal .modal-img-container {
     margin-left: 24%;
+  }
+
+  .antidote-modal .modal-img {
+    width: 150px;
   }
 }
 
