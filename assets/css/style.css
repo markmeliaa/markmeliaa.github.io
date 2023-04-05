@@ -71,7 +71,6 @@ body .cursor__ball--small circle {
 ::-webkit-scrollbar-thumb:hover {
   background: #645000; 
 }
-</style>
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -1175,7 +1174,7 @@ p {
   }
 
   .swiper-wrapper {
-    height: 120px;
+    height: 100px;
   }
 
   .traits-modal h1 {
@@ -1195,6 +1194,7 @@ p {
   .traits-block > img {
     height: 70px;
     padding-bottom: 15px;
+    margin-top: -10px;
   }
 
   .traits-block > h3 {
