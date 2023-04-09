@@ -61,6 +61,21 @@
     });
   }
 
+  // Research help writting effect
+  const typed_help_4 = document.querySelector('.typed-help-4');
+  if (typed_help_4) {
+    let typed_strings = typed_help_4.getAttribute('data-typed-items')
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed-help-4', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 50,
+      backSpeed: 70,
+      backDelay: 1000,
+      showCursor: false
+    });
+  }
+
   //------------------- TYPED EFFECT FUNCTIONS -------------------//
 
   // Personal traits slider
@@ -148,6 +163,18 @@
     // Mouse hover light efect over the portfolio work cards
     document.getElementById("portfolio-cards").onmousemove = e => {
       for(const card of document.getElementsByClassName("work-card")) {
+        const rect = card.getBoundingClientRect(),
+              x = e.clientX - rect.left,
+              y = e.clientY - rect.top;
+
+        card.style.setProperty("--mouse-x", `${x}px`);
+        card.style.setProperty("--mouse-y", `${y}px`);
+      };
+    }
+
+    // Mouse hover light efect over the research article cards
+    document.getElementById("research-cards").onmousemove = e => {
+      for(const card of document.getElementsByClassName("article-card")) {
         const rect = card.getBoundingClientRect(),
               x = e.clientX - rect.left,
               y = e.clientY - rect.top;
