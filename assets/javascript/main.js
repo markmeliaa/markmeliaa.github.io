@@ -520,4 +520,34 @@
   })
 
   //------------------- PORTFOLIO MODAL ACTIVATORS -------------------//
+
+  //------------------- RESEARCH MODAL ACTIVATORS -------------------//
+
+  // Manage neural network research
+  const open_neural_network_modal = document.getElementById('neural-network-card');
+  const neural_network_modal_container = document.getElementById('neural-network-modal-container');
+  const close_neural_network_modal = document.getElementById('neural-network-modal-close');
+
+  open_neural_network_modal.addEventListener('click', () => {
+    neural_network_modal_container.classList.add('show');
+  })
+
+  close_neural_network_modal.addEventListener('click', () => {
+    neural_network_modal_container.classList.remove('show');
+  })
+
+  // Manage custom engine modal
+  const open_concurrency_modal = document.getElementById('concurrency-card');
+  const concurrency_modal_container = document.getElementById('concurrency-modal-container');
+  const close_concurrency_modal = document.getElementById('concurrency-modal-close');
+
+  open_concurrency_modal.addEventListener('click', () => {
+    concurrency_modal_container.classList.add('show');
+  })
+
+  close_concurrency_modal.addEventListener('click', () => {
+    concurrency_modal_container.classList.remove('show');
+  })
+
+  //------------------- RESEARCH MODAL ACTIVATORS -------------------//
 })()
