@@ -273,7 +273,7 @@
   }
 
   // Unlock red secret trait
-  const red_secret_activator = document.querySelectorAll('.help-quote-2'); // Activator placeholder
+  const red_secret_activator = document.querySelectorAll('.help-quote-4');
   const red_secret_images = document.querySelectorAll('.red-secret-bottle-locked');
   const red_secret_quotes = document.querySelectorAll('.red-secret-no-quote');
 
