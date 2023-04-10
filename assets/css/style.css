@@ -1356,7 +1356,7 @@ p {
 .portfolio-block .work-card::before{
   background: radial-gradient(
     800px circle at var(--mouse-x) var(--mouse-y),
-    rgb(31, 149, 84, 0.0),
+    rgba(255, 255, 255, 0.05),
     transparent 40%
   );
   z-index: 3;
@@ -3431,7 +3431,7 @@ p {
 .research-block .article-card::before{
   background: radial-gradient(
     800px circle at var(--mouse-x) var(--mouse-y),
-    rgba(89, 0, 255, 0),
+    rgba(255, 255, 255, 0.05),
     transparent 40%
   );
   z-index: 3;
