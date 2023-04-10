@@ -3539,14 +3539,12 @@ p {
   width: 900px;
   max-width: 80%;
   box-shadow: 0px 0px 10px #6130dd;
-  position: relative;
 }
 
 .neural-network-modal .modal-img-container {
-  width: 40%;
-  height: 40%;
-  padding-bottom: 40%;
-  position: absolute;
+  width: 75%;
+  padding-left: 25%;
+  position: static;
   filter: drop-shadow(0px 0px 5px #ec0484);
   margin-top: 20px;
   text-align: left;
@@ -3558,7 +3556,7 @@ p {
   height: 90%;
   object-fit: fill;
   object-position: 50% 40%;
-  position: absolute;
+  position: static;
 }
 
 .neural-network-modal h1 {
@@ -3574,7 +3572,6 @@ p {
   color: #ffffff;
   opacity: 0.8;
   width: 100%;
-  padding-left: 50%;
 }
 
 .neural-network-modal .small-disclaimer {
@@ -3657,10 +3654,9 @@ p {
 }
 
 .concurrency-modal .modal-img-container {
-  width: 40%;
-  height: 40%;
-  padding-bottom: 40%;
-  position: absolute;
+  width: 75%;
+  padding-left: 25%;
+  position: static;
   filter: drop-shadow(0px 0px 5px #ec0484);
   margin-top: 20px;
   text-align: left;
@@ -3672,7 +3668,7 @@ p {
   height: 90%;
   object-fit: fill;
   object-position: 50% 40%;
-  position: absolute;
+  position: static;
 }
 
 .concurrency-modal h1 {
@@ -3688,7 +3684,6 @@ p {
   color: #ffffff;
   opacity: 0.8;
   width: 100%;
-  padding-left: 50%;
 }
 
 .concurrency-modal .small-disclaimer {
@@ -3771,10 +3766,9 @@ p {
 }
 
 .ai-modal .modal-img-container {
-  width: 40%;
-  height: 40%;
-  padding-bottom: 40%;
-  position: absolute;
+  width: 75%;
+  padding-left: 25%;
+  position: static;
   filter: drop-shadow(0px 0px 5px #ec0484);
   margin-top: 20px;
   text-align: left;
@@ -3786,7 +3780,7 @@ p {
   height: 90%;
   object-fit: fill;
   object-position: 50% 40%;
-  position: absolute;
+  position: static;
 }
 
 .ai-modal h1 {
@@ -3802,7 +3796,6 @@ p {
   color: #ffffff;
   opacity: 0.8;
   width: 100%;
-  padding-left: 50%;
 }
 
 .ai-modal .small-disclaimer {
@@ -3938,20 +3931,6 @@ p {
     padding-left: 0%;
   }
 
-  .neural-network-modal .modal-img-container {
-    position: static;
-    width: 60%;
-    padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 23%;
-    margin-top: 5%;
-  }
-  
-  .neural-network-modal .modal-img {
-    position: static;
-    width: 200px;
-  }
-
   .concurrency-modal {
     padding: 30px 30px;
   }
@@ -3965,20 +3944,6 @@ p {
     padding-left: 0%;
   }
 
-  .concurrency-modal .modal-img-container {
-    position: static;
-    width: 60%;
-    padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 23%;
-    margin-top: 5%;
-  }
-  
-  .ai-modal .modal-img {
-    position: static;
-    width: 200px;
-  }
-
   .ai-modal {
     padding: 30px 30px;
   }
@@ -3990,51 +3955,6 @@ p {
 
   .ai-modal p {
     padding-left: 0%;
-  }
-
-  .ai-modal .modal-img-container {
-    position: static;
-    width: 60%;
-    padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 23%;
-    margin-top: 5%;
-  }
-  
-  .ai-modal .modal-img {
-    position: static;
-    width: 200px;
-  }
-}
-
-@media(max-width: 800px) {
-  #research .card-image > img {
-    width: 160px;
-    margin-bottom: 10px;
-  }
-
-  .neural-network-modal .modal-img-container {
-    margin-left: 24%;
-  }
-
-  .neural-network-modal .modal-img {
-    width: 150px;
-  }
-
-  .concurrency-modal .modal-img-container {
-    margin-left: 24%;
-  }
-
-  .concurrency-modal .modal-img {
-    width: 150px;
-  }
-
-  .ai-modal .modal-img-container {
-    margin-left: 24%;
-  }
-
-  .ai-modal .modal-img {
-    width: 150px;
   }
 }
 
@@ -4108,18 +4028,6 @@ p {
     content: normal;
   }
 
-  .neural-network-modal .modal-img-container {
-    position: static;
-    width: 60%;
-    padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 22%;
-  }
-
-  .neural-network-modal .modal-img {
-    position: static;
-  }
-
   .concurrency-modal {
     padding: 30px 10px;
   }
@@ -4147,18 +4055,6 @@ p {
     content: normal;
   }
 
-  .concurrency-modal .modal-img-container {
-    position: static;
-    width: 60%;
-    padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 22%;
-  }
-
-  .ai-modal .modal-img {
-    position: static;
-  }
-
   .ai-modal {
     padding: 30px 10px;
   }
@@ -4184,32 +4080,6 @@ p {
 
   .ai-modal .small-disclaimer br {
     content: normal;
-  }
-
-  .ai-modal .modal-img-container {
-    position: static;
-    width: 60%;
-    padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 22%;
-  }
-
-  .ai-modal .modal-img {
-    position: static;
-  }
-}
-
-@media(max-width: 500px) {
-  .neural-network-modal .modal-img-container {
-    margin-left: 18%;
-  }
-
-  .concurrency-modal .modal-img-container {
-    margin-left: 18%;
-  }
-
-  .ai-modal .modal-img-container {
-    margin-left: 18%;
   }
 }
 
@@ -4266,18 +4136,6 @@ p {
     content: normal;
   }
 
-  .neural-network-modal .modal-img-container {
-    position: static;
-    width: 70%;
-    padding-bottom: 0%;
-    padding-left: 25%;
-    margin-left: 0%;
-  }
-  
-  .neural-network-modal .modal-img {
-    position: static;
-  }
-
   .concurrency-modal h1 {
     font-size: 25px;
     padding-top: 5px;
@@ -4303,18 +4161,6 @@ p {
     content: normal;
   }
 
-  .concurrency-modal .modal-img-container {
-    position: static;
-    width: 70%;
-    padding-bottom: 0%;
-    padding-left: 25%;
-    margin-left: 0%;
-  }
-  
-  .ai-modal .modal-img {
-    position: static;
-  }
-
   .ai-modal h1 {
     font-size: 25px;
     padding-top: 5px;
@@ -4338,18 +4184,6 @@ p {
 
   .ai-modal .small-disclaimer br {
     content: normal;
-  }
-
-  .ai-modal .modal-img-container {
-    position: static;
-    width: 70%;
-    padding-bottom: 0%;
-    padding-left: 25%;
-    margin-left: 0%;
-  }
-  
-  .ai-modal .modal-img {
-    position: static;
   }
 }
 
@@ -4459,7 +4293,7 @@ p {
     margin-left: 0px;
   }
   
-  .ai-modal .modal-img {
+  .concurrency-modal .modal-img {
     position: static;
     width: 80px;
   }
