@@ -43,7 +43,7 @@ body .cursor__ball--small circle {
   stroke-width: 0.5;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .cursor {
     visibility: hidden;
   }
@@ -3431,7 +3431,7 @@ p {
 .research-block .article-card::before{
   background: radial-gradient(
     800px circle at var(--mouse-x) var(--mouse-y),
-    rgba(0, 34, 255, 0.1),
+    rgba(89, 0, 255, 0.1),
     transparent 40%
   );
   z-index: 3;
@@ -3454,7 +3454,7 @@ p {
 .research-block .article-card > .article-card-border {
   background: radial-gradient(
     400px circle at var(--mouse-x) var(--mouse-y),
-    rgb(173, 29, 108, 0.8),
+    rgba(255, 153, 0, 0.9),
     transparent 40%
   );
   z-index: 1;
