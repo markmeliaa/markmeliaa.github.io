@@ -549,5 +549,18 @@
     concurrency_modal_container.classList.remove('show');
   })
 
+  // Manage custom engine modal
+  const open_ai_modal = document.getElementById('ai-card');
+  const ai_modal_container = document.getElementById('ai-modal-container');
+  const close_ai_modal = document.getElementById('ai-modal-close');
+
+  open_ai_modal.addEventListener('click', () => {
+    ai_modal_container.classList.add('show');
+  })
+
+  close_ai_modal.addEventListener('click', () => {
+    ai_modal_container.classList.remove('show');
+  })
+
   //------------------- RESEARCH MODAL ACTIVATORS -------------------//
 })()
