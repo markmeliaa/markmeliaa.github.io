@@ -163,7 +163,7 @@ p {
   text-transform: capitalize;
   color: white;
   font-weight: 500;
-  opacity: 0.35;
+  opacity: 0.75;
   position: absolute;
   bottom: 20px;
   right: 0px;
@@ -219,6 +219,7 @@ p {
   text-transform: uppercase;
   color: #108fc9;
   padding-top: 30px;
+  filter: brightness(150%);
 }
 
 #about .about-descr .about-text {
@@ -231,18 +232,6 @@ p {
   width: 70%;
 }
 
-.about-content .help-quote-2 {
-  font-size: 10px;
-  color: #228fc1;
-  opacity: 0.15;
-  text-align: right;
-  position: absolute;
-  top: 17px;
-  right: -22px;
-  writing-mode: vertical-lr;
-  font-weight: 750;
-}
-
 #about .p-heading-small {
   font-family: clipFont;
   font-size: 30px;
@@ -253,6 +242,7 @@ p {
   display: inline;
   padding-right: 10px;
   position: relative;
+  filter: brightness(150%);
 }
 
 #about .traits-question-container {
@@ -260,6 +250,7 @@ p {
   user-select: none;
   position: absolute;
   padding-top: 2px;
+  filter: brightness(150%);
 }
 
 #about #traits-question-mark {
@@ -272,6 +263,27 @@ p {
   border-radius: 5px;
   background-color: #00354b;
   box-shadow: 2px 2px 2px #000000;
+}
+
+#about .traits-question-mark-arrow {
+  margin-left: 7px;
+}
+
+#about .traits-question-mark-text {
+  color: #108fc9;
+  font-size: 10px;
+  font-weight: 500;
+  margin-left: 1px;
+}
+
+@media (max-width: 520px){
+  #about .traits-question-mark-arrow {
+    visibility: hidden;
+  }
+  
+  #about .traits-question-mark-text {
+    visibility: hidden;
+  }
 }
 
 /* -----------------Traits Help Modal----------------- */
@@ -888,30 +900,16 @@ p {
   background-color: #cf57b1;
 }
 
-#about #scroll-to-up {
-  font-size: 13px;
-  letter-spacing: 3px;
-  text-transform: capitalize;
-  color: white;
-  font-weight: 500;
-  text-align: left;
-  opacity: 0.35;
+.about-content .help-quote-2 {
+  font-size: 10px;
+  color: #228fc1;
+  opacity: 0.15;
+  text-align: right;
   position: absolute;
-  top: 20px;
-  cursor: none;
-}
-
-#about #scroll-to-down {
-  font-size: 13px;
-  letter-spacing: 3px;
-  text-transform: capitalize;
-  color: white;
-  font-weight: 500;
-  opacity: 0.35;
-  position: absolute;
-  bottom: 20px;
-  right: 0px;
-  cursor: none;
+  top: 17px;
+  right: -25px;
+  writing-mode: vertical-lr;
+  font-weight: 750;
 }
 
 /* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
@@ -1155,7 +1153,7 @@ p {
 @media(max-width: 400px) {
   #about .about-descr .p-heading {
     font-size: 30px;
-    padding-top: 40px;
+    padding-top: 20px;
   }
 
   #about .about-img-container {
@@ -1272,6 +1270,32 @@ p {
   }
 }
 
+#about #scroll-to-up {
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 500;
+  text-align: left;
+  opacity: 0.75;
+  position: absolute;
+  top: 20px;
+  cursor: none;
+}
+
+#about #scroll-to-down {
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 500;
+  opacity: 0.75;
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  cursor: none;
+}
+
 @font-face {
   font-family: clipFont;
   src: url(../fonts/Clip.ttf);
@@ -1306,9 +1330,10 @@ p {
   font-size: 35px;
   text-transform: uppercase;
   color: #ddad00;
+  filter: brightness(150%);
 }
 
-.portfolio-block{
+.portfolio-block {
   display: flex;
   justify-content: center;
   align-items: flex-start;  
@@ -1316,7 +1341,7 @@ p {
   width: 100%;
 }
 
-.portfolio-block #portfolio-cards{
+.portfolio-block #portfolio-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -1353,10 +1378,10 @@ p {
   transition: opacity 500ms;
 }
 
-.portfolio-block .work-card::before{
+.portfolio-block .work-card::before {
   background: radial-gradient(
     800px circle at var(--mouse-x) var(--mouse-y),
-    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.1),
     transparent 40%
   );
   z-index: 3;
@@ -1391,12 +1416,6 @@ p {
   height: 170px;
   justify-content: center;
   overflow: hidden;
-}
-
-#portfolio .card-image > i {
-  font-size: 6em;
-  opacity: 0.25;
-  color: #00d24d;
 }
 
 #portfolio .card-image > img {
@@ -1434,6 +1453,13 @@ p {
   margin-top: 8px;
 }
 
+#portfolio .card-info-click-me {
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 500;
+  margin-left: 1px;
+}
+
 /* -----------------Custom Engine Modal----------------- */
 .custom-engine-modal-container {
   background-color: rgb(0, 0, 0, 0.7);
@@ -1462,7 +1488,7 @@ p {
   padding: 40px 50px;
   width: 900px;
   max-width: 80%;
-  box-shadow: 0px 0px 10px #1f9554cc;
+  box-shadow: 0px 0px 10px 3px #1f9554cc;
   position: relative;
 }
 
@@ -1576,7 +1602,7 @@ p {
   padding: 40px 50px;
   width: 900px;
   max-width: 80%;
-  box-shadow: 0px 0px 10px #1f9554cc;
+  box-shadow: 0px 0px 10px 3px #1f9554cc;
   position: relative;
 }
 
@@ -1690,7 +1716,7 @@ p {
   padding: 40px 50px;
   width: 900px;
   max-width: 80%;
-  box-shadow: 0px 0px 10px #1f9554cc;
+  box-shadow: 0px 0px 10px 3px #1f9554cc;
   position: relative;
 }
 
@@ -1804,7 +1830,7 @@ p {
   padding: 40px 50px;
   width: 900px;
   max-width: 80%;
-  box-shadow: 0px 0px 10px #1f9554cc;
+  box-shadow: 0px 0px 10px 3px #1f9554cc;
   position: relative;
 }
 
@@ -1918,7 +1944,7 @@ p {
   padding: 40px 50px;
   width: 900px;
   max-width: 80%;
-  box-shadow: 0px 0px 10px #1f9554cc;
+  box-shadow: 0px 0px 10px 3px #1f9554cc;
   position: relative;
 }
 
@@ -2032,7 +2058,7 @@ p {
   padding: 40px 50px;
   width: 900px;
   max-width: 80%;
-  box-shadow: 0px 0px 10px #1f9554cc;
+  box-shadow: 0px 0px 10px 3px #1f9554cc;
   position: relative;
 }
 
@@ -2732,7 +2758,7 @@ p {
 @media(max-width: 450px) {
   .portfolio-block .work-card {
     width: 100%;
-    height: 260px;
+    height: 270px;
   }
 
   #portfolio .card-image {
@@ -3328,7 +3354,7 @@ p {
   color: white;
   font-weight: 500;
   text-align: left;
-  opacity: 0.35;
+  opacity: 0.75;
   position: absolute;
   top: 20px;
   cursor: none;
@@ -3340,7 +3366,7 @@ p {
   text-transform: capitalize;
   color: white;
   font-weight: 500;
-  opacity: 0.35;
+  opacity: 0.75;
   position: absolute;
   bottom: 20px;
   right: 0px;
@@ -3381,9 +3407,10 @@ p {
   font-size: 60px;
   /*text-transform: uppercase;*/
   color: #ad1d6c;
+  filter: brightness(150%);
 }
 
-.research-block{
+.research-block {
   display: flex;
   justify-content: center;
   align-items: flex-start;  
@@ -3391,7 +3418,7 @@ p {
   width: 100%;
 }
 
-.research-block #research-cards{
+.research-block #research-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -3408,7 +3435,7 @@ p {
 
 .research-block .article-card {
   background-color: rgba(255, 255, 255, 0.1);
-  height: 260px;
+  height: 265px;
   width: 300px;
   border-radius: 10px;
   position: relative;
@@ -3428,10 +3455,10 @@ p {
   transition: opacity 500ms;
 }
 
-.research-block .article-card::before{
+.research-block .article-card::before {
   background: radial-gradient(
     800px circle at var(--mouse-x) var(--mouse-y),
-    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.1),
     transparent 40%
   );
   z-index: 3;
@@ -3466,12 +3493,6 @@ p {
   height: 170px;
   justify-content: center;
   overflow: hidden;
-}
-
-#research .card-image > i {
-  font-size: 6em;
-  opacity: 0.25;
-  color: #00d24d;
 }
 
 #research .card-image > img {
@@ -3511,6 +3532,13 @@ p {
   margin-top: 8px;
 }
 
+#research .card-info-click-me {
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 500;
+  margin-left: 1px;
+}
+
 /* -----------------Neural Network Research Modal----------------- */
 .neural-network-modal-container {
   background-color: rgb(0, 0, 0, 0.7);
@@ -3539,7 +3567,7 @@ p {
   padding: 40px 50px;
   width: 900px;
   max-width: 80%;
-  box-shadow: 0px 0px 10px #6130dd;
+  box-shadow: 0px 0px 10px 3px #6130dd;
 }
 
 .neural-network-modal .modal-img-container {
@@ -3565,6 +3593,7 @@ p {
   font-family: dirtChunk;
   letter-spacing: 2.5px;
   color: #6130dd;
+  filter: brightness(125%);
 }
 
 .neural-network-modal p {
@@ -3650,7 +3679,7 @@ p {
   padding: 40px 50px;
   width: 900px;
   max-width: 80%;
-  box-shadow: 0px 0px 10px #6130dd;
+  box-shadow: 0px 0px 10px 3px #6130dd;
   position: relative;
 }
 
@@ -3677,6 +3706,7 @@ p {
   font-family: dirtChunk;
   letter-spacing: 2.5px;
   color: #6130dd;
+  filter: brightness(125%);
 }
 
 .concurrency-modal p {
@@ -3762,7 +3792,7 @@ p {
   padding: 40px 50px;
   width: 900px;
   max-width: 80%;
-  box-shadow: 0px 0px 10px #6130dd;
+  box-shadow: 0px 0px 10px 3px #6130dd;
   position: relative;
 }
 
@@ -3866,6 +3896,7 @@ p {
   .research-block .article-card {
     flex-shrink: 1;
     width: calc(30% + 10px);
+    height: 275px;
   }
 
   #research .card-image > img {
@@ -3969,7 +4000,7 @@ p {
   .research-block .article-card {
     flex-shrink: 1;
     width: 31%;
-    height: 210px;
+    height: 230px;
   }
   
   #research .card-image {
@@ -3994,7 +4025,7 @@ p {
   }
   
   #research .card-info-title > h3 {
-    font-size: 0.9em;
+    font-size: 1.05em;
   }
 
   #research .card-info-title > h4 {
@@ -4087,7 +4118,7 @@ p {
 @media(max-width: 480px) {
   .research-block .article-card {
     width: 100%;
-    height: 260px;
+    height: 270px;
   }
 
   #research .card-image {
@@ -4377,7 +4408,7 @@ p {
   color: white;
   font-weight: 500;
   text-align: left;
-  opacity: 0.35;
+  opacity: 0.75;
   position: absolute;
   top: 20px;
   cursor: none;
@@ -4389,7 +4420,7 @@ p {
   text-transform: capitalize;
   color: white;
   font-weight: 500;
-  opacity: 0.35;
+  opacity: 0.75;
   position: absolute;
   bottom: 20px;
   right: 0px;
