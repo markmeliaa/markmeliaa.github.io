@@ -43,11 +43,13 @@ body .cursor__ball--small circle {
   stroke-width: 0.5;
 }
 
+/*
 @media screen and (max-width: 1023px) {
   .cursor {
     visibility: hidden;
   }
 }
+*/
 
 /* LATERAL NAVBAR STYLE */
 /* width */
@@ -942,11 +944,11 @@ p {
 
 @media(max-width: 1020px) {
   #about .about-descr .p-heading {
-    font-size: 50px;
+    font-size: 30px;
   }
 
   #about .about-img-container {
-    top: 35px;
+    top: 25px;
   }
 
   #about .about-descr .about-text {
@@ -956,12 +958,12 @@ p {
   }
 
   #about .p-heading-small {
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 15px;
   }
 
   .swiper-wrapper {
-    height: 190px;
+    height: 170px;
   } 
 
   .traits-slider {
@@ -3539,6 +3541,118 @@ p {
   margin-left: 1px;
 }
 
+/* -----------------AI Research Modal----------------- */
+.ai-modal-container {
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.ai-modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.ai-modal {
+  background-color: black;
+  border-radius: 10px;
+  padding: 40px 50px;
+  width: 900px;
+  max-width: 80%;
+  box-shadow: 0px 0px 10px 3px #6130dd;
+  position: relative;
+}
+
+.ai-modal .modal-img-container {
+  width: 75%;
+  padding-left: 25%;
+  position: static;
+  filter: drop-shadow(0px 0px 5px #ec0484);
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.ai-modal .modal-img {
+  width: 90%;
+  height: 90%;
+  object-fit: fill;
+  object-position: 50% 40%;
+  position: static;
+}
+
+.ai-modal h1 {
+  text-align: center;
+  font-family: dirtChunk;
+  letter-spacing: 2.5px;
+  color: #6130dd;
+}
+
+.ai-modal p {
+  text-align: justify;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.ai-modal .small-disclaimer {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300px;
+}
+
+.ai-modal .acomplishments {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 300px;
+}
+
+.ai-modal .click-button {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+  background-color: white;
+  border-radius: 3px;
+  opacity: 1.0;
+  padding-left: 3px;
+  padding-right: 3px;
+  box-shadow: 2px 2px 2px #6130dd;
+  margin-left: 2px;
+  margin-right: 2px;
+  user-select: none;
+  cursor: none;
+}
+
+.ai-modal .click-button:hover {
+  color: #ec0484;
+}
+
+#ai-modal-close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-right: -25px;
+}
+
+#ai-modal-close:hover,
+#ai-modal-close:focus {
+  color: #8e61ff;
+  text-decoration: none;
+}
+
 /* -----------------Neural Network Research Modal----------------- */
 .neural-network-modal-container {
   background-color: rgb(0, 0, 0, 0.7);
@@ -3575,7 +3689,7 @@ p {
   padding-left: 25%;
   position: static;
   filter: drop-shadow(0px 0px 5px #ec0484);
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: left;
   margin-left: 15px;
 }
@@ -3605,7 +3719,7 @@ p {
 }
 
 .neural-network-modal .small-disclaimer {
-  text-align: justify;
+  text-align: center;
   font-size: 12px;
   font-weight: 300px;
 }
@@ -3688,7 +3802,7 @@ p {
   padding-left: 25%;
   position: static;
   filter: drop-shadow(0px 0px 5px #ec0484);
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: left;
   margin-left: 15px;
 }
@@ -3718,7 +3832,7 @@ p {
 }
 
 .concurrency-modal .small-disclaimer {
-  text-align: justify;
+  text-align: center;
   font-size: 12px;
   font-weight: 300px;
 }
@@ -3760,118 +3874,6 @@ p {
 
 #concurrency-modal-close:hover,
 #concurrency-modal-close:focus {
-  color: #8e61ff;
-  text-decoration: none;
-}
-
-/* -----------------AI Research Modal----------------- */
-.ai-modal-container {
-  background-color: rgb(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 100vh;
-  width: 100vw;
-  z-index: 10;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-
-.ai-modal-container.show {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.ai-modal {
-  background-color: black;
-  border-radius: 10px;
-  padding: 40px 50px;
-  width: 900px;
-  max-width: 80%;
-  box-shadow: 0px 0px 10px 3px #6130dd;
-  position: relative;
-}
-
-.ai-modal .modal-img-container {
-  width: 75%;
-  padding-left: 25%;
-  position: static;
-  filter: drop-shadow(0px 0px 5px #ec0484);
-  margin-top: 20px;
-  text-align: left;
-  margin-left: 15px;
-}
-
-.ai-modal .modal-img {
-  width: 90%;
-  height: 90%;
-  object-fit: fill;
-  object-position: 50% 40%;
-  position: static;
-}
-
-.ai-modal h1 {
-  text-align: center;
-  font-family: dirtChunk;
-  letter-spacing: 2.5px;
-  color: #6130dd;
-}
-
-.ai-modal p {
-  text-align: justify;
-  font-weight: 500;
-  color: #ffffff;
-  opacity: 0.8;
-  width: 100%;
-}
-
-.ai-modal .small-disclaimer {
-  text-align: justify;
-  font-size: 12px;
-  font-weight: 300px;
-}
-
-.ai-modal .acomplishments {
-  text-align: left;
-  font-size: 12px;
-  font-weight: 300px;
-}
-
-.ai-modal .click-button {
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #000000;
-  background-color: white;
-  border-radius: 3px;
-  opacity: 1.0;
-  padding-left: 3px;
-  padding-right: 3px;
-  box-shadow: 2px 2px 2px #6130dd;
-  margin-left: 2px;
-  margin-right: 2px;
-  user-select: none;
-  cursor: none;
-}
-
-.ai-modal .click-button:hover {
-  color: #ec0484;
-}
-
-#ai-modal-close {
-  color: #ffffff;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  margin-top: -20px;
-  margin-right: -25px;
-}
-
-#ai-modal-close:hover,
-#ai-modal-close:focus {
   color: #8e61ff;
   text-decoration: none;
 }
@@ -3950,6 +3952,19 @@ p {
     margin-top: 4px;
   }
 
+  .ai-modal {
+    padding: 30px 30px;
+  }
+
+  #ai-modal-close {
+    margin-top: -15px;
+    margin-right: -15px;
+  }
+
+  .ai-modal p {
+    padding-left: 0%;
+  }
+
   .neural-network-modal {
     padding: 30px 30px;
   }
@@ -3973,19 +3988,6 @@ p {
   }
 
   .concurrency-modal p {
-    padding-left: 0%;
-  }
-
-  .ai-modal {
-    padding: 30px 30px;
-  }
-
-  #ai-modal-close {
-    margin-top: -15px;
-    margin-right: -15px;
-  }
-
-  .ai-modal p {
     padding-left: 0%;
   }
 }
@@ -4031,6 +4033,33 @@ p {
   #research .card-info-title > h4 {
     font-size: 0.8em;
     margin-top: 4px;
+  }
+
+  .ai-modal {
+    padding: 30px 10px;
+  }
+
+  #ai-modal-close {
+    margin-top: -20px;
+    margin-right: 0px;
+  }
+
+  .ai-modal p {
+    padding-left: 0%;
+  }
+
+  .ai-modal .small-disclaimer {
+    text-align: justify;
+    font-size: 10px;
+  }
+
+  .ai-modal .acomplishments {
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .ai-modal .small-disclaimer br {
+    content: normal;
   }
 
   .neural-network-modal {
@@ -4086,33 +4115,6 @@ p {
   .concurrency-modal .small-disclaimer br {
     content: normal;
   }
-
-  .ai-modal {
-    padding: 30px 10px;
-  }
-
-  #ai-modal-close {
-    margin-top: -20px;
-    margin-right: 0px;
-  }
-
-  .ai-modal p {
-    padding-left: 0%;
-  }
-
-  .ai-modal .small-disclaimer {
-    text-align: justify;
-    font-size: 10px;
-  }
-
-  .ai-modal .acomplishments {
-    text-align: left;
-    font-size: 10px;
-  }
-
-  .ai-modal .small-disclaimer br {
-    content: normal;
-  }
 }
 
 @media(max-width: 480px) {
@@ -4141,6 +4143,31 @@ p {
   #research .card-info-title > h4 {
     font-size: 0.8em;
     margin-top: 4px;
+  }
+
+  .ai-modal h1 {
+    font-size: 25px;
+    padding-top: 5px;
+  }
+  
+  .ai-modal p {
+    font-size: 10px;
+    padding-left: 0%;
+  }
+  
+  .ai-modal .small-disclaimer {
+    font-size: 7px;
+    margin-bottom: -15px;
+  }
+
+  .ai-modal .acomplishments {
+    text-align: left;
+    font-size: 7px;
+    margin-bottom: -15px;
+  }
+
+  .ai-modal .small-disclaimer br {
+    content: normal;
   }
 
   .neural-network-modal h1 {
@@ -4192,34 +4219,64 @@ p {
   .concurrency-modal .small-disclaimer br {
     content: normal;
   }
+}
+
+@media(max-width: 300px) {
+  .ai-modal {
+    padding: 30px 10px;
+    position: static;
+  }
+
+  #ai-modal-close {
+    margin-top: -20px;
+    margin-right: 0px;
+  }
 
   .ai-modal h1 {
-    font-size: 25px;
+    font-size: 15px;
     padding-top: 5px;
   }
   
   .ai-modal p {
-    font-size: 10px;
+    font-size: 8px;
     padding-left: 0%;
+  }
+
+  .ai-modal br {
+    display: block;
+    content: "";
+    margin: 5px 5px;
+  }
+
+  .ai-modal img {
+    opacity: 1;
   }
   
   .ai-modal .small-disclaimer {
-    font-size: 7px;
+    font-size: 6px;
     margin-bottom: -15px;
   }
 
   .ai-modal .acomplishments {
     text-align: left;
-    font-size: 7px;
+    font-size: 6px;
     margin-bottom: -15px;
   }
 
-  .ai-modal .small-disclaimer br {
-    content: normal;
+  .ai-modal .modal-img-container {
+    position: static;
+    width: 100%;
+    padding-bottom: 0%;
+    margin-bottom: -10%;
+    padding-left: 30%;
+    margin-left: 0px;
   }
-}
+  
+  .ai-modal .modal-img {
+    position: static;
+    width: 80px;
+  }
 
-@media(max-width: 300px) {
   .neural-network-modal {
     padding: 30px 10px;
     position: static;
@@ -4326,61 +4383,6 @@ p {
   }
   
   .concurrency-modal .modal-img {
-    position: static;
-    width: 80px;
-  }
-
-  .ai-modal {
-    padding: 30px 10px;
-    position: static;
-  }
-
-  #ai-modal-close {
-    margin-top: -20px;
-    margin-right: 0px;
-  }
-
-  .ai-modal h1 {
-    font-size: 15px;
-    padding-top: 5px;
-  }
-  
-  .ai-modal p {
-    font-size: 8px;
-    padding-left: 0%;
-  }
-
-  .ai-modal br {
-    display: block;
-    content: "";
-    margin: 5px 5px;
-  }
-
-  .ai-modal img {
-    opacity: 1;
-  }
-  
-  .ai-modal .small-disclaimer {
-    font-size: 6px;
-    margin-bottom: -15px;
-  }
-
-  .ai-modal .acomplishments {
-    text-align: left;
-    font-size: 6px;
-    margin-bottom: -15px;
-  }
-
-  .ai-modal .modal-img-container {
-    position: static;
-    width: 100%;
-    padding-bottom: 0%;
-    margin-bottom: -10%;
-    padding-left: 30%;
-    margin-left: 0px;
-  }
-  
-  .ai-modal .modal-img {
     position: static;
     width: 80px;
   }
