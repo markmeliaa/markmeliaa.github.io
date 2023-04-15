@@ -2404,6 +2404,10 @@ p {
 }
 
 @media(max-width: 800px) {
+  .portfolio-block .work-card {
+    height: 275px;
+  }
+
   .custom-engine-modal .modal-img-container {
     margin-left: 24%;
   }
@@ -3607,7 +3611,7 @@ p {
 }
 
 .ai-modal .small-disclaimer {
-  text-align: center;
+  text-align: justify;
   font-size: 12px;
   font-weight: 300px;
 }
@@ -3719,7 +3723,7 @@ p {
 }
 
 .neural-network-modal .small-disclaimer {
-  text-align: center;
+  text-align: justify;
   font-size: 12px;
   font-weight: 300px;
 }
@@ -3832,7 +3836,7 @@ p {
 }
 
 .concurrency-modal .small-disclaimer {
-  text-align: center;
+  text-align: justify;
   font-size: 12px;
   font-weight: 300px;
 }
