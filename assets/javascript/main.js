@@ -76,6 +76,21 @@
     });
   }
 
+  // Research help writting effect
+  const typed_help_5 = document.querySelector('.typed-help-5');
+  if (typed_help_5) {
+    let typed_strings = typed_help_5.getAttribute('data-typed-items')
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed-help-5', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 50,
+      backSpeed: 70,
+      backDelay: 1000,
+      showCursor: false
+    });
+  }
+
   //------------------- TYPED EFFECT FUNCTIONS -------------------//
 
   // Personal traits slider
@@ -205,7 +220,7 @@
   }
 
   // Unlock absinthe trait
-  const absinthe_activator = document.querySelectorAll('.help-quote-1'); // Activator placeholder
+  const absinthe_activator = document.querySelectorAll('.help-quote-3'); // Activator placeholder
   const absinthe_images = document.querySelectorAll('.absinthe-bottle-locked');
   const absinthe_quotes = document.querySelectorAll('.absinthe-no-quote');
 
@@ -273,7 +288,7 @@
   }
 
   // Unlock red secret trait
-  const red_secret_activator = document.querySelectorAll('.help-quote-2'); // Activator placeholder
+  const red_secret_activator = document.querySelectorAll('.help-quote-5');
   const red_secret_images = document.querySelectorAll('.red-secret-bottle-locked');
   const red_secret_quotes = document.querySelectorAll('.red-secret-no-quote');
 

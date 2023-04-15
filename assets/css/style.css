@@ -1320,7 +1320,7 @@ p {
 #portfolio .portfolio-content {
   height: 100vh;
   text-align: center;
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -3401,7 +3401,7 @@ p {
 #research .research-content {
   height: 100vh;
   text-align: center;
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -4470,46 +4470,68 @@ p {
 # Contact
 --------------------------------------------------------------*/
 #contact {
-  height: auto;
+  background: url("../img/contact-image-1.jpg") repeat scroll center center/cover;
+  height: 100vh;
   width: 100%;
-  padding-top: 130px;
-  padding-bottom: 130px;
 }
 
-.contact-details {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  color: white;
-}
-
-.contact-quote {
-  color: white;
-  font-family: 'Redressed', cursive;
-  font-size: 35px;
-  padding-top: 50px;
+#contact .contact-content {
+  height: 100vh;
   text-align: center;
+  width: 95%;
+  display: flex;
+  justify-content: top;
+  flex-direction: column;
+  position: relative;
 }
 
-.contact-quote-author {
-  color: #086a91;
-  font-family: "Poppins", helvetica;
-  font-size: 30px;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  text-align: center;
+#contact .p-heading {
+  font-family: littleNightmare;
+  font-size: 60px;
+  /*text-transform: uppercase;*/
+  color: #ffffff;
+  filter: brightness(150%);
+  padding-top: 70px;
+  padding-left: 60%;
+}
+.contact-content p {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  color: #fdd088;
+  font-weight: 500;
 }
 
-.contact-details li {
-  font-size: 30px;
-  padding-bottom: 20px;
+.contact-content .help-quote-5 {
+  font-size: 10px;
+  color: #848215;
+  opacity: 0.15;
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  margin-right: -20px;
+  font-weight: 750;
 }
 
-#contact input, #contact textarea {
-  width: 100%;
-  margin-bottom: 5px;
+#contact #scroll-to-up {
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 500;
+  text-align: left;
+  opacity: 0.75;
+  position: absolute;
+  top: 20px;
+  cursor: none;
 }
 
-#contact textarea {
-  min-height: 160px;
+@font-face {
+  font-family: littleNightmare;
+  src: url(../fonts/LITTLE-NIGHTMARE.ttf);
+}
+
+@font-face {
+  font-family: amaticFont;
+  src: url(../fonts/AmaticSC-Regular.ttf);
 }
