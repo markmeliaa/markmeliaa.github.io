@@ -3882,6 +3882,8 @@ p {
   text-decoration: none;
 }
 
+/* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
+
 @media(max-width: 1100px) {
   .research-block {
     align-items: flex-start;  
@@ -4486,7 +4488,7 @@ p {
 }
 
 #contact .p-heading {
-  font-family: littleNightmare;
+  font-family: journeyFont;
   font-size: 60px;
   /*text-transform: uppercase;*/
   color: #ffffff;
@@ -4502,12 +4504,48 @@ p {
   font-weight: 500;
 }
 
+/* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
+
+@media (max-width: 1200px) {
+  #contact .p-heading {
+    padding-left: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #contact .p-heading {
+    padding-left: 5%;
+  }
+}
+
+@media (max-width: 500px) {
+  #contact .p-heading {
+    padding-left: 5%;
+    font-size: 45px;
+    padding-top: 45px;
+  }
+}
+
+@media (max-width: 400px) {
+  #contact .p-heading {
+    padding-left: 5%;
+    font-size: 30px;
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 300px) {
+  #contact .p-heading {
+    padding-left: 5%;
+  }
+}
+
 .contact-content .help-quote-5 {
   font-size: 10px;
-  color: #848215;
+  color: #163030;
   opacity: 0.15;
   position: absolute;
-  top: 5px;
+  top: 10px;
   right: 0px;
   margin-right: -20px;
   font-weight: 750;
@@ -4527,11 +4565,6 @@ p {
 }
 
 @font-face {
-  font-family: littleNightmare;
-  src: url(../fonts/LITTLE-NIGHTMARE.ttf);
-}
-
-@font-face {
-  font-family: amaticFont;
-  src: url(../fonts/AmaticSC-Regular.ttf);
+  font-family: journeyFont;
+  src: url(../fonts/JourneyPS3.ttf);
 }
