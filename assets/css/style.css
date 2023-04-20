@@ -925,6 +925,8 @@ p {
 
   #about .about-img-container {
     top: 25px;
+    width: 15%;
+    padding-bottom: 15%;
   }
 
   #about .about-descr .about-text {
@@ -1026,6 +1028,8 @@ p {
 
   #about .about-img-container {
     top: 35px;
+    width: 20%;
+    padding-bottom: 20%;
   }
 
   #about .about-descr .about-text {
@@ -1600,7 +1604,6 @@ p {
   width: 90%;
   height: 90%;
   object-fit: fill;
-  object-position: 50% 40%;
   position: absolute;
 }
 
@@ -2134,6 +2137,17 @@ p {
   font-weight: 750;
 }
 
+.portfolio-content .help-quote-6 {
+  font-size: 10px;
+  color: #18a200;
+  opacity: 0.20;
+  text-align: left;
+  position: absolute;
+  top: -15px;
+  left: -70px;
+  font-weight: 750;
+}
+
 /* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
 
 @media(max-width: 1100px) {
@@ -2228,16 +2242,17 @@ p {
 
   .custom-engine-modal .modal-img-container {
     position: static;
-    width: 60%;
+    width: 100%;
     padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 23%;
+    padding-left: 0%;
+    margin-left: 0%;
     margin-top: 5%;
+    text-align: center;
   }
   
   .custom-engine-modal .modal-img {
     position: static;
-    width: 200px;
+    width: 150px;
   }
 
   .ophiuchus-modal {
@@ -2255,16 +2270,17 @@ p {
 
   .ophiuchus-modal .modal-img-container {
     position: static;
-    width: 60%;
+    width: 100%;
     padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 23%;
+    padding-left: 0%;
+    margin-left: 0%;
     margin-top: 5%;
+    text-align: center;
   }
   
   .ophiuchus-modal .modal-img {
     position: static;
-    width: 200px;
+    width: 150px;
   }
 
   .custom-wordle-modal {
@@ -2282,16 +2298,17 @@ p {
 
   .custom-wordle-modal .modal-img-container {
     position: static;
-    width: 60%;
+    width: 100%;
     padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 23%;
+    padding-left: 0%;
+    margin-left: 0%;
     margin-top: 5%;
+    text-align: center;
   }
   
   .custom-wordle-modal .modal-img {
     position: static;
-    width: 200px;
+    width: 150px;
   }
 
   .chess-and-tails-modal {
@@ -2309,16 +2326,17 @@ p {
 
   .chess-and-tails-modal .modal-img-container {
     position: static;
-    width: 60%;
+    width: 100%;
     padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 23%;
+    padding-left: 0%;
+    margin-left: 0%;
     margin-top: 5%;
+    text-align: center;
   }
   
   .chess-and-tails-modal .modal-img {
     position: static;
-    width: 200px;
+    width: 150px;
   }
 
   .strat-game-modal {
@@ -2336,16 +2354,17 @@ p {
 
   .strat-game-modal .modal-img-container {
     position: static;
-    width: 60%;
+    width: 100%;
     padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 23%;
+    padding-left: 0%;
+    margin-left: 0%;
     margin-top: 5%;
+    text-align: center;
   }
   
   .strat-game-modal .modal-img {
     position: static;
-    width: 200px;
+    width: 150px;
   }
 
   .antidote-modal {
@@ -2363,74 +2382,31 @@ p {
 
   .antidote-modal .modal-img-container {
     position: static;
-    width: 60%;
+    width: 100%;
     padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 23%;
+    padding-left: 0%;
+    margin-left: 0%;
     margin-top: 5%;
+    text-align: center;
   }
   
   .antidote-modal .modal-img {
     position: static;
-    width: 200px;
+    width: 150px;
   }
 
   .portfolio-content .help-quote-3 {
     color: #0c8a00;
   }
+
+  .portfolio-content .help-quote-6 {
+    left: 30px;
+  }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 900px) {
   .portfolio-block .work-card {
     height: 275px;
-  }
-
-  .custom-engine-modal .modal-img-container {
-    margin-left: 24%;
-  }
-
-  .custom-engine-modal .modal-img {
-    width: 150px;
-  }
-
-  .ophiuchus-modal .modal-img-container {
-    margin-left: 24%;
-  }
-
-  .ophiuchus-modal .modal-img {
-    width: 150px;
-  }
-
-  .custom-wordle-modal .modal-img-container {
-    margin-left: 24%;
-  }
-
-  .custom-wordle-modal .modal-img {
-    width: 150px;
-  }
-
-  .chess-and-tails-modal .modal-img-container {
-    margin-left: 24%;
-  }
-
-  .chess-and-tails-modal .modal-img {
-    width: 150px;
-  }
-
-  .strat-game-modal .modal-img-container {
-    margin-left: 24%;
-  }
-
-  .strat-game-modal .modal-img {
-    width: 150px;
-  }
-
-  .antidote-modal .modal-img-container {
-    margin-left: 24%;
-  }
-
-  .antidote-modal .modal-img {
-    width: 150px;
   }
 }
 
@@ -2504,14 +2480,6 @@ p {
     content: normal;
   }
 
-  .custom-engine-modal .modal-img-container {
-    position: static;
-    width: 60%;
-    padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 22%;
-  }
-
   .custom-engine-modal .modal-img {
     position: static;
   }
@@ -2541,14 +2509,6 @@ p {
 
   .ophiuchus-modal .small-disclaimer br {
     content: normal;
-  }
-
-  .ophiuchus-modal .modal-img-container {
-    position: static;
-    width: 60%;
-    padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 22%;
   }
 
   .ophiuchus-modal .modal-img {
@@ -2582,14 +2542,6 @@ p {
     content: normal;
   }
 
-  .custom-wordle-modal .modal-img-container {
-    position: static;
-    width: 60%;
-    padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 22%;
-  }
-
   .custom-wordle-modal .modal-img {
     position: static;
   }
@@ -2619,14 +2571,6 @@ p {
 
   .chess-and-tails-modal .small-disclaimer br {
     content: normal;
-  }
-
-  .chess-and-tails-modal .modal-img-container {
-    position: static;
-    width: 60%;
-    padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 22%;
   }
 
   .chess-and-tails-modal .modal-img {
@@ -2660,14 +2604,6 @@ p {
     content: normal;
   }
 
-  .strat-game-modal .modal-img-container {
-    position: static;
-    width: 60%;
-    padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 22%;
-  }
-
   .strat-game-modal .modal-img {
     position: static;
   }
@@ -2699,42 +2635,8 @@ p {
     content: normal;
   }
 
-  .antidote-modal .modal-img-container {
-    position: static;
-    width: 60%;
-    padding-bottom: 0%;
-    padding-left: 10%;
-    margin-left: 22%;
-  }
-
   .antidote-modal .modal-img {
     position: static;
-  }
-}
-
-@media(max-width: 500px) {
-  .custom-engine-modal .modal-img-container {
-    margin-left: 18%;
-  }
-
-  .ophiuchus-modal .modal-img-container {
-    margin-left: 18%;
-  }
-
-  .custom-wordle-modal .modal-img-container {
-    margin-left: 18%;
-  }
-
-  .chess-and-tails-modal .modal-img-container {
-    margin-left: 18%;
-  }
-
-  .strat-game-modal .modal-img-container {
-    margin-left: 18%;
-  }
-
-  .antidote-modal .modal-img-container {
-    margin-left: 18%;
   }
 }
 
@@ -2998,7 +2900,7 @@ p {
   }
 }
 
-@media(max-width: 300px) {
+@media(max-width: 350px) {
   .custom-engine-modal {
     padding: 30px 10px;
     position: static;
@@ -3038,15 +2940,6 @@ p {
     text-align: left;
     font-size: 6px;
     margin-bottom: -15px;
-  }
-
-  .custom-engine-modal .modal-img-container {
-    position: static;
-    width: 100%;
-    padding-bottom: 0%;
-    margin-bottom: -10%;
-    padding-left: 30%;
-    margin-left: 0px;
   }
   
   .custom-engine-modal .modal-img {
@@ -3094,15 +2987,6 @@ p {
     font-size: 6px;
     margin-bottom: -15px;
   }
-
-  .ophiuchus-modal .modal-img-container {
-    position: static;
-    width: 100%;
-    padding-bottom: 0%;
-    margin-bottom: -10%;
-    padding-left: 30%;
-    margin-left: 0px;
-  }
   
   .ophiuchus-modal .modal-img {
     position: static;
@@ -3148,15 +3032,6 @@ p {
     text-align: left;
     font-size: 6px;
     margin-bottom: -15px;
-  }
-
-  .custom-wordle-modal .modal-img-container {
-    position: static;
-    width: 100%;
-    padding-bottom: 0%;
-    margin-bottom: -10%;
-    padding-left: 30%;
-    margin-left: 0px;
   }
   
   .custom-wordle-modal .modal-img {
@@ -3204,15 +3079,6 @@ p {
     font-size: 6px;
     margin-bottom: -15px;
   }
-
-  .chess-and-tails-modal .modal-img-container {
-    position: static;
-    width: 100%;
-    padding-bottom: 0%;
-    margin-bottom: -10%;
-    padding-left: 30%;
-    margin-left: 0px;
-  }
   
   .chess-and-tails-modal .modal-img {
     position: static;
@@ -3258,15 +3124,6 @@ p {
     text-align: left;
     font-size: 6px;
     margin-bottom: -15px;
-  }
-
-  .strat-game-modal .modal-img-container {
-    position: static;
-    width: 100%;
-    padding-bottom: 0%;
-    margin-bottom: -10%;
-    padding-left: 30%;
-    margin-left: 0px;
   }
   
   .strat-game-modal .modal-img {
@@ -3314,19 +3171,14 @@ p {
     font-size: 6px;
     margin-bottom: -15px;
   }
-
-  .antidote-modal .modal-img-container {
-    position: static;
-    width: 100%;
-    padding-bottom: 0%;
-    margin-bottom: -10%;
-    padding-left: 30%;
-    margin-left: 0px;
-  }
   
   .antidote-modal .modal-img {
     position: static;
     width: 80px;
+  }
+
+  .portfolio-content .help-quote-6 {
+    opacity: 0;
   }
 }
 
@@ -3962,6 +3814,20 @@ p {
     padding: 30px 30px;
   }
 
+  .ai-modal .modal-img-container {
+    position: static;
+    width: 100%;
+    padding-bottom: 0%;
+    padding-left: 0%;
+    margin-left: 0%;
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .ai-modal .modal-img {
+    width: 275px;
+  }
+
   #ai-modal-close {
     margin-top: -15px;
     margin-right: -15px;
@@ -3975,6 +3841,20 @@ p {
     padding: 30px 30px;
   }
 
+  .neural-network-modal .modal-img-container {
+    position: static;
+    width: 100%;
+    padding-bottom: 0%;
+    padding-left: 0%;
+    margin-left: 0%;
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .neural-network-modal .modal-img {
+    width: 275px;
+  }
+
   #neural-network-modal-close {
     margin-top: -15px;
     margin-right: -15px;
@@ -3986,6 +3866,20 @@ p {
 
   .concurrency-modal {
     padding: 30px 30px;
+  }
+
+  .concurrency-modal .modal-img-container {
+    position: static;
+    width: 100%;
+    padding-bottom: 0%;
+    padding-left: 0%;
+    margin-left: 0%;
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .concurrency-modal .modal-img {
+    width: 275px;
   }
 
   #concurrency-modal-close {
@@ -4160,6 +4054,10 @@ p {
     font-size: 10px;
     padding-left: 0%;
   }
+
+  .ai-modal .modal-img {
+    width: 150px;
+  }
   
   .ai-modal .small-disclaimer {
     font-size: 7px;
@@ -4185,6 +4083,10 @@ p {
     font-size: 10px;
     padding-left: 0%;
   }
+
+  .neural-network-modal .modal-img {
+    width: 150px;
+  }
   
   .neural-network-modal .small-disclaimer {
     font-size: 7px;
@@ -4209,6 +4111,10 @@ p {
   .concurrency-modal p {
     font-size: 10px;
     padding-left: 0%;
+  }
+
+  .concurrency-modal .modal-img {
+    width: 150px;
   }
   
   .concurrency-modal .small-disclaimer {
@@ -4269,20 +4175,6 @@ p {
     margin-bottom: -15px;
   }
 
-  .ai-modal .modal-img-container {
-    position: static;
-    width: 100%;
-    padding-bottom: 0%;
-    margin-bottom: -10%;
-    padding-left: 30%;
-    margin-left: 0px;
-  }
-  
-  .ai-modal .modal-img {
-    position: static;
-    width: 80px;
-  }
-
   .neural-network-modal {
     padding: 30px 10px;
     position: static;
@@ -4324,20 +4216,6 @@ p {
     margin-bottom: -15px;
   }
 
-  .neural-network-modal .modal-img-container {
-    position: static;
-    width: 100%;
-    padding-bottom: 0%;
-    margin-bottom: -10%;
-    padding-left: 30%;
-    margin-left: 0px;
-  }
-  
-  .neural-network-modal .modal-img {
-    position: static;
-    width: 80px;
-  }
-
   .concurrency-modal {
     padding: 30px 10px;
     position: static;
@@ -4377,20 +4255,6 @@ p {
     text-align: left;
     font-size: 6px;
     margin-bottom: -15px;
-  }
-
-  .concurrency-modal .modal-img-container {
-    position: static;
-    width: 100%;
-    padding-bottom: 0%;
-    margin-bottom: -10%;
-    padding-left: 30%;
-    margin-left: 0px;
-  }
-  
-  .concurrency-modal .modal-img {
-    position: static;
-    width: 80px;
   }
 
   #research .card-info-title > h3 {

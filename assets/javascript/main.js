@@ -76,7 +76,7 @@
     });
   }
 
-  // Research help writting effect
+  // Contact help writting effect
   const typed_help_5 = document.querySelector('.typed-help-5');
   if (typed_help_5) {
     let typed_strings = typed_help_5.getAttribute('data-typed-items')
@@ -90,6 +90,21 @@
       showCursor: false
     });
   }
+
+    // Portfolio work card help writting effect
+    const typed_help_6 = document.querySelector('.typed-help-6');
+    if (typed_help_6) {
+      let typed_strings = typed_help_6.getAttribute('data-typed-items')
+      typed_strings = typed_strings.split(',')
+      new Typed('.typed-help-6', {
+        strings: typed_strings,
+        loop: true,
+        typeSpeed: 50,
+        backSpeed: 70,
+        backDelay: 1000,
+        showCursor: false
+      });
+    }
 
   //------------------- TYPED EFFECT FUNCTIONS -------------------//
 
@@ -220,7 +235,7 @@
   }
 
   // Unlock absinthe trait
-  const absinthe_activator = document.querySelectorAll('.help-quote-3'); // Activator placeholder
+  const absinthe_activator = document.querySelectorAll('.help-quote-6');
   const absinthe_images = document.querySelectorAll('.absinthe-bottle-locked');
   const absinthe_quotes = document.querySelectorAll('.absinthe-no-quote');
 
@@ -374,7 +389,7 @@
 
   for (const drink of vodka_images) {
     drink.addEventListener('click', () => {
-      vodka_trait_modal_container.classList.add('show');
+      //vodka_trait_modal_container.classList.add('show');
     })
   }
 
@@ -388,7 +403,7 @@
 
   for (const drink of absinthe_images) {
     drink.addEventListener('click', () => {
-      absinthe_trait_modal_container.classList.add('show');
+      //absinthe_trait_modal_container.classList.add('show');
     })
   }
 
@@ -402,7 +417,7 @@
 
   for (const drink of tequila_images) {
     drink.addEventListener('click', () => {
-      tequila_trait_modal_container.classList.add('show');
+      //tequila_trait_modal_container.classList.add('show');
     })
   }
 
@@ -416,7 +431,7 @@
 
   for (const drink of bourbon_images) {
     drink.addEventListener('click', () => {
-      bourbon_trait_modal_container.classList.add('show');
+      //bourbon_trait_modal_container.classList.add('show');
     })
   }
 
@@ -430,7 +445,7 @@
 
   for (const drink of blue_whisper_images) {
     drink.addEventListener('click', () => {
-      blue_whisper_trait_modal_container.classList.add('show');
+      //blue_whisper_trait_modal_container.classList.add('show');
     })
   }
 
@@ -444,7 +459,7 @@
 
   for (const drink of red_secret_images) {
     drink.addEventListener('click', () => {
-      red_secret_trait_modal_container.classList.add('show');
+      //red_secret_trait_modal_container.classList.add('show');
     })
   }
 
