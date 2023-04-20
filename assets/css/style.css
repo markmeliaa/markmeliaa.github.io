@@ -116,7 +116,7 @@ p {
 
 .hero-content .list-social li {
   float: left;
-  margin-right: 30px;
+  margin-right: 20px;
   margin-bottom: 40px;
 }
 
@@ -4291,9 +4291,9 @@ p {
 }
 
 #contact .contact-content {
-  height: 100vh;
+  height: 99vh;
   text-align: center;
-  width: 95%;
+  width: 100%;
   display: flex;
   justify-content: top;
   flex-direction: column;
@@ -4306,8 +4306,8 @@ p {
   /*text-transform: uppercase;*/
   color: #ffffff;
   filter: brightness(150%);
-  padding-top: 70px;
-  padding-left: 60%;
+  margin-top: 75px;
+  padding-left: 62%;
 }
 
 .contact-content .list-social li {
@@ -4317,6 +4317,20 @@ p {
 }
 
 .contact-content .list-social li i {
+  color: #ffd9c1;
+  font-size: 15px;
+  cursor: none;
+  text-transform: none;
+  font-weight: 500;
+}
+
+.contact-content .list-social-2 li {
+  float: right;
+  margin-right: 70px;
+  margin-top: 10px;
+}
+
+.contact-content .list-social-2 li i {
   color: #ffd9c1;
   font-size: 15px;
   cursor: none;
@@ -4355,13 +4369,25 @@ p {
   .contact-content .list-social li i {
     color: #000000;
   }
+
+  .contact-content .list-social-2 li {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 10%;
+    margin-right: 60px;
+  }
+
+  .contact-content .list-social-2 li i {
+    color: #000000;
+  }
 }
 
 @media (max-width: 500px) {
   #contact .p-heading {
     padding-left: 5%;
     font-size: 45px;
-    padding-top: 45px;
+    margin-top: 45px;
   }
 }
 
@@ -4369,7 +4395,8 @@ p {
   #contact .p-heading {
     padding-left: 5%;
     font-size: 30px;
-    padding-top: 40px;
+    margin-top: 60px;
+    margin-bottom: 10px;
   }
 
   .contact-content .list-social li {
@@ -4379,6 +4406,16 @@ p {
   }
 
   .contact-content .list-social li i {
+    font-size: 10px;
+  }
+
+  .contact-content .list-social-2 li {
+    padding-left: 5%;
+    margin-right: 10px;
+    margin-top: 0px;
+  }
+
+  .contact-content .list-social-2 li i {
     font-size: 10px;
   }
 }
@@ -4392,11 +4429,11 @@ p {
 
 .contact-content .help-quote-5 {
   font-size: 10px;
-  color: #163030;
+  color: rgb(12, 18, 18);
   opacity: 0.20;
   position: absolute;
   top: 10px;
-  right: 5px;
+  right: 20px;
   margin-right: -20px;
   font-weight: 750;
 }
