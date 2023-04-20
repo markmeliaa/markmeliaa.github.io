@@ -4,7 +4,7 @@
 
 /* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
 @media (pointer:coarse) and (orientation:landscape) {
-  #landscape { display:block; }
+  #landscape { display:block !important; }
   #portrait { display:none; }
 }
  
