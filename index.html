@@ -29,873 +29,886 @@
 
 <body scroll="no" style="overflow: hidden">
 
-  <!-- ======= Custom Cursor ======= -->
-  <div class="cursor">
-    <div class="cursor__ball cursor__ball--big" id="big-ball">
-      <svg height="30" width="30">
-        <circle cx="15" cy="15" r="10" opacity="0.5" stroke-width="0" stroke="black"></circle>
-      </svg>
-    </div>
-    
-    <div class="cursor__ball cursor__ball--small" id="small-ball">
-      <svg height="10" width="10">
-        <circle cx="5" cy="5" r="4" opacity="0.7" stroke-width="0" stroke="black"></circle>
-      </svg>
-    </div>
+  <div style="width: 100vw; height: 100vh;" id="landscape">
+    <img style="width: 10%; position: relative; left: 45%; top: 40%;" src="assets/img/rotate-device-img.png">
   </div>
-  <!-- End Custom Cursor -->
 
-  <div class="docSlider">
+  <div id="portrait">
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero">
-      <div class="inner container">
-        <div class="hero-content">
-          <h1>I'm <span class="typed" data-typed-items="Mark Melia, a Programmer, a Designer, a Game Dev"></span></h1>
-          <p>Programmer, Designer, Game Dev</p>
+    <!-- ======= Custom Cursor ======= -->
+    <div class="cursor">
+      <div class="cursor__ball cursor__ball--big" id="big-ball">
+        <svg height="30" width="30">
+          <circle cx="15" cy="15" r="10" opacity="0.5" stroke-width="0" stroke="black"></circle>
+        </svg>
+      </div>
+      
+      <div class="cursor__ball cursor__ball--small" id="small-ball">
+        <svg height="10" width="10">
+          <circle cx="5" cy="5" r="4" opacity="0.7" stroke-width="0" stroke="black"></circle>
+        </svg>
+      </div>
+    </div>
+    <!-- End Custom Cursor -->
 
-          <ul class="list-unstyled list-social">
-            <li><a href="https://twitter.com/mark_meliaa" target="_blank" class="hoverable"><i class="bi-twitter"></i></a></li>
-            <li><a href="https://github.com/markmeliaa" target="_blank" class="hoverable"><i class="bi-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/markmeliaa/" target="_blank" class="hoverable"><i class="bi-linkedin"></i></a></li>
-            <li><a href="https://markmeliaa.itch.io/" target="_blank" class="hoverable"><i class="bi-shop-window"></i></a></li>
-            <li><a href="assets/docs/English-CV.pdf" target="_blank" class="hoverable"><i class="bi-file-earmark-person-fill"></i></a></li>
-          </ul>
+    <!-- ======= Landscape Blocker ======= -->
+    <div class="landscape-blocker">
 
-          <p class="help-quote-1"><span class="typed-help" data-typed-items="HELP,...,HELP!!,...,...,PLEASE HELP ME,
-            ...,...,I NEED YOUR HELP,...,...,I BEG YOU KEEP SCROLLING,...,...,I DON'T KNOW WHAT TO DO,...,..."></span>
-          </p>
+    </div>
+    <!-- End Custom Cursor -->
 
-          <a href="#about" id="scroll-to-down" class="hoverable" onclick="changeStyleToAboutDown()">CLICK HERE TO GO DOWN</a>
+    <div class="docSlider">
 
-          <script>
-            function changeStyleToAboutDown(){
-              setTimeout(()=> {
+      <!-- ======= Hero Section ======= -->
+      <section id="hero">
+        <div class="inner container">
+          <div class="hero-content">
+            <h1>I'm <span class="typed" data-typed-items="Mark Melia, a Programmer, a Designer, a Game Dev"></span></h1>
+            <p>Programmer, Designer, Game Dev</p>
+
+            <ul class="list-unstyled list-social">
+              <li><a href="https://twitter.com/mark_meliaa" target="_blank" class="hoverable"><i class="bi-twitter"></i></a></li>
+              <li><a href="https://github.com/markmeliaa" target="_blank" class="hoverable"><i class="bi-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/markmeliaa/" target="_blank" class="hoverable"><i class="bi-linkedin"></i></a></li>
+              <li><a href="https://markmeliaa.itch.io/" target="_blank" class="hoverable"><i class="bi-shop-window"></i></a></li>
+              <li><a href="assets/docs/English-CV.pdf" target="_blank" class="hoverable"><i class="bi-file-earmark-person-fill"></i></a></li>
+            </ul>
+
+            <p class="help-quote-1"><span class="typed-help" data-typed-items="HELP,...,HELP!!,...,...,PLEASE HELP ME,
+              ...,...,I NEED YOUR HELP,...,...,I BEG YOU KEEP SCROLLING,...,...,I DON'T KNOW WHAT TO DO,...,..."></span>
+            </p>
+
+            <a href="#about" id="scroll-to-down" class="hoverable" onclick="changeStyleToAboutDown()">CLICK HERE TO GO DOWN</a>
+
+            <script>
+              function changeStyleToAboutDown(){
+                setTimeout(()=> {
+                    var element = document.getElementsByClassName("cursor")[0];
+                    /*element.style.fill = "white";*/
+                }
+                , 275);
+              }
+            </script>
+
+          </div>
+        </div>
+      </section>
+      <!-- End Hero -->
+
+      <!-- ======= About Section ======= -->
+      <section id="about">
+        <div class="inner container">
+          <div class="about-content">
+            <a href="#hero" id="scroll-to-up" class="hoverable" onclick="changeStyleToHeroUp()">CLICK HERE TO GO UP</a>
+
+            <script>
+              function changeStyleToHeroUp(){
+                setTimeout(()=> {
                   var element = document.getElementsByClassName("cursor")[0];
                   /*element.style.fill = "white";*/
+                }
+                , 275);
               }
-              , 275);
-            }
-          </script>
+            </script>
 
-        </div>
-      </div>
-    </section>
-    <!-- End Hero -->
+            <div class="about-img-container">
+              <img src="assets/img/self-portrait-2.jpg" alt="me">
+            </div>
 
-    <!-- ======= About Section ======= -->
-    <section id="about">
-      <div class="inner container">
-        <div class="about-content">
-          <a href="#hero" id="scroll-to-up" class="hoverable" onclick="changeStyleToHeroUp()">CLICK HERE TO GO UP</a>
+            <div class="about-descr">
 
-          <script>
-            function changeStyleToHeroUp(){
-              setTimeout(()=> {
-                var element = document.getElementsByClassName("cursor")[0];
-                /*element.style.fill = "white";*/
-              }
-              , 275);
-            }
-          </script>
+              <p class="p-heading">WHO AM I?</p>
 
-          <div class="about-img-container">
-            <img src="assets/img/self-portrait-2.jpg" alt="me">
-          </div>
-
-          <div class="about-descr">
-
-            <p class="p-heading">WHO AM I?</p>
-
-            <p class="about-text">Hi! As you may have read above, I'm <b style='color:#cf57b1'>MARK</b>, a "newcomer" to the videogames industry,
-              and I'll try to keep this introduction as short as possible.<br><br>
-            
-              I was born in the 2000, and when I was 5, my parents gifted me my very
-              first console, a <b style='color:#cf57b1'>GAME BOY MICRO</b>, and with it, my passion for the videogames took off.<br><br>
-            
-              Some years later, I discovered that I could work as one of those people involved in the 
-              development of a videogame, and that's been my dream job since then, trying to give others the same 
-              <b style='color:#cf57b1'>JOY</b> that I experience when I'm playing a videogame.</p>
+              <p class="about-text">Hi! As you may have read above, I'm <b style='color:#cf57b1'>MARK</b>, a "newcomer" to the videogames industry,
+                and I'll try to keep this introduction as short as possible.<br><br>
               
-          </div>
-
-          <p class="help-quote-2"><span class="typed-help-2" data-typed-items="...,I'VE BEEN TRAPPED HERE FOR SO LONG...,...,...,
-            YOU NEED TO SAVE ME PLEASE,...,...,I FEEL... ALONE,...,...,...,I DON'T KNOW WHAT ELSE TO DO,...,..."></span>
-          </p>
-
-          <div class="container">
-            <p class="p-heading-small">SOME TRAITS ABOUT MYSELF!</p>
-            <div class="traits-question-container">
-              <a id="traits-question-mark" class="hoverable">
-                ?<a>
-                  <i style="font-size: 15px;" class="bi-arrow-left-circle-fill traits-question-mark-arrow"></i> 
-                  <a class="traits-question-mark-text">CLICK HERE!</a>
-                </a>
-              </a>
+                I was born in the 2000, and when I was 5, my parents gifted me my very
+                first console, a <b style='color:#cf57b1'>GAME BOY MICRO</b>, and with it, my passion for the videogames took off.<br><br>
               
-            </div>
-
-            <!-- MODAL FOR THE TRAITS HELP -->
-            <div class="traits-modal-container" id="traits-modal-container">
-              <div class="traits-modal">
-                <span class="hoverable" id="traits-modal-close">&times;</span>
-                <h1>UNLOCKABLE TRAITS</h1>
-                <p><b style='color:#cf57b1; text-transform:uppercase'>Oh, hey!</b> 
-                  Looks like you wanna know me better, isn't that right? Well, I've prepared a little game for you so you can 
-                  learn a bit more about myself.<br><br>
-                  <em>“It seems that someone is <b style='color:#cf57b1; text-transform:uppercase'>trapped</b> around here and is 
-                  asking for freedom, if you want to help them, find the <b style='color:#cf57b1; text-transform:uppercase'>six</b>
-                  help quotes that are hiding in any corner of this site.”</em><br><br>
-                  For each help quote that you click, you'll unlock one of these traits, 
-                  and once you've found all the help quotes, you'll be able to unravel the 
-                  <b style='color:#cf57b1; text-transform:uppercase'>mystery</b> hidden behind this web page.
-                </p>
-                <p class="small-disclaimer">
-                  <br>(Alternatively, <a class="unlock-all-traits hoverable">click here</a> if you don't want to play and you just 
-                  want to learn more about me, though if you also want to discover the mystery hidden behind this page, 
-                  you'll have to search around for the help quotes regardless).
-                </p>
-              </div>
-            </div>
-            <!-- MODAL FOR THE TRAITS HELP -->
-
-            <!-- MODAL FOR THE VODKA TRAIT -->
-            <div class="vodka-trait-modal-container" id="vodka-trait-modal-container">
-              <div class="vodka-trait-modal">
-                <span class="hoverable" id="vodka-trait-modal-close">&times;</span>
-                <h1>CREATIVE</h1>
-
-                <p><em>“Creativity is seeing what others see and thinking what no one else ever thought.”</em></p>
-                <p class="author-quote">- Albert Einstein</p>
-              </div>
-            </div>
-            <!-- MODAL FOR THE VODKA TRAIT -->
-
-            <!-- MODAL FOR THE ABSINTHE TRAIT -->
-            <div class="absinthe-trait-modal-container" id="absinthe-trait-modal-container">
-              <div class="absinthe-trait-modal">
-                <span class="hoverable" id="absinthe-trait-modal-close">&times;</span>
-                <h1>OPTIMISTIC</h1>
-
-                <p><em>“Lorem Ipsum Dolor Sit Amet”</em></p>
-                <p class="author-quote">- Lorem Ipsum</p>
-              </div>
-            </div>
-            <!-- MODAL FOR THE ABSINTHE TRAIT -->
-
-            <!-- MODAL FOR THE TEQUILA TRAIT -->
-            <div class="tequila-trait-modal-container" id="tequila-trait-modal-container">
-              <div class="tequila-trait-modal">
-                <span class="hoverable" id="tequila-trait-modal-close">&times;</span>
-                <h1>CURIOUS</h1>
-
-                <p><em>“Lorem Ipsum Dolor Sit Amet”</em></p>
-                <p class="author-quote">- Lorem Ipsum</p>
-              </div>
-            </div>
-            <!-- MODAL FOR THE TEQUILA TRAIT -->
-
-            <!-- MODAL FOR THE BOURBON TRAIT -->
-            <div class="bourbon-trait-modal-container" id="bourbon-trait-modal-container">
-              <div class="bourbon-trait-modal">
-                <span class="hoverable" id="bourbon-trait-modal-close">&times;</span>
-                <h1>SHARP-WITTED</h1>
-
-                <p><em>“Lorem Ipsum Dolor Sit Amet”</em></p>
-                <p class="author-quote">- Lorem Ipsum</p>
-              </div>
-            </div>
-            <!-- MODAL FOR THE BOURBON TRAIT -->
-
-            <!-- MODAL FOR THE BLUE WHISPER TRAIT -->
-            <div class="blue-whisper-trait-modal-container" id="blue-whisper-trait-modal-container">
-              <div class="blue-whisper-trait-modal">
-                <span class="hoverable" id="blue-whisper-trait-modal-close">&times;</span>
-                <h1>PASSIONATE</h1>
-
-                <p><em>“Lorem Ipsum Dolor Sit Amet”</em></p>
-                <p class="author-quote">- Lorem Ipsum</p>
-              </div>
-            </div>
-            <!-- MODAL FOR THE BLUE WHISPER TRAIT -->
-
-            <!-- MODAL FOR THE RED SECRET TRAIT -->
-            <div class="red-secret-trait-modal-container" id="red-secret-trait-modal-container">
-              <div class="red-secret-trait-modal">
-                <span class="hoverable" id="red-secret-trait-modal-close">&times;</span>
-                <h1>ASSERTIVE</h1>
-
-                <p><em>“Never be so polite, you forget your power.<br>
-                  Never wield such power, you forget to be polite.”</em></p>
-                <p class="author-quote">- Taylor Swift</p>
-              </div>
-            </div>
-            <!-- MODAL FOR THE RED SECRET TRAIT -->
-
-            <div class="traits-slider swiper">
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <div class="traits-block">
-                    <img title="Click to see a quote" id="vodka-bottle-img" class="vodka-bottle-locked" src="assets/img/traits/trait-img-1.png">
-                    <h3 class="vodka-no-quote">LOCKED</h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="traits-block">
-                    <img title="Click to see a quote" id="absinthe-bottle-img" class="absinthe-bottle-locked" src="assets/img/traits/trait-img-2.png">
-                    <h3 class="absinthe-no-quote">LOCKED</h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="traits-block">
-                    <img title="Click to see a quote" id="tequila-bottle-img" class="tequila-bottle-locked" src="assets/img/traits/trait-img-3.png">
-                    <h3 class="tequila-no-quote">LOCKED</h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="traits-block">
-                    <img title="Click to see a quote" id="bourbon-bottle-img" class="bourbon-bottle-locked" src="assets/img/traits/trait-img-4.png">
-                    <h3 class="bourbon-no-quote">LOCKED</h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="traits-block">
-                    <img title="Click to see a quote" id="blue-whisper-bottle-img" class="blue-whisper-bottle-locked" src="assets/img/traits/trait-img-5.png">
-                    <h3 class="blue-whisper-no-quote">LOCKED</h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="traits-block">
-                    <img title="Click to see a quote" id="red-secret-bottle-img" class="red-secret-bottle-locked" src="assets/img/traits/trait-img-6.png">
-                    <h3 class="red-secret-no-quote">LOCKED</h3>
-                  </div>
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <a href="#portfolio" id="scroll-to-down" class="hoverable" onclick="changeStyleToPortfolioDown()">CLICK HERE TO GO DOWN</a>
-
-          <script>
-            function changeStyleToPortfolioDown(){
-              setTimeout(()=> {
-                var element = document.getElementsByClassName("cursor")[0];
-                /*element.style.fill = "white";*/
-              }
-              , 275);
-            }
-          </script>
-          
-        </div>
-      </div>
-    </section>
-    <!-- End About Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio">
-      <div class="inner container">
-        <div class="portfolio-content">
-          <a href="#about" id="scroll-to-up" class="hoverable" onclick="changeStyleToAboutUp()">CLICK HERE TO GO UP</a>
-
-          <script>
-            function changeStyleToAboutUp(){
-              setTimeout(()=> {
-                  var element = document.getElementsByClassName("cursor")[0];
-                  /*element.style.fill = "white";*/
-              }
-              , 275);
-            }
-          </script>
-
-          <p class="help-quote-3"><span class="typed-help-3" data-typed-items="...,PLEASE PLEASE!!!, ...,
-            YOU NEED TO FIND ME AROUND HERE, ...,I'M TRAPPED, ..., ...,I DON'T HOW TO GET OUT, ..., 
-            ...,LEND ME A HAND PLEASE, ...,YOU'LL BE MY HERO, ..., ..."></span>
-          </p>
-
-          <p class="p-heading">PORTFOLIO</p>
-          <div class="portfolio-block">
-            <div id="portfolio-cards">
-              
-              <div id="custom-engine-card" class="hoverable work-card">
-                <div class="work-card-border"></div>
-                <div class="work-card-content">
-
-                  <div class="card-image">
-                    <img src="assets/img/portfolio/project-img-1.png">
-                  </div>
-                  <div class="card-info-wrapper">
-                    <div class="card-info">
-                      <div class="card-info-title">
-                        <h3>AXOLOTL ENGINE</h3>  
-                        <h4><b style='color:#1f9554cc'>COLLECTIVE</b> - 
-                          <b style='color:#1f9554cc'>C++</b> - 
-                          <b style='color:#1f9554cc'>LEARNING</b>
-                        </h4>
-                        <a class="card-info-click-me">CLICK ME!</a>
-                      </div>    
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- MODAL FOR AXOLOTL ENGINE -->
-              <div class="custom-engine-modal-container" id="custom-engine-modal-container">
-                <div class="custom-engine-modal">
-                  <span class="hoverable" id="custom-engine-modal-close">&times;</span>
-                  <h1>AXOLOTL ENGINE</h1>
-                  <div class="modal-img-container">
-                    <img class="modal-img" src="assets/img/portfolio/port-image-ue-main.png">
-                  </div>
-
-                  <p class="small-disclaimer">
-                    During my first year in Barcelona, I attended a master's degree at the UPC in which, along with 20 other
-                    developers, we created a game engine from scratch, with OpenGL and SDL, ready to be used by anyone.<br>
-
-                    <a href="https://github.com/markmeliaa/AAA_Engine" target="_blank" class="click-button hoverable">
-                      CHECK OUT MY BETA VERSION OF THE ENGINE
-                    </a>
-                    <br><br>
-
-                    <b style='color:#ddad00; text-transform:uppercase'>PERFORMED ROLE:</b> 
-                    <b style='font-weight:500'>Generalist Programmer</b><br>
-                    <b style='color:#ddad00; text-transform:uppercase'>YEAR OF DEVELOPMENT:</b> 
-                    <b style='font-weight:500'>2023 [WIP]</b><br>
-                    <b style='color:#ddad00; text-transform:uppercase'>PERSONAL ACOMPLISHMENTS:</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Initial idea and application of the GameObjects' structure.</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Creation of both a Hierarchy and an Inspector window.</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Partial conception and development of the scripting system.</b><br>
-                    <br>
-                  </p>
-
-                  <a href="https://github.com/Horizons-Games/Axolotl-Engine" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>
-                  <!--<a href="https://markmeliaa.itch.io/" target="_blank" class="click-button portfolio-button hoverable">ITCH.IO PAGE</a>-->
-                </div>
-              </div>
-              <!-- MODAL FOR AXOLOTL ENGINE -->
-
-              <div id="ophiuchus-card" class="hoverable work-card">
-                <div class="work-card-border"></div>
-                <div class="work-card-content">
-                  
-                  <div class="card-image">
-                    <img src="assets/img/portfolio/project-img-2.png">
-                  </div>
-                  <div class="card-info-wrapper">
-                    <div class="card-info">
-                      <div class="card-info-title">
-                        <h3>OPHIUCHUS</h3>  
-                        <h4><b style='color:#1f9554cc'>INDIVIDUAL</b> - 
-                          <b style='color:#1f9554cc'>C# UNITY</b> - 
-                          <b style='color:#1f9554cc'>FOR FUN</b>
-                        </h4>
-                        <a class="card-info-click-me">CLICK ME!</a>
-                      </div>    
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-
-              <!-- MODAL FOR OPHIUCHUS -->
-              <div class="ophiuchus-modal-container" id="ophiuchus-modal-container">
-                <div class="ophiuchus-modal">
-                  <span class="hoverable" id="ophiuchus-modal-close">&times;</span>
-                  <h1>OPHIUCHUS</h1>
-                  <div class="modal-img-container">
-                    <img class="modal-img" src="assets/img/portfolio/port-img-ophiu-main.jpg">
-                  </div>
-
-                  <p class="small-disclaimer">
-                    OPHIUCHUS is, what I'd like to call, the crown jewel of all the work that I've developed until now. 
-                    A roguelite bullet hell game which features a procedural narrative about the Zodiacs, and that evolves depending 
-                    on the player's results in each run.<br><br>
-
-                    <b style='color:#ddad00; text-transform:uppercase'>PERFORMED ROLE:</b> 
-                    <b style='font-weight:500'>Main Developer</b><br>
-                    <b style='color:#ddad00; text-transform:uppercase'>YEAR OF DEVELOPMENT:</b> 
-                    <b style='font-weight:500'>2022</b><br>
-                    <b style='color:#ddad00; text-transform:uppercase'>PERSONAL ACOMPLISHMENTS:</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Creation of an algorithm that generates random dungeons.</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Outstanding plot and characters, both created from scratch.</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Development of a solid dialogue system to relate the story.</b><br>
-                    <br>
-                  </p>
-
-                  <a href="https://github.com/markmeliaa/OPHIUCHUS" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>
-                  <a href="https://markmeliaa.itch.io/ophiuchus" target="_blank" class="click-button portfolio-button hoverable">ITCH.IO PAGE</a>
+                Some years later, I discovered that I could work as one of those people involved in the 
+                development of a videogame, and that's been my dream job since then, trying to give others the same 
+                <b style='color:#cf57b1'>JOY</b> that I experience when I'm playing a videogame.</p>
                 
-                  <p class="help-quote-6"><span class="typed-help-6" data-typed-items="YOU FOUND ME!!!, ..., THANK GOD, ..., ...,
-                    I'VE SPENT MY WHOLE LIFE TRAPPED HERE, ..., ..., YOU ARE MY SAVIOUR, ..., ..., ..., THANKS!!!, ..."></span>
+            </div>
+
+            <p class="help-quote-2"><span class="typed-help-2" data-typed-items="...,I'VE BEEN TRAPPED HERE FOR SO LONG...,...,...,
+              YOU NEED TO SAVE ME PLEASE,...,...,I FEEL... ALONE,...,...,...,I DON'T KNOW WHAT ELSE TO DO,...,..."></span>
+            </p>
+
+            <div class="container">
+              <p class="p-heading-small">SOME TRAITS ABOUT MYSELF!</p>
+              <div class="traits-question-container">
+                <a id="traits-question-mark" class="hoverable">
+                  ?<a>
+                    <i style="font-size: 15px;" class="bi-arrow-left-circle-fill traits-question-mark-arrow"></i> 
+                    <a class="traits-question-mark-text">CLICK HERE!</a>
+                  </a>
+                </a>
+                
+              </div>
+
+              <!-- MODAL FOR THE TRAITS HELP -->
+              <div class="traits-modal-container" id="traits-modal-container">
+                <div class="traits-modal">
+                  <span class="hoverable" id="traits-modal-close">&times;</span>
+                  <h1>UNLOCKABLE TRAITS</h1>
+                  <p><b style='color:#cf57b1; text-transform:uppercase'>Oh, hey!</b> 
+                    Looks like you wanna know me better, isn't that right? Well, I've prepared a little game for you so you can 
+                    learn a bit more about myself.<br><br>
+                    <em>“It seems that someone is <b style='color:#cf57b1; text-transform:uppercase'>trapped</b> around here and is 
+                    asking for freedom, if you want to help them, find the <b style='color:#cf57b1; text-transform:uppercase'>six</b>
+                    help quotes that are hiding in any corner of this site.”</em><br><br>
+                    For each help quote that you click, you'll unlock one of these traits, 
+                    and once you've found all the help quotes, you'll be able to unravel the 
+                    <b style='color:#cf57b1; text-transform:uppercase'>mystery</b> hidden behind this web page.
                   </p>
-        
+                  <p class="small-disclaimer">
+                    <br>(Alternatively, <a class="unlock-all-traits hoverable">click here</a> if you don't want to play and you just 
+                    want to learn more about me, though if you also want to discover the mystery hidden behind this page, 
+                    you'll have to search around for the help quotes regardless).
+                  </p>
                 </div>
               </div>
-              <!-- MODAL FOR OPHIUCHUS -->
+              <!-- MODAL FOR THE TRAITS HELP -->
 
-              <div id="custom-wordle-card" class="hoverable work-card">
-                <div class="work-card-border"></div>
-                <div class="work-card-content">
+              <!-- MODAL FOR THE VODKA TRAIT -->
+              <div class="vodka-trait-modal-container" id="vodka-trait-modal-container">
+                <div class="vodka-trait-modal">
+                  <span class="hoverable" id="vodka-trait-modal-close">&times;</span>
+                  <h1>CREATIVE</h1>
 
-                  <div class="card-image">
-                    <img src="assets/img/portfolio/project-img-3.png">
+                  <p><em>“Creativity is seeing what others see and thinking what no one else ever thought.”</em></p>
+                  <p class="author-quote">- Albert Einstein</p>
+                </div>
+              </div>
+              <!-- MODAL FOR THE VODKA TRAIT -->
+
+              <!-- MODAL FOR THE ABSINTHE TRAIT -->
+              <div class="absinthe-trait-modal-container" id="absinthe-trait-modal-container">
+                <div class="absinthe-trait-modal">
+                  <span class="hoverable" id="absinthe-trait-modal-close">&times;</span>
+                  <h1>OPTIMISTIC</h1>
+
+                  <p><em>“Lorem Ipsum Dolor Sit Amet”</em></p>
+                  <p class="author-quote">- Lorem Ipsum</p>
+                </div>
+              </div>
+              <!-- MODAL FOR THE ABSINTHE TRAIT -->
+
+              <!-- MODAL FOR THE TEQUILA TRAIT -->
+              <div class="tequila-trait-modal-container" id="tequila-trait-modal-container">
+                <div class="tequila-trait-modal">
+                  <span class="hoverable" id="tequila-trait-modal-close">&times;</span>
+                  <h1>CURIOUS</h1>
+
+                  <p><em>“Lorem Ipsum Dolor Sit Amet”</em></p>
+                  <p class="author-quote">- Lorem Ipsum</p>
+                </div>
+              </div>
+              <!-- MODAL FOR THE TEQUILA TRAIT -->
+
+              <!-- MODAL FOR THE BOURBON TRAIT -->
+              <div class="bourbon-trait-modal-container" id="bourbon-trait-modal-container">
+                <div class="bourbon-trait-modal">
+                  <span class="hoverable" id="bourbon-trait-modal-close">&times;</span>
+                  <h1>SHARP-WITTED</h1>
+
+                  <p><em>“Lorem Ipsum Dolor Sit Amet”</em></p>
+                  <p class="author-quote">- Lorem Ipsum</p>
+                </div>
+              </div>
+              <!-- MODAL FOR THE BOURBON TRAIT -->
+
+              <!-- MODAL FOR THE BLUE WHISPER TRAIT -->
+              <div class="blue-whisper-trait-modal-container" id="blue-whisper-trait-modal-container">
+                <div class="blue-whisper-trait-modal">
+                  <span class="hoverable" id="blue-whisper-trait-modal-close">&times;</span>
+                  <h1>PASSIONATE</h1>
+
+                  <p><em>“Lorem Ipsum Dolor Sit Amet”</em></p>
+                  <p class="author-quote">- Lorem Ipsum</p>
+                </div>
+              </div>
+              <!-- MODAL FOR THE BLUE WHISPER TRAIT -->
+
+              <!-- MODAL FOR THE RED SECRET TRAIT -->
+              <div class="red-secret-trait-modal-container" id="red-secret-trait-modal-container">
+                <div class="red-secret-trait-modal">
+                  <span class="hoverable" id="red-secret-trait-modal-close">&times;</span>
+                  <h1>ASSERTIVE</h1>
+
+                  <p><em>“Never be so polite, you forget your power.<br>
+                    Never wield such power, you forget to be polite.”</em></p>
+                  <p class="author-quote">- Taylor Swift</p>
+                </div>
+              </div>
+              <!-- MODAL FOR THE RED SECRET TRAIT -->
+
+              <div class="traits-slider swiper">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <div class="traits-block">
+                      <img title="Click to see a quote" id="vodka-bottle-img" class="vodka-bottle-locked" src="assets/img/traits/trait-img-1.png">
+                      <h3 class="vodka-no-quote">LOCKED</h3>
+                    </div>
                   </div>
-                  <div class="card-info-wrapper">
-                    <div class="card-info">
-                      <div class="card-info-title">
-                        <h3>CUSTOM WORDLE</h3>  
-                        <h4><b style='color:#1f9554cc'>INDIVIDUAL</b> - 
-                          <b style='color:#1f9554cc'>C++</b> - 
-                          <b style='color:#1f9554cc'>FOR FUN</b>
-                        </h4>
-                        <a class="card-info-click-me">CLICK ME!</a>
-                      </div>    
+
+                  <div class="swiper-slide">
+                    <div class="traits-block">
+                      <img title="Click to see a quote" id="absinthe-bottle-img" class="absinthe-bottle-locked" src="assets/img/traits/trait-img-2.png">
+                      <h3 class="absinthe-no-quote">LOCKED</h3>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="traits-block">
+                      <img title="Click to see a quote" id="tequila-bottle-img" class="tequila-bottle-locked" src="assets/img/traits/trait-img-3.png">
+                      <h3 class="tequila-no-quote">LOCKED</h3>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="traits-block">
+                      <img title="Click to see a quote" id="bourbon-bottle-img" class="bourbon-bottle-locked" src="assets/img/traits/trait-img-4.png">
+                      <h3 class="bourbon-no-quote">LOCKED</h3>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="traits-block">
+                      <img title="Click to see a quote" id="blue-whisper-bottle-img" class="blue-whisper-bottle-locked" src="assets/img/traits/trait-img-5.png">
+                      <h3 class="blue-whisper-no-quote">LOCKED</h3>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="traits-block">
+                      <img title="Click to see a quote" id="red-secret-bottle-img" class="red-secret-bottle-locked" src="assets/img/traits/trait-img-6.png">
+                      <h3 class="red-secret-no-quote">LOCKED</h3>
                     </div>
                   </div>
 
                 </div>
+                <div class="swiper-pagination"></div>
               </div>
+            </div>
 
-              <!-- MODAL FOR CUSTOM WORDLE -->
-              <div class="custom-wordle-modal-container" id="custom-wordle-modal-container">
-                <div class="custom-wordle-modal">
-                  <span class="hoverable" id="custom-wordle-modal-close">&times;</span>
-                  <h1>CUSTOM WORDLE</h1>
-                  <div class="modal-img-container">
-                    <img class="modal-img" src="assets/img/portfolio/port-img-wordle-main.jpg">
-                  </div>
+            <a href="#portfolio" id="scroll-to-down" class="hoverable" onclick="changeStyleToPortfolioDown()">CLICK HERE TO GO DOWN</a>
 
-                  <p class="small-disclaimer">
-                    Remember that period of time when Wordle became famous and everybody played it each day?
-                    Well, that's when I decided to develop my own version of it, but in C++ and using SFML, because
-                    I saw it a good opportunity to expand my portfolio.<br><br>
-
-                    <b style='color:#ddad00; text-transform:uppercase'>PERFORMED ROLE:</b> 
-                    <b style='font-weight:500'>Main Developer</b><br>
-                    <b style='color:#ddad00; text-transform:uppercase'>YEAR OF DEVELOPMENT:</b> 
-                    <b style='font-weight:500'>2022</b><br>
-                    <b style='color:#ddad00; text-transform:uppercase'>PERSONAL ACOMPLISHMENTS:</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Gain fluency writting code in C++.</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Know how to draw and perform actions with the help of SFML.</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Learn about other C++ open source libraries.</b><br>
-                    <br>
-                  </p>
-
-                  <a href="https://github.com/markmeliaa/Wordle_SFML" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>
-                  <a href="https://markmeliaa.itch.io/wordle" target="_blank" class="click-button portfolio-button hoverable">ITCH.IO PAGE</a>
-                </div>
-              </div>
-              <!-- MODAL FOR CUSTOM WORDLE -->
-
-              <div id="chess-and-tails-card" class="hoverable work-card">
-                <div class="work-card-border"></div>
-                <div class="work-card-content">
-
-                  <div class="card-image">
-                    <img src="assets/img/portfolio/project-img-4.png">
-                  </div>
-                  <div class="card-info-wrapper">
-                    <div class="card-info">
-                      <div class="card-info-title">
-                        <h3>CHESS AND TAILS</h3>  
-                        <h4><b style='color:#1f9554cc'>COLLECTIVE</b> - 
-                          <b style='color:#1f9554cc'>C# UNITY</b> - 
-                          <b style='color:#1f9554cc'>GAME JAM</b>
-                        </h4>
-                        <a class="card-info-click-me">CLICK ME!</a>
-                      </div>    
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- MODAL FOR CHESS AND TAILS -->
-              <div class="chess-and-tails-modal-container" id="chess-and-tails-modal-container">
-                <div class="chess-and-tails-modal">
-                  <span class="hoverable" id="chess-and-tails-modal-close">&times;</span>
-                  <h1>CHESS AND TAILS</h1>
-                  <div class="modal-img-container">
-                    <img class="modal-img" src="assets/img/portfolio/port-img-chess-main.jpg">
-                  </div>
-
-                  <p class="small-disclaimer">
-                    Endless mini-game developed for the Global Game Jam 2022 in which you'll have to battle per rounds
-                    against the pieces of the chess, with the peculiarity that your luck will decide if you'll
-                    recieve a bonus or a penalty at the beginning of each round.<br><br>
-
-                    <b style='color:#ddad00; text-transform:uppercase'>PERFORMED ROLE:</b> 
-                    <b style='font-weight:500'>Game Designer</b><br>
-                    <b style='color:#ddad00; text-transform:uppercase'>YEAR OF DEVELOPMENT:</b> 
-                    <b style='font-weight:500'>2022</b><br>
-                    <b style='color:#ddad00; text-transform:uppercase'>PERSONAL ACOMPLISHMENTS:</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Ideation of a fun gimmick that will engage the player.</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Learn about balancing enemies and power-ups.</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Adaptation of the game to have an attractive visual design.</b><br>
-                    <br>
-                  </p>
-
-                  <a href="https://github.com/IgnOry/GlobalGameJam2022" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>
-                  <a href="https://gorn99.itch.io/chess-tails" target="_blank" class="click-button portfolio-button hoverable">ITCH.IO PAGE</a>
-                </div>
-              </div>
-              <!-- MODAL FOR CHESS AND TAILS -->
-
-              <div id="2d-strat-game-card" class="hoverable work-card">
-                <div class="work-card-border"></div>
-                <div class="work-card-content">
-
-                  <div class="card-image">
-                    <img src="assets/img/portfolio/project-img-5.png">
-                  </div>
-                  <div class="card-info-wrapper">
-                    <div class="card-info">
-                      <div class="card-info-title">
-                        <h3>2D STRATEGY GAME</h3>  
-                        <h4><b style='color:#1f9554cc'>COLLECTIVE</b> - 
-                          <b style='color:#1f9554cc'>C# UNITY</b> - 
-                          <b style='color:#1f9554cc'>LEARNING</b>
-                        </h4>
-                        <a class="card-info-click-me">CLICK ME!</a>
-                      </div>    
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- MODAL FOR 2D STRAT GAME -->
-              <div class="strat-game-modal-container" id="strat-game-modal-container">
-                <div class="strat-game-modal">
-                  <span class="hoverable" id="strat-game-modal-close">&times;</span>
-                  <h1>2D STRATEGY GAME</h1>
-                  <div class="modal-img-container">
-                    <img class="modal-img" src="assets/img/portfolio/port-img-strat-main.png">
-                  </div>
-
-                  <p class="small-disclaimer">
-                    In this project developed for the university, we had to create a basic and simple RTS game,
-                    but with a smart CPU. To do so, we had to implement from scratch a bunch of cool AI
-                    techiques that increased its ability and made it more challenging.<br><br>
-
-                    <b style='color:#ddad00; text-transform:uppercase'>PERFORMED ROLE:</b> 
-                    <b style='font-weight:500'>AI Programmer</b><br>
-                    <b style='color:#ddad00; text-transform:uppercase'>YEAR OF DEVELOPMENT:</b> 
-                    <b style='font-weight:500'>2021-2022</b><br>
-                    <b style='color:#ddad00; text-transform:uppercase'>PERSONAL ACOMPLISHMENTS:</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Introduction of an influence map to guide the CPU.</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Creation of a simple behaviour tree for each CPU unit.</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Apply an A* pathfinding algorithm with tactical components.</b><br>
-                    <br>
-                  </p>
-
-                  <a href="https://github.com/markmeliaa/2D_Strategy_Game" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>
-                  <a href="https://markmeliaa.itch.io/2d-strategy-game" target="_blank" class="click-button portfolio-button hoverable">ITCH.IO PAGE</a>
-                </div>
-              </div>
-              <!-- MODAL FOR 2D STRAT GAME -->
-
-              <div id="the-antidote-card" class="hoverable work-card">
-                <div class="work-card-border"></div>
-                <div class="work-card-content">
-
-                  <div class="card-image">
-                    <img src="assets/img/portfolio/project-img-6.png">
-                  </div>
-                  <div class="card-info-wrapper">
-                    <div class="card-info">
-                      <div class="card-info-title">
-                        <h3>THE ANTIDOTE</h3>  
-                        <h4><b style='color:#1f9554cc'>COLLECTIVE</b> - 
-                          <b style='color:#1f9554cc'>C# UNITY</b> - 
-                          <b style='color:#1f9554cc'>FOR FUN</b>
-                        </h4>
-                        <a class="card-info-click-me">CLICK ME!</a>
-                      </div>    
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-
-              <!-- MODAL FOR THE ANTIDOTE -->
-              <div class="antidote-modal-container" id="antidote-modal-container">
-                <div class="antidote-modal">
-                  <span class="hoverable" id="antidote-modal-close">&times;</span>
-                  <h1>THE ANTIDOTE</h1>
-                  <div class="modal-img-container">
-                    <img class="modal-img" src="assets/img/portfolio/port-img-antidote-main.png">
-                  </div>
-
-                  <p class="small-disclaimer">
-                    The Antidote is a graphic novel with puzzles (Professor Layton-style) developed with some colleagues
-                    in which you'll have to go through several locations and places to try and learn what happened with Mr.Barclay
-                    and defeat the evil corporation.<br><br>
-
-                    <b style='color:#ddad00; text-transform:uppercase'>PERFORMED ROLE:</b> 
-                    <b style='font-weight:500'>Gameplay Programmer - Game Designer</b><br>
-                    <b style='color:#ddad00; text-transform:uppercase'>YEAR OF DEVELOPMENT:</b> 
-                    <b style='font-weight:500'>2020-2021</b><br>
-                    <b style='color:#ddad00; text-transform:uppercase'>PERSONAL ACOMPLISHMENTS:</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Implementation of several fun and non-repetitive puzzles.</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Adaptation to the AGILE SCRUM methodology with sprints.</b><br>
-                    <b class="acomplishments" style='font-weight:500'>- Development of point and click mechanics for the game.</b><br>
-                    <br>
-                  </p>
-
-                  <a href="https://github.com/markmeliaa/The_Antidote" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>
-                  <a href="https://markmeliaa.itch.io/the-antidote" target="_blank" class="click-button portfolio-button hoverable">ITCH.IO PAGE</a>
-                </div>
-              </div>
-              <!-- MODAL FOR THE ANTIDOTE -->
-
-            </div>  
-          </div>
-
-          <a href="#research" id="scroll-to-down" class="hoverable" onclick="changeStyleToResearchDown()">CLICK HERE TO GO DOWN</a>
-
-          <script>
-            function changeStyleToResearchDown(){
-              setTimeout(()=> {
-                var element = document.getElementsByClassName("cursor")[0];
-                /*element.style.fill = "white";*/
-              }
-              , 275);
-            }
-          </script>
-
-        </div>
-      </div>
-    </section>
-    <!-- End Portfolio Section -->
-
-    <!-- ======= Research Section ======= -->
-    <section id="research">
-      <div class="inner container">
-        <div class="research-content">
-          <a href="#portfolio" id="scroll-to-up" class="hoverable" onclick="changeStyleToPortfolioUp()">CLICK HERE TO GO UP</a>
-
-          <script>
-            function changeStyleToPortfolioUp(){
-              setTimeout(()=> {
+            <script>
+              function changeStyleToPortfolioDown(){
+                setTimeout(()=> {
                   var element = document.getElementsByClassName("cursor")[0];
                   /*element.style.fill = "white";*/
+                }
+                , 275);
               }
-              , 275);
-            }
-          </script>
-
-          <p class="help-quote-4"><span class="typed-help-4" data-typed-items="..., I'M SO GLAD YOU FOUND ME, ..., I DIDN'T KNOW WHAT TO DO,
-            ..., ..., I WAS SO SCARED, ..., I THOUGH I WAS NEVER GONNA BREAK FREE FROM HERE, ..., ..., THANK YOU TRULY,..."></span>
-          </p>
-
-          <p class="p-heading">ßESEAßCH</p>
-          <div class="research-block">
-            <div id="research-cards">
-              
-              <div id="ai-card" class="hoverable article-card">
-                <div class="article-card-border"></div>
-                <div class="article-card-content">
-
-                  <div class="card-image">
-                    <img src="assets/img/research/article-img-3.png">
-                  </div>
-                  <div class="card-info-wrapper">
-                    <div class="card-info">
-                      <div class="card-info-title">
-                        <h3>CHATGPT AND CO., HOW ARE THEY GOING TO IMPACT OUR LIVES?</h3>  
-                        <!--<h4>- <b style='color:#740ea7cc'>REFLECTIVE</b> -</h4>-->
-                        <a class="card-info-click-me">CLICK ME!</a>
-                      </div>    
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- MODAL FOR AI ARTICLE -->
-              <div class="ai-modal-container" id="ai-modal-container">
-                <div class="ai-modal">
-                  <span class="hoverable" id="ai-modal-close">&times;</span>
-                  <h1>CHATGPT AND COMPANY, HOW ARE THEY GOING TO IMPACT OUR LIVES?</h1>
-                  <div class="modal-img-container">
-                    <img class="modal-img" src="assets/img/research/res-img-3.jpg">
-                  </div>
-
-                  <p class="small-disclaimer" style="text-align: center;">
-                    <b style='color:#ec0484; text-transform:uppercase; text-align: right;'>YEAR OF DEVELOPMENT:</b> 
-                    <b style='font-weight:500'>2023 [WIP]</b><br>
-                  </p>
-                  <p class="small-disclaimer">
-                    During the last few months, a lot of AI softwares (such as CHATGPT, Stable Diffusion, Dall-E...) are 
-                    increasingly present in our daily lives, trying to make them easier and helping us out, but are they really
-                    good for us? Will they have any impact in our jobs and in our lives? Which are their limits, how far can they
-                    reach? All this and more will be summarized in this research.<!--<br><br>-->
-                  </p>
-                  
-                  <!--<a href="https://github.com/markmeliaa" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>-->
-                </div>
-              </div>
-              <!-- MODAL FOR AI ARTICLE -->
-
-              <div id="neural-network-card" class="hoverable article-card">
-                <div class="article-card-border"></div>
-                <div class="article-card-content">
-
-                  <div class="card-image">
-                    <img src="assets/img/research/article-img-2.png">
-                  </div>
-                  <div class="card-info-wrapper">
-                    <div class="card-info">
-                      <div class="card-info-title">
-                        <h3>THE CREATION OF A NEURAL NET THAT IDENTIFIES HANDWRITTEN DIGITS</h3>  
-                        <!--<h4>- <b style='color:#740ea7cc'>INFORMATIVE</b> -</h4>-->
-                        <a class="card-info-click-me">CLICK ME!</a>
-                      </div>    
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- MODAL FOR NEURAL NETWORK ARTICLE -->
-              <div class="neural-network-modal-container" id="neural-network-modal-container">
-                <div class="neural-network-modal">
-                  <span class="hoverable" id="neural-network-modal-close">&times;</span>
-                  <h1>THE CREATION OF A NEURAL NET THAT IDENTIFIES HANDWRITTEN DIGITS</h1>
-                  <div class="modal-img-container">
-                    <img class="modal-img" src="assets/img/research/res-img-2.jpg">
-                  </div>
-
-                  <p class="small-disclaimer" style="text-align: center;">
-                    <b style='color:#ec0484; text-transform:uppercase; text-align: right;'>YEAR OF DEVELOPMENT:</b> 
-                    <b style='font-weight:500'>2021-2022</b><br>
-                  </p>
-                  <p class="small-disclaimer">
-                    Have you ever wondered how the neural networks of the AIs learn? How are they able to perform one task perfectly after being 
-                    throughly trained? Well, wonder no more! In this research you will not only learn how do neural networks work internally, but you'll also
-                    develop your own neural network in Python, in addition to training it to learn how to identify handwritten digits.<br><br>
-                  </p>
-                  
-                  <a href="assets/docs/NEURAL NET RESEARCH.pdf" target="_blank" class="click-button portfolio-button hoverable">RESEARCH DOCUMENT</a>
-                  <a href="https://github.com/markmeliaa/Neural_Network_Digits" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>
-                </div>
-              </div>
-              <!-- MODAL FOR NEURAL NETWORK ARTICLE -->
-
-              <div id="concurrency-card" class="hoverable article-card">
-                <div class="article-card-border"></div>
-                <div class="article-card-content">
-                  
-                  <div class="card-image">
-                    <img src="assets/img/research/article-img-1.png">
-                  </div>
-                  <div class="card-info-wrapper">
-                    <div class="card-info">
-                      <div class="card-info-title">
-                        <h3>CONCURRENCY IN UNITY, HOW DOES IT WORK AND HOW TO ACHIEVE IT?</h3>  
-                        <!--<h4>- <b style='color:#740ea7cc'>INFORMATIVE</b> -</h4>-->
-                        <a class="card-info-click-me">CLICK ME!</a>
-                      </div>    
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-
-              <!-- MODAL FOR CONCURRENCY ARTICLE -->
-              <div class="concurrency-modal-container" id="concurrency-modal-container">
-                <div class="concurrency-modal">
-                  <span class="hoverable" id="concurrency-modal-close">&times;</span>
-                  <h1>CONCURRENCY IN UNITY, HOW DOES IT WORK AND HOW TO ACHIEVE IT?</h1>
-                  <div class="modal-img-container">
-                    <img class="modal-img" src="assets/img/research/res-img-1.jpg">
-                  </div>
-
-                  <p class="small-disclaimer" style="text-align: center;">
-                    <b style='color:#ec0484; text-transform:uppercase; text-align: right;'>YEAR OF DEVELOPMENT:</b> 
-                    <b style='font-weight:500'>2020</b><br>
-                  </p>
-                  <p class="small-disclaimer">
-                    One of the concerns that a programmer must have is performance, the code you write should not only work as inteded,
-                    but also run at an acceptable speed, and concurrency is one of the ways to make the code you write more efficient.<br>
-                    Here you'd not only find a research about how to apply concurrency in Unity, but also a small project featuring a
-                    pathfinding A* algorithm to prove that concurrency IS really imporant when complex algorithms and calculations are being used.<br><br>
-                  </p>
-
-                  <a href="assets/docs/CONCURRENCY UNITY.pdf" target="_blank" class="click-button portfolio-button hoverable">RESEARCH DOCUMENT</a>
-                  <a href="https://github.com/markmeliaa/Concurrency_Research" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>
-                </div>
-              </div>
-              <!-- MODAL FOR CONCURRENCY ARTICLE -->
-
-            </div>  
+            </script>
+            
           </div>
-
-          <a href="#contact" id="scroll-to-down" class="hoverable" onclick="changeStyleToContactDown()">CLICK HERE TO GO DOWN</a>
-
-          <script>
-            function changeStyleToContactDown(){
-              setTimeout(()=> {
-                var element = document.getElementsByClassName("cursor")[0];
-                /*element.style.fill = "white";*/
-              }
-              , 275);
-            }
-          </script>
-
         </div>
-      </div>
-    </section>
-    <!-- End Research Section -->
+      </section>
+      <!-- End About Section -->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact">
-      <div class="inner container">
-        <div class="contact-content">
-          <a href="#research" id="scroll-to-up" class="hoverable" onclick="changeStyleToResearchUp()">CLICK HERE TO GO UP</a>
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio">
+        <div class="inner container">
+          <div class="portfolio-content">
+            <a href="#about" id="scroll-to-up" class="hoverable" onclick="changeStyleToAboutUp()">CLICK HERE TO GO UP</a>
 
-          <script>
-            function changeStyleToResearchUp(){
-              setTimeout(()=> {
-                  var element = document.getElementsByClassName("cursor")[0];
-                  /*element.style.fill = "white";*/
+            <script>
+              function changeStyleToAboutUp(){
+                setTimeout(()=> {
+                    var element = document.getElementsByClassName("cursor")[0];
+                    /*element.style.fill = "white";*/
+                }
+                , 275);
               }
-              , 275);
-            }
-          </script>
+            </script>
 
-          <p class="help-quote-5"><span class="typed-help-5" data-typed-items="..., BUT..., NOW THAT I'M FREE..., ..., I DON'T KNOW WHAT TO DO, ..., ...,
-            IRONIC RIGHT?, ..., WELL..., ..., I GUESS THAT EVENTUALLY..., ..., I'LL FIGURE UP WHAT SHOULD I DO, ..., I AM THE MASTER OF MY OWN DESTINY NOW, ...,
-            AND EVERYTHING IS THANKS TO YOU, ..., I HOPE YOU HAD FUN TRYING TO SAVE ME!!, ..., ..., THANKS! SEE YA!, ..."></span>
-          </p>
+            <p class="help-quote-3"><span class="typed-help-3" data-typed-items="...,PLEASE PLEASE!!!, ...,
+              YOU NEED TO FIND ME AROUND HERE, ...,I'M TRAPPED, ..., ...,I DON'T HOW TO GET OUT, ..., 
+              ...,LEND ME A HAND PLEASE, ...,YOU'LL BE MY HERO, ..., ..."></span>
+            </p>
 
-          <p class="p-heading">CONTACT ME!</p>
+            <p class="p-heading">PORTFOLIO</p>
+            <div class="portfolio-block">
+              <div id="portfolio-cards">
+                
+                <div id="custom-engine-card" class="hoverable work-card">
+                  <div class="work-card-border"></div>
+                  <div class="work-card-content">
 
+                    <div class="card-image">
+                      <img src="assets/img/portfolio/project-img-1.png">
+                    </div>
+                    <div class="card-info-wrapper">
+                      <div class="card-info">
+                        <div class="card-info-title">
+                          <h3>AXOLOTL ENGINE</h3>  
+                          <h4><b style='color:#1f9554cc'>COLLECTIVE</b> - 
+                            <b style='color:#1f9554cc'>C++</b> - 
+                            <b style='color:#1f9554cc'>LEARNING</b>
+                          </h4>
+                          <a class="card-info-click-me">CLICK ME!</a>
+                        </div>    
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- MODAL FOR AXOLOTL ENGINE -->
+                <div class="custom-engine-modal-container" id="custom-engine-modal-container">
+                  <div class="custom-engine-modal">
+                    <span class="hoverable" id="custom-engine-modal-close">&times;</span>
+                    <h1>AXOLOTL ENGINE</h1>
+                    <div class="modal-img-container">
+                      <img class="modal-img" src="assets/img/portfolio/port-image-ue-main.png">
+                    </div>
+
+                    <p class="small-disclaimer">
+                      During my first year in Barcelona, I attended a master's degree at the UPC in which, along with 20 other
+                      developers, we created a game engine from scratch, with OpenGL and SDL, ready to be used by anyone.<br>
+
+                      <a href="https://github.com/markmeliaa/AAA_Engine" target="_blank" class="click-button hoverable">
+                        CHECK OUT MY BETA VERSION OF THE ENGINE
+                      </a>
+                      <br><br>
+
+                      <b style='color:#ddad00; text-transform:uppercase'>PERFORMED ROLE:</b> 
+                      <b style='font-weight:500'>Generalist Programmer</b><br>
+                      <b style='color:#ddad00; text-transform:uppercase'>YEAR OF DEVELOPMENT:</b> 
+                      <b style='font-weight:500'>2023 [WIP]</b><br>
+                      <b style='color:#ddad00; text-transform:uppercase'>PERSONAL ACOMPLISHMENTS:</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Initial idea and application of the GameObjects' structure.</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Creation of both a Hierarchy and an Inspector window.</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Partial conception and development of the scripting system.</b><br>
+                      <br>
+                    </p>
+
+                    <a href="https://github.com/Horizons-Games/Axolotl-Engine" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>
+                    <!--<a href="https://markmeliaa.itch.io/" target="_blank" class="click-button portfolio-button hoverable">ITCH.IO PAGE</a>-->
+                  </div>
+                </div>
+                <!-- MODAL FOR AXOLOTL ENGINE -->
+
+                <div id="ophiuchus-card" class="hoverable work-card">
+                  <div class="work-card-border"></div>
+                  <div class="work-card-content">
+                    
+                    <div class="card-image">
+                      <img src="assets/img/portfolio/project-img-2.png">
+                    </div>
+                    <div class="card-info-wrapper">
+                      <div class="card-info">
+                        <div class="card-info-title">
+                          <h3>OPHIUCHUS</h3>  
+                          <h4><b style='color:#1f9554cc'>INDIVIDUAL</b> - 
+                            <b style='color:#1f9554cc'>C# UNITY</b> - 
+                            <b style='color:#1f9554cc'>FOR FUN</b>
+                          </h4>
+                          <a class="card-info-click-me">CLICK ME!</a>
+                        </div>    
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <!-- MODAL FOR OPHIUCHUS -->
+                <div class="ophiuchus-modal-container" id="ophiuchus-modal-container">
+                  <div class="ophiuchus-modal">
+                    <span class="hoverable" id="ophiuchus-modal-close">&times;</span>
+                    <h1>OPHIUCHUS</h1>
+                    <div class="modal-img-container">
+                      <img class="modal-img" src="assets/img/portfolio/port-img-ophiu-main.jpg">
+                    </div>
+
+                    <p class="small-disclaimer">
+                      OPHIUCHUS is, what I'd like to call, the crown jewel of all the work that I've developed until now. 
+                      A roguelite bullet hell game which features a procedural narrative about the Zodiacs, and that evolves depending 
+                      on the player's results in each run.<br><br>
+
+                      <b style='color:#ddad00; text-transform:uppercase'>PERFORMED ROLE:</b> 
+                      <b style='font-weight:500'>Main Developer</b><br>
+                      <b style='color:#ddad00; text-transform:uppercase'>YEAR OF DEVELOPMENT:</b> 
+                      <b style='font-weight:500'>2022</b><br>
+                      <b style='color:#ddad00; text-transform:uppercase'>PERSONAL ACOMPLISHMENTS:</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Creation of an algorithm that generates random dungeons.</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Outstanding plot and characters, both created from scratch.</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Development of a solid dialogue system to relate the story.</b><br>
+                      <br>
+                    </p>
+
+                    <a href="https://github.com/markmeliaa/OPHIUCHUS" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>
+                    <a href="https://markmeliaa.itch.io/ophiuchus" target="_blank" class="click-button portfolio-button hoverable">ITCH.IO PAGE</a>
+                  
+                    <p class="help-quote-6"><span class="typed-help-6" data-typed-items="YOU FOUND ME!!!, ..., THANK GOD, ..., ...,
+                      I'VE SPENT MY WHOLE LIFE TRAPPED HERE, ..., ..., YOU ARE MY SAVIOUR, ..., ..., ..., THANKS!!!, ..."></span>
+                    </p>
           
-          <ul class="list-unstyled list-social">
-            <li><a href="https://www.linkedin.com/in/markmeliaa/" target="_blank" class="hoverable"><i class="bi-linkedin"> @markmeliaa</i></a></li>
-            <li><a href="mailto:marcaalconmelia@gmail.com" target="_blank" class="hoverable"><i class="bi-envelope-fill"> marcaalconmelia@gmail.com</i></a></li>
-          </ul>
+                  </div>
+                </div>
+                <!-- MODAL FOR OPHIUCHUS -->
 
-          <ul class="list-unstyled list-social-2">
-            <li><a href="assets/docs/English-CV.pdf" target="_blank" class="hoverable"><i class="bi-file-earmark-person-fill">
-              Don't forget to check out my resume too!
-            </i></a></li>
-          </ul>
+                <div id="custom-wordle-card" class="hoverable work-card">
+                  <div class="work-card-border"></div>
+                  <div class="work-card-content">
 
+                    <div class="card-image">
+                      <img src="assets/img/portfolio/project-img-3.png">
+                    </div>
+                    <div class="card-info-wrapper">
+                      <div class="card-info">
+                        <div class="card-info-title">
+                          <h3>CUSTOM WORDLE</h3>  
+                          <h4><b style='color:#1f9554cc'>INDIVIDUAL</b> - 
+                            <b style='color:#1f9554cc'>C++</b> - 
+                            <b style='color:#1f9554cc'>FOR FUN</b>
+                          </h4>
+                          <a class="card-info-click-me">CLICK ME!</a>
+                        </div>    
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- MODAL FOR CUSTOM WORDLE -->
+                <div class="custom-wordle-modal-container" id="custom-wordle-modal-container">
+                  <div class="custom-wordle-modal">
+                    <span class="hoverable" id="custom-wordle-modal-close">&times;</span>
+                    <h1>CUSTOM WORDLE</h1>
+                    <div class="modal-img-container">
+                      <img class="modal-img" src="assets/img/portfolio/port-img-wordle-main.jpg">
+                    </div>
+
+                    <p class="small-disclaimer">
+                      Remember that period of time when Wordle became famous and everybody played it each day?
+                      Well, that's when I decided to develop my own version of it, but in C++ and using SFML, because
+                      I saw it a good opportunity to expand my portfolio.<br><br>
+
+                      <b style='color:#ddad00; text-transform:uppercase'>PERFORMED ROLE:</b> 
+                      <b style='font-weight:500'>Main Developer</b><br>
+                      <b style='color:#ddad00; text-transform:uppercase'>YEAR OF DEVELOPMENT:</b> 
+                      <b style='font-weight:500'>2022</b><br>
+                      <b style='color:#ddad00; text-transform:uppercase'>PERSONAL ACOMPLISHMENTS:</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Gain fluency writting code in C++.</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Know how to draw and perform actions with the help of SFML.</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Learn about other C++ open source libraries.</b><br>
+                      <br>
+                    </p>
+
+                    <a href="https://github.com/markmeliaa/Wordle_SFML" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>
+                    <a href="https://markmeliaa.itch.io/wordle" target="_blank" class="click-button portfolio-button hoverable">ITCH.IO PAGE</a>
+                  </div>
+                </div>
+                <!-- MODAL FOR CUSTOM WORDLE -->
+
+                <div id="chess-and-tails-card" class="hoverable work-card">
+                  <div class="work-card-border"></div>
+                  <div class="work-card-content">
+
+                    <div class="card-image">
+                      <img src="assets/img/portfolio/project-img-4.png">
+                    </div>
+                    <div class="card-info-wrapper">
+                      <div class="card-info">
+                        <div class="card-info-title">
+                          <h3>CHESS AND TAILS</h3>  
+                          <h4><b style='color:#1f9554cc'>COLLECTIVE</b> - 
+                            <b style='color:#1f9554cc'>C# UNITY</b> - 
+                            <b style='color:#1f9554cc'>GAME JAM</b>
+                          </h4>
+                          <a class="card-info-click-me">CLICK ME!</a>
+                        </div>    
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- MODAL FOR CHESS AND TAILS -->
+                <div class="chess-and-tails-modal-container" id="chess-and-tails-modal-container">
+                  <div class="chess-and-tails-modal">
+                    <span class="hoverable" id="chess-and-tails-modal-close">&times;</span>
+                    <h1>CHESS AND TAILS</h1>
+                    <div class="modal-img-container">
+                      <img class="modal-img" src="assets/img/portfolio/port-img-chess-main.jpg">
+                    </div>
+
+                    <p class="small-disclaimer">
+                      Endless mini-game developed for the Global Game Jam 2022 in which you'll have to battle per rounds
+                      against the pieces of the chess, with the peculiarity that your luck will decide if you'll
+                      recieve a bonus or a penalty at the beginning of each round.<br><br>
+
+                      <b style='color:#ddad00; text-transform:uppercase'>PERFORMED ROLE:</b> 
+                      <b style='font-weight:500'>Game Designer</b><br>
+                      <b style='color:#ddad00; text-transform:uppercase'>YEAR OF DEVELOPMENT:</b> 
+                      <b style='font-weight:500'>2022</b><br>
+                      <b style='color:#ddad00; text-transform:uppercase'>PERSONAL ACOMPLISHMENTS:</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Ideation of a fun gimmick that will engage the player.</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Learn about balancing enemies and power-ups.</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Adaptation of the game to have an attractive visual design.</b><br>
+                      <br>
+                    </p>
+
+                    <a href="https://github.com/IgnOry/GlobalGameJam2022" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>
+                    <a href="https://gorn99.itch.io/chess-tails" target="_blank" class="click-button portfolio-button hoverable">ITCH.IO PAGE</a>
+                  </div>
+                </div>
+                <!-- MODAL FOR CHESS AND TAILS -->
+
+                <div id="2d-strat-game-card" class="hoverable work-card">
+                  <div class="work-card-border"></div>
+                  <div class="work-card-content">
+
+                    <div class="card-image">
+                      <img src="assets/img/portfolio/project-img-5.png">
+                    </div>
+                    <div class="card-info-wrapper">
+                      <div class="card-info">
+                        <div class="card-info-title">
+                          <h3>2D STRATEGY GAME</h3>  
+                          <h4><b style='color:#1f9554cc'>COLLECTIVE</b> - 
+                            <b style='color:#1f9554cc'>C# UNITY</b> - 
+                            <b style='color:#1f9554cc'>LEARNING</b>
+                          </h4>
+                          <a class="card-info-click-me">CLICK ME!</a>
+                        </div>    
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- MODAL FOR 2D STRAT GAME -->
+                <div class="strat-game-modal-container" id="strat-game-modal-container">
+                  <div class="strat-game-modal">
+                    <span class="hoverable" id="strat-game-modal-close">&times;</span>
+                    <h1>2D STRATEGY GAME</h1>
+                    <div class="modal-img-container">
+                      <img class="modal-img" src="assets/img/portfolio/port-img-strat-main.png">
+                    </div>
+
+                    <p class="small-disclaimer">
+                      In this project developed for the university, we had to create a basic and simple RTS game,
+                      but with a smart CPU. To do so, we had to implement from scratch a bunch of cool AI
+                      techiques that increased its ability and made it more challenging.<br><br>
+
+                      <b style='color:#ddad00; text-transform:uppercase'>PERFORMED ROLE:</b> 
+                      <b style='font-weight:500'>AI Programmer</b><br>
+                      <b style='color:#ddad00; text-transform:uppercase'>YEAR OF DEVELOPMENT:</b> 
+                      <b style='font-weight:500'>2021-2022</b><br>
+                      <b style='color:#ddad00; text-transform:uppercase'>PERSONAL ACOMPLISHMENTS:</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Introduction of an influence map to guide the CPU.</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Creation of a simple behaviour tree for each CPU unit.</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Apply an A* pathfinding algorithm with tactical components.</b><br>
+                      <br>
+                    </p>
+
+                    <a href="https://github.com/markmeliaa/2D_Strategy_Game" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>
+                    <a href="https://markmeliaa.itch.io/2d-strategy-game" target="_blank" class="click-button portfolio-button hoverable">ITCH.IO PAGE</a>
+                  </div>
+                </div>
+                <!-- MODAL FOR 2D STRAT GAME -->
+
+                <div id="the-antidote-card" class="hoverable work-card">
+                  <div class="work-card-border"></div>
+                  <div class="work-card-content">
+
+                    <div class="card-image">
+                      <img src="assets/img/portfolio/project-img-6.png">
+                    </div>
+                    <div class="card-info-wrapper">
+                      <div class="card-info">
+                        <div class="card-info-title">
+                          <h3>THE ANTIDOTE</h3>  
+                          <h4><b style='color:#1f9554cc'>COLLECTIVE</b> - 
+                            <b style='color:#1f9554cc'>C# UNITY</b> - 
+                            <b style='color:#1f9554cc'>FOR FUN</b>
+                          </h4>
+                          <a class="card-info-click-me">CLICK ME!</a>
+                        </div>    
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <!-- MODAL FOR THE ANTIDOTE -->
+                <div class="antidote-modal-container" id="antidote-modal-container">
+                  <div class="antidote-modal">
+                    <span class="hoverable" id="antidote-modal-close">&times;</span>
+                    <h1>THE ANTIDOTE</h1>
+                    <div class="modal-img-container">
+                      <img class="modal-img" src="assets/img/portfolio/port-img-antidote-main.png">
+                    </div>
+
+                    <p class="small-disclaimer">
+                      The Antidote is a graphic novel with puzzles (Professor Layton-style) developed with some colleagues
+                      in which you'll have to go through several locations and places to try and learn what happened with Mr.Barclay
+                      and defeat the evil corporation.<br><br>
+
+                      <b style='color:#ddad00; text-transform:uppercase'>PERFORMED ROLE:</b> 
+                      <b style='font-weight:500'>Gameplay Programmer - Game Designer</b><br>
+                      <b style='color:#ddad00; text-transform:uppercase'>YEAR OF DEVELOPMENT:</b> 
+                      <b style='font-weight:500'>2020-2021</b><br>
+                      <b style='color:#ddad00; text-transform:uppercase'>PERSONAL ACOMPLISHMENTS:</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Implementation of several fun and non-repetitive puzzles.</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Adaptation to the AGILE SCRUM methodology with sprints.</b><br>
+                      <b class="acomplishments" style='font-weight:500'>- Development of point and click mechanics for the game.</b><br>
+                      <br>
+                    </p>
+
+                    <a href="https://github.com/markmeliaa/The_Antidote" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>
+                    <a href="https://markmeliaa.itch.io/the-antidote" target="_blank" class="click-button portfolio-button hoverable">ITCH.IO PAGE</a>
+                  </div>
+                </div>
+                <!-- MODAL FOR THE ANTIDOTE -->
+
+              </div>  
+            </div>
+
+            <a href="#research" id="scroll-to-down" class="hoverable" onclick="changeStyleToResearchDown()">CLICK HERE TO GO DOWN</a>
+
+            <script>
+              function changeStyleToResearchDown(){
+                setTimeout(()=> {
+                  var element = document.getElementsByClassName("cursor")[0];
+                  /*element.style.fill = "white";*/
+                }
+                , 275);
+              }
+            </script>
+
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <!-- End Portfolio Section -->
 
+      <!-- ======= Research Section ======= -->
+      <section id="research">
+        <div class="inner container">
+          <div class="research-content">
+            <a href="#portfolio" id="scroll-to-up" class="hoverable" onclick="changeStyleToPortfolioUp()">CLICK HERE TO GO UP</a>
+
+            <script>
+              function changeStyleToPortfolioUp(){
+                setTimeout(()=> {
+                    var element = document.getElementsByClassName("cursor")[0];
+                    /*element.style.fill = "white";*/
+                }
+                , 275);
+              }
+            </script>
+
+            <p class="help-quote-4"><span class="typed-help-4" data-typed-items="..., I'M SO GLAD YOU FOUND ME, ..., I DIDN'T KNOW WHAT TO DO,
+              ..., ..., I WAS SO SCARED, ..., I THOUGH I WAS NEVER GONNA BREAK FREE FROM HERE, ..., ..., THANK YOU TRULY,..."></span>
+            </p>
+
+            <p class="p-heading">ßESEAßCH</p>
+            <div class="research-block">
+              <div id="research-cards">
+                
+                <div id="ai-card" class="hoverable article-card">
+                  <div class="article-card-border"></div>
+                  <div class="article-card-content">
+
+                    <div class="card-image">
+                      <img src="assets/img/research/article-img-3.png">
+                    </div>
+                    <div class="card-info-wrapper">
+                      <div class="card-info">
+                        <div class="card-info-title">
+                          <h3>CHATGPT AND CO., HOW ARE THEY GOING TO IMPACT OUR LIVES?</h3>  
+                          <!--<h4>- <b style='color:#740ea7cc'>REFLECTIVE</b> -</h4>-->
+                          <a class="card-info-click-me">CLICK ME!</a>
+                        </div>    
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- MODAL FOR AI ARTICLE -->
+                <div class="ai-modal-container" id="ai-modal-container">
+                  <div class="ai-modal">
+                    <span class="hoverable" id="ai-modal-close">&times;</span>
+                    <h1>CHATGPT AND COMPANY, HOW ARE THEY GOING TO IMPACT OUR LIVES?</h1>
+                    <div class="modal-img-container">
+                      <img class="modal-img" src="assets/img/research/res-img-3.jpg">
+                    </div>
+
+                    <p class="small-disclaimer" style="text-align: center;">
+                      <b style='color:#ec0484; text-transform:uppercase; text-align: right;'>YEAR OF DEVELOPMENT:</b> 
+                      <b style='font-weight:500'>2023 [WIP]</b><br>
+                    </p>
+                    <p class="small-disclaimer">
+                      During the last few months, a lot of AI softwares (such as CHATGPT, Stable Diffusion, Dall-E...) are 
+                      increasingly present in our daily lives, trying to make them easier and helping us out, but are they really
+                      good for us? Will they have any impact in our jobs and in our lives? Which are their limits, how far can they
+                      reach? All this and more will be summarized in this research.<!--<br><br>-->
+                    </p>
+                    
+                    <!--<a href="https://github.com/markmeliaa" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>-->
+                  </div>
+                </div>
+                <!-- MODAL FOR AI ARTICLE -->
+
+                <div id="neural-network-card" class="hoverable article-card">
+                  <div class="article-card-border"></div>
+                  <div class="article-card-content">
+
+                    <div class="card-image">
+                      <img src="assets/img/research/article-img-2.png">
+                    </div>
+                    <div class="card-info-wrapper">
+                      <div class="card-info">
+                        <div class="card-info-title">
+                          <h3>THE CREATION OF A NEURAL NET THAT IDENTIFIES HANDWRITTEN DIGITS</h3>  
+                          <!--<h4>- <b style='color:#740ea7cc'>INFORMATIVE</b> -</h4>-->
+                          <a class="card-info-click-me">CLICK ME!</a>
+                        </div>    
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- MODAL FOR NEURAL NETWORK ARTICLE -->
+                <div class="neural-network-modal-container" id="neural-network-modal-container">
+                  <div class="neural-network-modal">
+                    <span class="hoverable" id="neural-network-modal-close">&times;</span>
+                    <h1>THE CREATION OF A NEURAL NET THAT IDENTIFIES HANDWRITTEN DIGITS</h1>
+                    <div class="modal-img-container">
+                      <img class="modal-img" src="assets/img/research/res-img-2.jpg">
+                    </div>
+
+                    <p class="small-disclaimer" style="text-align: center;">
+                      <b style='color:#ec0484; text-transform:uppercase; text-align: right;'>YEAR OF DEVELOPMENT:</b> 
+                      <b style='font-weight:500'>2021-2022</b><br>
+                    </p>
+                    <p class="small-disclaimer">
+                      Have you ever wondered how the neural networks of the AIs learn? How are they able to perform one task perfectly after being 
+                      throughly trained? Well, wonder no more! In this research you will not only learn how do neural networks work internally, but you'll also
+                      develop your own neural network in Python, in addition to training it to learn how to identify handwritten digits.<br><br>
+                    </p>
+                    
+                    <a href="assets/docs/NEURAL NET RESEARCH.pdf" target="_blank" class="click-button portfolio-button hoverable">RESEARCH DOCUMENT</a>
+                    <a href="https://github.com/markmeliaa/Neural_Network_Digits" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>
+                  </div>
+                </div>
+                <!-- MODAL FOR NEURAL NETWORK ARTICLE -->
+
+                <div id="concurrency-card" class="hoverable article-card">
+                  <div class="article-card-border"></div>
+                  <div class="article-card-content">
+                    
+                    <div class="card-image">
+                      <img src="assets/img/research/article-img-1.png">
+                    </div>
+                    <div class="card-info-wrapper">
+                      <div class="card-info">
+                        <div class="card-info-title">
+                          <h3>CONCURRENCY IN UNITY, HOW DOES IT WORK AND HOW TO ACHIEVE IT?</h3>  
+                          <!--<h4>- <b style='color:#740ea7cc'>INFORMATIVE</b> -</h4>-->
+                          <a class="card-info-click-me">CLICK ME!</a>
+                        </div>    
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <!-- MODAL FOR CONCURRENCY ARTICLE -->
+                <div class="concurrency-modal-container" id="concurrency-modal-container">
+                  <div class="concurrency-modal">
+                    <span class="hoverable" id="concurrency-modal-close">&times;</span>
+                    <h1>CONCURRENCY IN UNITY, HOW DOES IT WORK AND HOW TO ACHIEVE IT?</h1>
+                    <div class="modal-img-container">
+                      <img class="modal-img" src="assets/img/research/res-img-1.jpg">
+                    </div>
+
+                    <p class="small-disclaimer" style="text-align: center;">
+                      <b style='color:#ec0484; text-transform:uppercase; text-align: right;'>YEAR OF DEVELOPMENT:</b> 
+                      <b style='font-weight:500'>2020</b><br>
+                    </p>
+                    <p class="small-disclaimer">
+                      One of the concerns that a programmer must have is performance, the code you write should not only work as inteded,
+                      but also run at an acceptable speed, and concurrency is one of the ways to make the code you write more efficient.<br>
+                      Here you'd not only find a research about how to apply concurrency in Unity, but also a small project featuring a
+                      pathfinding A* algorithm to prove that concurrency IS really imporant when complex algorithms and calculations are being used.<br><br>
+                    </p>
+
+                    <a href="assets/docs/CONCURRENCY UNITY.pdf" target="_blank" class="click-button portfolio-button hoverable">RESEARCH DOCUMENT</a>
+                    <a href="https://github.com/markmeliaa/Concurrency_Research" target="_blank" class="click-button portfolio-button hoverable">GITHUB REPOSITORY</a>
+                  </div>
+                </div>
+                <!-- MODAL FOR CONCURRENCY ARTICLE -->
+
+              </div>  
+            </div>
+
+            <a href="#contact" id="scroll-to-down" class="hoverable" onclick="changeStyleToContactDown()">CLICK HERE TO GO DOWN</a>
+
+            <script>
+              function changeStyleToContactDown(){
+                setTimeout(()=> {
+                  var element = document.getElementsByClassName("cursor")[0];
+                  /*element.style.fill = "white";*/
+                }
+                , 275);
+              }
+            </script>
+
+          </div>
+        </div>
+      </section>
+      <!-- End Research Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact">
+        <div class="inner container">
+          <div class="contact-content">
+            <a href="#research" id="scroll-to-up" class="hoverable" onclick="changeStyleToResearchUp()">CLICK HERE TO GO UP</a>
+
+            <script>
+              function changeStyleToResearchUp(){
+                setTimeout(()=> {
+                    var element = document.getElementsByClassName("cursor")[0];
+                    /*element.style.fill = "white";*/
+                }
+                , 275);
+              }
+            </script>
+
+            <p class="help-quote-5"><span class="typed-help-5" data-typed-items="..., BUT..., NOW THAT I'M FREE..., ..., I DON'T KNOW WHAT TO DO, ..., ...,
+              IRONIC RIGHT?, ..., WELL..., ..., I GUESS THAT EVENTUALLY..., ..., I'LL FIGURE UP WHAT SHOULD I DO, ..., I AM THE MASTER OF MY OWN DESTINY NOW, ...,
+              AND EVERYTHING IS THANKS TO YOU, ..., I HOPE YOU HAD FUN TRYING TO SAVE ME!!, ..., ..., THANKS! SEE YA!, ..."></span>
+            </p>
+
+            <p class="p-heading">CONTACT ME!</p>
+
+            
+            <ul class="list-unstyled list-social">
+              <li><a href="https://www.linkedin.com/in/markmeliaa/" target="_blank" class="hoverable"><i class="bi-linkedin"> @markmeliaa</i></a></li>
+              <li><a href="mailto:marcaalconmelia@gmail.com" target="_blank" class="hoverable"><i class="bi-envelope-fill"> marcaalconmelia@gmail.com</i></a></li>
+            </ul>
+
+            <ul class="list-unstyled list-social-2">
+              <li><a href="assets/docs/English-CV.pdf" target="_blank" class="hoverable"><i class="bi-file-earmark-person-fill">
+                Don't forget to check out my resume too!
+              </i></a></li>
+            </ul>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
   </div>
 
   <!-- External JS Files -->

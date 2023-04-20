@@ -138,8 +138,6 @@
     }
   });
 
-  screen.orientation.lock("portrait");
-
   // Cursor for computer
   window.mobileAndTabletCheck = function() {
     let check = false;

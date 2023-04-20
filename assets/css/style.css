@@ -1,10 +1,23 @@
 /*--------------------------------------------------------------
 # Global Style
 --------------------------------------------------------------*/
+
+/* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
+@media (pointer:coarse) and (orientation:landscape) {
+  #landscape { display:block; }
+  #portrait { display:none; }
+}
+ 
+/* (B) CORRECT ORIENTATION - SHOW CONTENT HIDE MESSAGE */
+@media only screen and (orientation:portrait) {
+  #landscape { display:none; }
+  #portrait { display:block; }
+}
+
 html {
   cursor: none;
 }
-
+  
 body {
   background: #000000;
   color: #ffffff;
