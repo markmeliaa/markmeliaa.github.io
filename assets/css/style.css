@@ -3468,12 +3468,6 @@ p {
   font-weight: 300px;
 }
 
-.ai-modal .acomplishments {
-  text-align: left;
-  font-size: 12px;
-  font-weight: 300px;
-}
-
 .ai-modal .click-button {
   text-transform: uppercase;
   font-weight: 600;
@@ -3576,12 +3570,6 @@ p {
 
 .neural-network-modal .small-disclaimer {
   text-align: justify;
-  font-size: 12px;
-  font-weight: 300px;
-}
-
-.neural-network-modal .acomplishments {
-  text-align: left;
   font-size: 12px;
   font-weight: 300px;
 }
@@ -3689,12 +3677,6 @@ p {
 
 .concurrency-modal .small-disclaimer {
   text-align: justify;
-  font-size: 12px;
-  font-weight: 300px;
-}
-
-.concurrency-modal .acomplishments {
-  text-align: left;
   font-size: 12px;
   font-weight: 300px;
 }
@@ -3953,11 +3935,6 @@ p {
     font-size: 10px;
   }
 
-  .ai-modal .acomplishments {
-    text-align: left;
-    font-size: 10px;
-  }
-
   .ai-modal .small-disclaimer br {
     content: normal;
   }
@@ -3980,11 +3957,6 @@ p {
     font-size: 10px;
   }
 
-  .neural-network-modal .acomplishments {
-    text-align: left;
-    font-size: 10px;
-  }
-
   .neural-network-modal .small-disclaimer br {
     content: normal;
   }
@@ -4004,11 +3976,6 @@ p {
 
   .concurrency-modal .small-disclaimer {
     text-align: justify;
-    font-size: 10px;
-  }
-
-  .concurrency-modal .acomplishments {
-    text-align: left;
     font-size: 10px;
   }
 
@@ -4064,12 +4031,6 @@ p {
     margin-bottom: -15px;
   }
 
-  .ai-modal .acomplishments {
-    text-align: left;
-    font-size: 7px;
-    margin-bottom: -15px;
-  }
-
   .ai-modal .small-disclaimer br {
     content: normal;
   }
@@ -4093,12 +4054,6 @@ p {
     margin-bottom: -15px;
   }
 
-  .neural-network-modal .acomplishments {
-    text-align: left;
-    font-size: 7px;
-    margin-bottom: -15px;
-  }
-
   .neural-network-modal .small-disclaimer br {
     content: normal;
   }
@@ -4118,12 +4073,6 @@ p {
   }
   
   .concurrency-modal .small-disclaimer {
-    font-size: 7px;
-    margin-bottom: -15px;
-  }
-
-  .concurrency-modal .acomplishments {
-    text-align: left;
     font-size: 7px;
     margin-bottom: -15px;
   }
