@@ -2178,7 +2178,6 @@ p {
   .portfolio-block #portfolio-cards {
     max-width: 1000px;
     padding: 10px 10px;
-    height: 70vh;
     width: 90vw;
   }
   
@@ -2215,7 +2214,6 @@ p {
   .portfolio-block #portfolio-cards {
     max-width: 1000px;
     padding: 10px 10px;
-    height: 70vh;
     width: 90vw;
   }
   
@@ -2424,7 +2422,6 @@ p {
 @media(max-width: 600px) {
   .portfolio-block #portfolio-cards {
     padding: 10px 30px;
-    height: 70vh;
     width: 90vw;
   }
 
@@ -3279,8 +3276,7 @@ p {
   font-family: trigotFont;
   font-size: 45px;
   /*text-transform: uppercase;*/
-  /*color: #ad1d6c;*/
-  color: green;
+  color: #ad1d6c;
   filter: brightness(150%);
   padding-top: 40px;
 }
@@ -3746,7 +3742,6 @@ p {
   .research-block #research-cards {
     max-width: 1000px;
     padding: 10px 10px;
-    height: 70vh;
     width: 90vw;
   }
   
@@ -3784,7 +3779,6 @@ p {
   .research-block #research-cards {
     max-width: 1000px;
     padding: 10px 10px;
-    height: 70vh;
     width: 90vw;
   }
   
@@ -3892,7 +3886,6 @@ p {
 @media(max-width: 771px) {
   .research-block #research-cards {
     padding: 20px 30px;
-    height: 70vh;
     width: 90vw;
   }
 
@@ -4420,7 +4413,7 @@ p {
   .contact-content .list-social li {
     padding-left: 5%;
     margin-right: 5px;
-    margin-top: 5px;
+    margin-top: px;
     margin-bottom: 10px;
   }
 
