@@ -1347,7 +1347,9 @@ p {
   gap: 8px;
   max-width: 922px;
   width: calc(100% - 20px);
-  height: 68vh;
+  height: 65vh;
+  height: 65svh;
+  height: 65dvh;
   align-items: center;
   justify-content: center;
 }
@@ -3277,7 +3279,8 @@ p {
   font-family: trigotFont;
   font-size: 45px;
   /*text-transform: uppercase;*/
-  color: #ad1d6c;
+  /*color: #ad1d6c;*/
+  color: green;
   filter: brightness(150%);
   padding-top: 40px;
 }
@@ -3296,7 +3299,9 @@ p {
   gap: 8px;
   max-width: 922px;
   width: calc(100% - 20px);
-  height: 68vh;
+  height: 65vh;
+  height: 65svh;
+  height: 65dvh;
   align-items: center;
   justify-content: center;
 }
