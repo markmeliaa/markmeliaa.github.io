@@ -1071,6 +1071,12 @@ p {
     padding: 30px 10px;
   }
 
+  .traits-modal br {
+    display: block;
+    content: "";
+    margin: 7px 7px;
+  }
+
   #traits-modal-close {
     margin-top: -20px;
     margin-right: 0px;
@@ -1180,12 +1186,6 @@ p {
   
   .traits-modal p {
     font-size: 10px;
-  }
-
-  .traits-modal br {
-    display: block;
-    content: "";
-    margin: 7px 7px;
   }
   
   .traits-modal .small-disclaimer {
@@ -2718,7 +2718,7 @@ p {
 
   .custom-engine-modal .modal-img-container {
     position: static;
-    width: 70%;
+    width: 75%;
     padding-bottom: 0%;
     padding-left: 25%;
     margin-left: 0%;
@@ -2726,6 +2726,7 @@ p {
   
   .custom-engine-modal .modal-img {
     position: static;
+    width: 70%;
   }
 
   .ophiuchus-modal h1 {
@@ -2755,7 +2756,7 @@ p {
 
   .ophiuchus-modal .modal-img-container {
     position: static;
-    width: 70%;
+    width: 75%;
     padding-bottom: 0%;
     padding-left: 25%;
     margin-left: 0%;
@@ -2763,6 +2764,7 @@ p {
   
   .ophiuchus-modal .modal-img {
     position: static;
+    width: 70%;
   }
 
   .custom-wordle-modal h1 {
@@ -2792,7 +2794,7 @@ p {
 
   .custom-wordle-modal .modal-img-container {
     position: static;
-    width: 70%;
+    width: 75%;
     padding-bottom: 0%;
     padding-left: 25%;
     margin-left: 0%;
@@ -2800,6 +2802,7 @@ p {
   
   .custom-wordle-modal .modal-img {
     position: static;
+    width: 70%;
   }
 
   .chess-and-tails-modal h1 {
@@ -2829,7 +2832,7 @@ p {
 
   .chess-and-tails-modal .modal-img-container {
     position: static;
-    width: 70%;
+    width: 75%;
     padding-bottom: 0%;
     padding-left: 25%;
     margin-left: 0%;
@@ -2837,6 +2840,7 @@ p {
   
   .chess-and-tails-modal .modal-img {
     position: static;
+    width: 70%;
   }
 
   .strat-game-modal h1 {
@@ -2866,7 +2870,7 @@ p {
 
   .strat-game-modal .modal-img-container {
     position: static;
-    width: 70%;
+    width: 75%;
     padding-bottom: 0%;
     padding-left: 25%;
     margin-left: 0%;
@@ -2874,6 +2878,7 @@ p {
   
   .strat-game-modal .modal-img {
     position: static;
+    width: 70%;
   }
 
   .antidote-modal h1 {
@@ -2903,7 +2908,7 @@ p {
 
   .antidote-modal .modal-img-container {
     position: static;
-    width: 70%;
+    width: 75%;
     padding-bottom: 0%;
     padding-left: 25%;
     margin-left: 0%;
@@ -2911,6 +2916,7 @@ p {
   
   .antidote-modal .modal-img {
     position: static;
+    width: 70%;
   }
 
   .portfolio-button {
