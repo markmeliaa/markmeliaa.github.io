@@ -160,7 +160,7 @@ p {
   font-weight: 500;
   opacity: 0.75;
   position: absolute;
-  bottom: 13px;
+  bottom: 7px;
   right: -5%;
   cursor: none;
 }
@@ -940,10 +940,6 @@ p {
 }
 
 @media(max-width: 1020px) {
-  #about .about-descr .p-heading {
-    font-size: 30px;
-  }
-
   #about .about-img-container {
     top: 25px;
     width: 15%;
@@ -1043,10 +1039,6 @@ p {
 }
 
 @media(max-width: 600px) {
-  #about .about-descr .p-heading {
-    font-size: 30px;
-  }
-
   #about .about-img-container {
     top: 35px;
     width: 20%;
@@ -1283,7 +1275,7 @@ p {
   text-align: left;
   opacity: 0.75;
   position: absolute;
-  top: 20px;
+  top: 10px;
   cursor: none;
 }
 
@@ -1295,7 +1287,7 @@ p {
   font-weight: 500;
   opacity: 0.75;
   position: absolute;
-  bottom: 13px;
+  bottom: 7px;
   right: -5%;
   cursor: none;
 }
@@ -2180,10 +2172,6 @@ p {
     align-items: flex-start;  
     overflow: auto;
   }
-
-  #portfolio .p-heading {
-    margin-top: -25px;
-  }
   
   .portfolio-block #portfolio-cards {
     max-width: 1000px;
@@ -2220,10 +2208,6 @@ p {
   .portfolio-block {
     align-items: flex-start;  
     overflow: auto;
-  }
-
-  #portfolio .p-heading {
-    margin-top: -25px;
   }
   
   .portfolio-block #portfolio-cards {
@@ -3216,7 +3200,7 @@ p {
   text-align: left;
   opacity: 0.75;
   position: absolute;
-  top: 20px;
+  top: 10px;
   cursor: none;
 }
 
@@ -3228,7 +3212,7 @@ p {
   font-weight: 500;
   opacity: 0.75;
   position: absolute;
-  bottom: 13px;
+  bottom: 7px;
   right: 0px;
   cursor: none;
 }
@@ -3291,10 +3275,11 @@ p {
 
 #research .p-heading {
   font-family: trigotFont;
-  font-size: 60px;
+  font-size: 45px;
   /*text-transform: uppercase;*/
   color: #ad1d6c;
   filter: brightness(150%);
+  padding-top: 40px;
 }
 
 .research-block {
@@ -3751,10 +3736,6 @@ p {
   .research-block {
     align-items: flex-start;  
     overflow: auto;
-  }
-
-  #research .p-heading {
-    margin-top: -25px;
   }
   
   .research-block #research-cards {
@@ -4260,7 +4241,7 @@ p {
   text-align: left;
   opacity: 0.75;
   position: absolute;
-  top: 20px;
+  top: 10px;
   cursor: none;
 }
 
@@ -4272,7 +4253,7 @@ p {
   font-weight: 500;
   opacity: 0.75;
   position: absolute;
-  bottom: 13px;
+  bottom: 7px;
   right: 0px;
   cursor: none;
 }
@@ -4427,29 +4408,29 @@ p {
 @media (max-width: 400px) {
   #contact .p-heading {
     padding-left: 5%;
-    font-size: 30px;
-    margin-top: 60px;
+    margin-top: 65px;
     margin-bottom: 10px;
   }
 
   .contact-content .list-social li {
     padding-left: 5%;
     margin-right: 5px;
-    margin-top: 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 
   .contact-content .list-social li i {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .contact-content .list-social-2 li {
     padding-left: 5%;
     margin-right: 10px;
-    margin-top: 0px;
+    margin-top: -10px;
   }
 
   .contact-content .list-social-2 li i {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
@@ -4480,7 +4461,7 @@ p {
   text-align: left;
   opacity: 0.75;
   position: absolute;
-  top: 20px;
+  top: 10px;
   cursor: none;
 }
 
