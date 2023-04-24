@@ -105,6 +105,8 @@ p {
 
 #hero .hero-content {
   height: 99vh;
+  height: 99svh;
+  height: 99dvh;
   text-align: left;
   width: 95%;
   display: flex;
@@ -181,6 +183,8 @@ p {
 
 #about .about-content {
   height: 99vh;
+  height: 99svh;
+  height: 99dvh;
   text-align: left;
   width: 95%;
   display: flex;
@@ -1319,6 +1323,8 @@ p {
 
 #portfolio .portfolio-content {
   height: 99vh;
+  height: 99svh;
+  height: 99dvh;
   text-align: center;
   width: 100%;
   display: flex;
@@ -3273,6 +3279,8 @@ p {
 
 #research .research-content {
   height: 99vh;
+  height: 99svh;
+  height: 99dvh;
   text-align: center;
   width: 100%;
   display: flex;
@@ -4315,6 +4323,8 @@ p {
 
 #contact .contact-content {
   height: 99vh;
+  height: 99svh;
+  height: 99dvh;
   text-align: center;
   width: 100%;
   display: flex;
