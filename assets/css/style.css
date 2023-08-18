@@ -4079,6 +4079,19 @@ p {
   }
 }
 
+@media(max-width: 400px) {
+  #research .card-image > img {
+    padding-top: 0px;
+    margin-top: -5px;
+    width: 140px;
+  }
+
+  #research .card-info-title > h3 {
+    padding-top: 0px;
+    margin-top: -10px;
+  }
+}
+
 @media(max-width: 350px) {
   .ai-modal {
     padding: 30px 10px;
